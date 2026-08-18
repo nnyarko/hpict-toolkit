@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22003348.svg)](https://doi.org/10.5281/zenodo.22003348)
 # HPI-CT — Healthcare Program Integrity Control Toolkit
 
 **A free, open toolkit that helps healthcare payers, providers, and program-integrity agencies find and close the internal-control gaps that fraud, waste, and abuse exploit — *before* payment.** Built from the public enforcement record and aligned to the GAO Green Book (2025) and COSO.
@@ -37,8 +38,7 @@ Use it, adapt it, deploy it, teach from it, build on it — commercially or not.
 
 ## Cite this
 
-> Nyarko, N. (2026). *HPI-CT: Healthcare Program Integrity Control Toolkit* [Framework and toolkit]. https://github.com/nnyarko/hpict-toolkit
-> _(A Zenodo DOI will be added at the first tagged release.)_
+> Nyarko, N. (2026). *HPI-CT: Healthcare Program Integrity Control Toolkit* (v1.0.0) [Framework and toolkit]. Zenodo. https://doi.org/10.5281/zenodo.22003348
 
 ## Contribute
 
