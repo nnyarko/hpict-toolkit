@@ -1,0 +1,320 @@
+{
+ "_meta": {
+  "note": "PUBLISHED tier — analysis only. Party names, case names, party descriptions, citation URLs, source strings and exact dates are removed, not scrubbed; dollar figures are banded. What remains is the analysis: scheme, stage, failed control and COSO/GB mapping. Source crosswalk retained privately by the maintainer and available on request. Allegations only; presumed innocent.",
+  "promoted": "2026-07-29",
+  "deidentified": "2026-08-18"
+ },
+ "cases_doj": [
+  {
+   "cat": "Telemedicine / genetic testing",
+   "cases": 86,
+   "billed": 10551.4,
+   "failed": "No verification of a legitimate physician-patient encounter or medical necessity before honoring telemedicine-ordered tests/items",
+   "stage": "4 Service authorization",
+   "coso": "Control Activities",
+   "ctrl": "C-05 Telemedicine + C-09 Lab/Genetic prior-auth (Module 03/04)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Hospice / home health",
+   "cases": 67,
+   "billed": 3457.2,
+   "failed": "No visit verification or hospice-eligibility (terminal prognosis) check before payment",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Monitoring",
+   "ctrl": "C-08 Home Health & Hospice - EVV/GPS visit verification + eligibility (Module 05)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "MA risk adjustment",
+   "cases": 38,
+   "billed": 1859.7,
+   "failed": "Risk-adjustment diagnosis codes accepted for payment without independent chart validation (unsupported HCC upcoding)",
+   "stage": "6 Adjudication/Payment",
+   "coso": "Control Activities",
+   "ctrl": "C-01 MA Risk Adjustment - independent HCC chart validation (Module 06)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Behavioral health / sober homes",
+   "cases": 70,
+   "billed": 1794.4,
+   "failed": "Patient-brokering kickbacks undetected; billed behavioral/UDT services not verified as rendered",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Control Activities",
+   "ctrl": "C-06 Kickbacks + C-05 service verification (Module 05/07)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Opioid / controlled substance / pharmacy",
+   "cases": 146,
+   "billed": 1630.5,
+   "failed": "No PDMP / prescribing-pattern monitoring to detect medically unnecessary or diverted dispensing",
+   "stage": "7 Post-payment/Monitoring",
+   "coso": "Control Activities",
+   "ctrl": "C-03 Opioid Prescribing - PDMP integration (Module 03/07)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "DME",
+   "cases": 74,
+   "billed": 1497.6,
+   "failed": "DME claims paid without beneficiary contact, valid order, or proof-of-delivery verification",
+   "stage": "4 Service authorization",
+   "coso": "Control Activities",
+   "ctrl": "C-04 DME Orders - beneficiary contact & proof-of-delivery (Module 04)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Compounding pharmacy",
+   "cases": 44,
+   "billed": 1403.2,
+   "failed": "Expensive compounded drugs/creams billed without medical-necessity or beneficiary-request verification; marketer kickbacks",
+   "stage": "4 Service authorization",
+   "coso": "Control Activities",
+   "ctrl": "C-07/C-09 prior-auth & medical-necessity review (Module 03/04)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Hospital/physician kickback (Stark/AKS)",
+   "cases": 68,
+   "billed": 1393.7,
+   "failed": "Improper financial relationships/referrals (Stark/AKS) undetected in payment review",
+   "stage": "6 Adjudication/Payment",
+   "coso": "Information & Communication",
+   "ctrl": "C-06 Kickbacks - Open Payments integration (Module 06)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Wound care / amniotic allograft",
+   "cases": 11,
+   "billed": 1255.6,
+   "failed": "High-cost amniotic/skin-substitute grafts billed without medical-necessity review; untrained sales reps drive largest-size graft orders via kickbacks; grafts often never applied or applied to ineligible (e.g., hospice) patients",
+   "stage": "4 Service authorization",
+   "coso": "Control Activities",
+   "ctrl": "C-07/C-09 prior-auth, size/medical-necessity review & high-$ wound-graft edits (Module 04/05)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Provider enrollment / nominee / TCO",
+   "cases": 35,
+   "billed": 1236.3,
+   "failed": "Enrollment granted without verifying true beneficial owner / nominee screening & licensure (shell or impersonated-owner providers admitted to billing)",
+   "stage": "3 Enrollment",
+   "coso": "Risk Assessment",
+   "ctrl": "C-01 Enrollment & beneficial-owner verification + site visit (Module 01)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Lab / urine drug testing",
+   "cases": 65,
+   "billed": 1109.9,
+   "failed": "No prior-auth/medical-necessity review for high-dollar lab & urine drug tests; undetected ordering kickbacks",
+   "stage": "4 Service authorization",
+   "coso": "Control Activities",
+   "ctrl": "C-09 Lab/Genetic - prior-auth & high-$ review (Module 03/07)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "COVID-19 testing",
+   "cases": 30,
+   "billed": 700.4,
+   "failed": "No utilization/anomaly monitoring on add-on or unsolicited COVID-era test billing",
+   "stage": "6 Adjudication/Payment",
+   "coso": "Monitoring",
+   "ctrl": "C-09/C-10 utilization & anomaly detection (Module 03)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Personal care / Medicaid (services not rendered)",
+   "cases": 29,
+   "billed": 442.0,
+   "failed": "No electronic visit verification - billed personal-care/respite services never rendered",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Monitoring",
+   "ctrl": "C-08 EVV visit verification (Module 02/05)",
+   "ex": {
+    "amt_band": "$100M+"
+   }
+  },
+  {
+   "cat": "Upcoding / E&M",
+   "cases": 20,
+   "billed": 169.8,
+   "failed": "Upcoded evaluation & management / office-visit codes paid without documentation validation or impossible-day edits",
+   "stage": "6 Adjudication/Payment",
+   "coso": "Control Activities",
+   "ctrl": "C-07 Claims Billing - coding-intensity & impossible-day edits (Module 06)",
+   "ex": null
+  },
+  {
+   "cat": "Pharma pricing / rebate (AKS)",
+   "cases": 4,
+   "billed": 151.0,
+   "failed": "Manufacturer kickbacks / copay-subsidy & best-price misreporting not detected at adjudication",
+   "stage": "6 Adjudication/Payment",
+   "coso": "Control Activities",
+   "ctrl": "C-06 AKS/Stark conflict & pricing-integrity checks (Module 06)",
+   "ex": null
+  },
+  {
+   "cat": "ACA enrollment fraud",
+   "cases": 1,
+   "billed": 141.5,
+   "failed": "No verification of consumer consent / agent-of-record before marketplace enrollment (unauthorized plan-switching)",
+   "stage": "2 Eligibility",
+   "coso": "Control Activities",
+   "ctrl": "C-02 Eligibility / agent-of-record controls (Module 02)",
+   "ex": null
+  },
+  {
+   "cat": "Telehealth stimulant / Adderall prescribing",
+   "cases": 1,
+   "billed": 100.0,
+   "failed": "No independent medical-necessity review of telehealth stimulant prescriptions; auto-refill policies bypassed prescriber-patient interaction checks",
+   "stage": "4 Service authorization",
+   "coso": "Control Activities",
+   "ctrl": "C-05 Telemedicine prescribing controls & DEA corresponding-responsibility checks (Module 03/04)",
+   "ex": null
+  },
+  {
+   "cat": "Other / general health care fraud",
+   "cases": 17,
+   "billed": 49.1,
+   "failed": "Inadequate pre-payment documentation / medical-necessity controls",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Control Activities",
+   "ctrl": "C-07 Claims Billing - pre-payment documentation edits (Module 05)",
+   "ex": null
+  },
+  {
+   "cat": "Physical therapy / chiropractic",
+   "cases": 25,
+   "billed": 45.9,
+   "failed": "Therapy/chiropractic services billed but not rendered; falsified treatment records; no service-delivery validation",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Control Activities",
+   "ctrl": "C-05 Service-delivery validation & documentation (Module 05)",
+   "ex": null
+  },
+  {
+   "cat": "Nursing home / substandard care",
+   "cases": 11,
+   "billed": 37.3,
+   "failed": "No independent verification of care-plan compliance; facilities self-certified quality metrics later found grossly substandard or worthless",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Monitoring",
+   "ctrl": "C-08 Facility service-delivery verification & quality monitoring (Module 05)",
+   "ex": null
+  },
+  {
+   "cat": "Ambulance / transportation",
+   "cases": 10,
+   "billed": 18.8,
+   "failed": "Non-emergency ambulance/transport billed without medical-necessity documentation or trip verification",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Control Activities",
+   "ctrl": "C-08 trip verification & medical-necessity (Module 05)",
+   "ex": null
+  },
+  {
+   "cat": "Dental / pediatric",
+   "cases": 4,
+   "billed": 6.0,
+   "failed": "Unnecessary or unrendered pediatric/dental procedures billed; no clinical-necessity edit",
+   "stage": "5 Service delivery/Doc",
+   "coso": "Control Activities",
+   "ctrl": "C-05 Clinical-necessity validation (Module 05)",
+   "ex": null
+  }
+ ],
+ "cases_state": [
+  {
+   "cat": "Provider-identity / NPI-footprint misappropriation",
+   "ctrl": "PI-20 Provider NPI/credential-footprint consistency monitoring (Mod 02)",
+   "failed": "No check that a billing NPI's location/TIN/geography matches the provider's enrollment / known practice footprint",
+   "stage": "6 Payment",
+   "amt_band": "$5-25M"
+  },
+  {
+   "cat": "Beneficiary-side integrity (recruiter-cluster / roster overlap)",
+   "ctrl": "PI-21 Beneficiary-side integrity analytics (Mod 02)",
+   "failed": "Provider-centric controls only; no recruiter-cluster or staff-roster to member-roll overlap detection",
+   "stage": "3 Enrollment / 7 Monitoring",
+   "amt_band": ""
+  },
+  {
+   "cat": "Entity-network cash-loop / laundering",
+   "ctrl": "PI-22 Entity-network cash-loop detection (Mod 02)",
+   "failed": "No follow-the-money / entity-network transfer-pattern control",
+   "stage": "7 Monitoring",
+   "amt_band": ""
+  },
+  {
+   "cat": "MSO / investment-disguised kickback",
+   "ctrl": "PI-23 MSO/investment-disguised kickback detection (Mod 02)",
+   "failed": "Ownership captured but not investment-return-disguised referral inducement; Open Payments/ownership is the detection surface",
+   "stage": "7 Monitoring",
+   "amt_band": "$25-100M"
+  },
+  {
+   "cat": "Ancillary / wrap-around fund disbursement anomaly",
+   "ctrl": "MC-22 Ancillary/wrap-around fund disbursement SoD (Mod 06)",
+   "failed": "Sole processing authority over discretionary (HRSF/ILOS) funds; no independent second-approver or recipient cross-check",
+   "stage": "6 Payment",
+   "amt_band": ""
+  },
+  {
+   "cat": "NF cost-report / rate-setting anomaly",
+   "ctrl": "MD-23 Nursing-facility cost-report rate-setting integrity check (Mod 07)",
+   "failed": "Per-diem rates set on unverified self-reported costs; no financial-distress cross-check",
+   "stage": "4 Authorization",
+   "amt_band": ""
+  },
+  {
+   "cat": "Self-directed-care approver-conflict",
+   "ctrl": "MD-24 Self-directed-care approver-independence control (Mod 07)",
+   "failed": "Representative/conservator approves attendant time with no independent check or relationship/conflict screen",
+   "stage": "5 Documentation",
+   "amt_band": ""
+  },
+  {
+   "cat": "NEMT shared-ride / unit inflation",
+   "ctrl": "MD-26 NEMT unit-of-service / shared-ride integrity edit (Mod 07)",
+   "failed": "No NEMT unit-of-service edit; each passenger in one vehicle billed as a separate trip",
+   "stage": "6 Payment",
+   "amt_band": ""
+  },
+  {
+   "cat": "Systemic / agentic mass-fraud (agency escalation)",
+   "ctrl": "MD-25 State-agency systemic-fraud escalation control (Mod 07)",
+   "failed": "No duty / audit-trail for the state agency to escalate a detected systemic scheme to AG/MFCU + HHS-OIG",
+   "stage": "7 Monitoring / governance",
+   "amt_band": ""
+  }
+ ]
+}

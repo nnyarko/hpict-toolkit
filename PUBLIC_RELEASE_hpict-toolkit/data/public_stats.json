@@ -1,0 +1,13 @@
+{
+  "generated": "2026-08-18",
+  "controls": 160,
+  "modules": 8,
+  "control_types": {
+    "Preventive": 72,
+    "Detective": 82,
+    "Corrective": 6
+  },
+  "questions": 224,
+  "coded_cases": 1586,
+  "cases_with_amount": 816
+}
