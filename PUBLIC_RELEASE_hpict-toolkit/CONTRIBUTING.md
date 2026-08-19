@@ -24,4 +24,4 @@ Open a GitHub **Issue** (or **Discussion** for open-ended ideas); for concrete e
 
 The toolkit is **advisory** — it recommends controls; it does not block or decide any payment, coverage, or eligibility action. Keep proposals within that advisory scope.
 
-Contact: Nicholas Nyarko · focusfusionuniverse@gmail.com
+Contact: Nicholas Nyarko · nicholasnyarko@gmail.com

@@ -26,4 +26,4 @@ We measure adoption only through signals that carry no identity and no assessmen
 - We never collect PHI, claim-level data, beneficiary/provider identifiers, or your assessment responses.
 - We never sell or share anything, and there is nothing personal to sell.
 
-Questions: focusfusionuniverse@gmail.com. *Personal-capacity, public-source project.*
+Questions: nicholasnyarko@gmail.com. *Personal-capacity, public-source project.*

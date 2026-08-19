@@ -6,7 +6,7 @@ type: software
 authors:
   - family-names: Nyarko
     given-names: Nicholas
-    email: focusfusionuniverse@gmail.com
+    email: nicholasnyarko@gmail.com
 version: "1.0.0"
 date-released: "2026-08-13"
 license: MIT
@@ -21,4 +21,4 @@ keywords:
   - green-book
   - medicaid
   - medicare
-# doi: 10.5281/zenodo.XXXXXXX   # doi: 10.5281/zenodo.22003348
+doi: 10.5281/zenodo.22003348

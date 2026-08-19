@@ -14,7 +14,7 @@ Machine-readable exports, licensed **CC BY 4.0** (attribution required). All fil
 | `improper_payment_weighting.json` / `.csv` | Improper-payment weighting reference. | — |
 
 ## Not included (held by the maintainer)
-The **row-level identified coded dataset and raw intake** are not published here. `cases.json` is the de-identified analytical subset. The identified source crosswalk is available to researchers on request under a short data-use understanding — focusfusionuniverse@gmail.com.
+The **row-level identified coded dataset and raw intake** are not published here. `cases.json` is the de-identified analytical subset. The identified source crosswalk is available to researchers on request under a short data-use understanding — nicholasnyarko@gmail.com.
 
 ## Attribution
 > HPI-CT — Healthcare Program Integrity Control Toolkit, created by Nicholas Nyarko, licensed under CC BY 4.0.

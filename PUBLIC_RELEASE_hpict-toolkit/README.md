@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22003348.svg)](https://doi.org/10.5281/zenodo.22003348)
+
 # HPI-CT — Healthcare Program Integrity Control Toolkit
 
 **A free, open toolkit that helps healthcare payers, providers, and program-integrity agencies find and close the internal-control gaps that fraud, waste, and abuse exploit — *before* payment.** Built from the public enforcement record and aligned to the GAO Green Book (2025) and COSO.
@@ -34,7 +35,7 @@ Use it, adapt it, deploy it, teach from it, build on it — commercially or not.
 
 > HPI-CT — Healthcare Program Integrity Control Toolkit, created by Nicholas Nyarko, licensed under CC BY 4.0.
 
-**Not included:** the row-level identified case dataset and raw intake are held by the maintainer; the exemplars here are de-identified. Researchers can request the identified source crosswalk under a short data-use understanding — focusfusionuniverse@gmail.com.
+**Not included:** the row-level identified case dataset and raw intake are held by the maintainer; the exemplars here are de-identified. Researchers can request the identified source crosswalk under a short data-use understanding — nicholasnyarko@gmail.com.
 
 ## Cite this
 
@@ -46,7 +47,7 @@ Propose a control, fix a citation, suggest a case correction, or share how you u
 
 ## Using it? Tell us (optional)
 
-Adoption helps this stay funded with attention and improve. If your organization uses HPI-CT, we'd value a one-line note or testimonial — open a Discussion or email focusfusionuniverse@gmail.com. See **[`PRIVACY.md`](PRIVACY.md)** for exactly what the toolkit does and does not collect (short version: it runs offline and collects nothing unless you opt in).
+Adoption helps this stay funded with attention and improve. If your organization uses HPI-CT, we'd value a one-line note or testimonial — open a Discussion or email nicholasnyarko@gmail.com. See **[`PRIVACY.md`](PRIVACY.md)** for exactly what the toolkit does and does not collect (short version: it runs offline and collects nothing unless you opt in).
 
 ## Scope & honesty
 
