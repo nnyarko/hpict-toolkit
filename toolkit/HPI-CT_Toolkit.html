@@ -349,6 +349,39 @@ details.cdet .body{padding:13px 15px;}
 .acls.operational{background:#eef1f7;color:var(--mut);}
 .nolink{background:#f7f8fb;border:1px dashed var(--line);border-radius:6px;padding:9px 11px;
   font-size:11.5px;color:var(--mut);margin-top:6px;}
+/* a commitment: disposition, owner, target and where it came from */
+.addbtn.sm{padding:5px 10px;font-size:11px;margin-top:7px;}
+.cmt{margin-top:8px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;background:#fbfcfe;}
+.cmt-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:6px;}
+.cmt-l{flex:0 0 52px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--mut);font-weight:700;}
+.cmt-row input{flex:1;min-width:150px;border:1px solid var(--line);border-radius:5px;padding:4px 8px;
+  font:inherit;font-size:11.5px;background:#fff;}
+.disp{background:#fff;border:1px solid var(--line);border-radius:12px;padding:3px 10px;font:inherit;
+  font-size:11px;cursor:pointer;color:var(--mut);}
+.disp.on{background:var(--navy);border-color:var(--navy);color:#fff;font-weight:600;}
+.cmt-why{font-size:10.5px;color:var(--mut);margin-top:2px;}
+.setrow{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;font-size:12px;color:var(--mut);
+  border-top:1px solid var(--line);padding:6px 0;}
+.setrow .sid{font-weight:700;color:var(--navy);}
+.setrow .sd{background:#eef1f7;border-radius:10px;padding:1px 8px;font-size:10.5px;}
+.setrow .sd.done{background:var(--grn);color:#1e5c22;}
+.setrow .sd.deferred{background:var(--amb);color:#6b4e00;}
+/* feasibility: can you actually obtain what this control runs on */
+.feas{margin-top:7px;padding:7px 10px;border-radius:6px;font-size:11.5px;background:#f7f8fb;
+  border:1px solid var(--line);}
+.feas.open{background:#f3f8f1;border-color:#cfe3c8;}
+.feas.shut{background:#fff8ee;border-color:#f0dcc0;}
+.feas.none{background:#f7f8fb;color:var(--mut);font-style:italic;}
+.feas .fs2{margin-top:4px;color:var(--mut);}
+.feas a{color:var(--navy);}
+/* the evidence request list */
+table.ev{border-collapse:collapse;width:100%;font-size:12px;margin-top:8px;}
+table.ev th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--mut);
+  border-bottom:1px solid var(--line);padding:5px 8px 5px 0;font-weight:700;white-space:nowrap;}
+table.ev td{border-bottom:1px solid var(--line);padding:7px 8px 7px 0;vertical-align:top;}
+table.ev td.art{font-weight:600;color:var(--ink);}
+table.ev td.who{color:var(--mut);white-space:nowrap;}
+table.ev .src{display:block;font-size:11px;color:var(--mut);margin-top:2px;}
 .covrow{display:flex;align-items:center;gap:10px;font-size:12.5px;margin:6px 0;}
 .covrow .cvn{flex:0 0 44px;font-weight:700;color:var(--navy);text-align:right;}
 .covrow .cvt{flex:1;color:var(--ink);}
@@ -2261,6 +2294,52 @@ function linksFor(m, qid){
   return out;
 }
 
+/* ---- the feasibility leg --------------------------------------------------
+   A control you cannot obtain the data for is not a recommendation, it is a
+   wish. Controls carry `ds_ids`; the source registry carries who holds each
+   source, how you get it, how often it refreshes, what you match on and what
+   will bite you. Both were already in the file and nothing joined them to a
+   recommendation.
+
+   This leg is PARTIAL and has to say so: 23 of the 87 controls the chain can
+   reach record a ds_id at all. Silence on the other 64 is not a claim that
+   they need no data — it is the library not recording any. */
+function sourcesFor(c){
+  return (c.ds_ids || []).map(id => SOURCES.filter(s => s.id === id)[0])
+    .filter(Boolean);
+}
+
+/* PUBLIC-FREE is the only tier that means "you can just go and get it". The
+   registry writes the rest several ways ("RESTRICTED", "RESTRICTED (plans)",
+   "MIXED (public rosters to formal data-sharing agreements)"), so the test is
+   a prefix on the authored string rather than an enumeration this file
+   invents. */
+function srcOpen(s){ return /^PUBLIC-FREE/i.test(String(s.tier || "")); }
+
+function feasBlock(c){
+  const ss = sourcesFor(c);
+  if(!ss.length){
+    return '<div class="feas none">This control records no data source, so nothing here can tell you whether you '
+      + 'could actually run it. That is the library not recording one — not a statement that it needs no data.</div>';
+  }
+  const shut = ss.filter(s => !srcOpen(s));
+  return '<div class="feas' + (shut.length ? " shut" : " open") + '">'
+    + '<b>Runs on:</b> '
+    + ss.map(s => '<a href="#/sources">' + esc(s.id) + ' ' + esc(s.name) + '</a>'
+        + ' <span class="acls ' + (srcOpen(s) ? "advisory" : "subregulatory") + '">' + esc(s.tier || "tier not stated")
+        + '</span>').join(" · ")
+    + ss.map(s => '<div class="fs2">' + esc(s.id) + (s.custodian ? ' — held by ' + esc(s.custodian) : "")
+        + (s.how ? '. How you get it: ' + esc(s.how) : "")
+        + (s.refresh ? '. Refreshes ' + esc(s.refresh) : "")
+        + (s.caveats ? '. <b>Watch:</b> ' + esc(s.caveats) : "") + '</div>').join("")
+    + (shut.length
+        ? '<div class="fs2"><b>' + shut.length + ' of these ' + (shut.length === 1 ? "is" : "are")
+          + ' not openly available.</b> Standing this control up needs that access first — put it on the plan '
+          + 'before the control, not after.</div>'
+        : "")
+    + '</div>';
+}
+
 /* The requirements a control cites, resolved. A reg_id with no requirement
    object is returned as `{id, missing:true}` rather than dropped: a control
    citing a rule the registry does not carry is an authoring gap worth seeing,
@@ -2434,12 +2513,9 @@ function chainCard(f, opts){
           : '<div class="req"><span class="rm">This control records no reg_id, so nothing here can say which '
             + 'requirement it serves. 59 of ' + COUNTS.controls + ' controls are in that position; filling those '
             + 'in is authoring work, not a code change.</span></div>')
-      + '<button class="addbtn' + (inStarting(l.ctrl.id) ? " on" : "") + '" '
-      +   'style="background:' + (inStarting(l.ctrl.id) ? "var(--grn)" : "var(--blue)") + ';color:'
-      +   (inStarting(l.ctrl.id) ? "#1e5c22" : "#fff") + ';border:0;border-radius:6px;padding:5px 10px;'
-      +   'font:inherit;font-size:11px;font-weight:600;cursor:pointer;margin-top:7px" '
-      +   'onclick="toggleStarting(\'' + esc(l.ctrl.id) + '\')">'
-      +   (inStarting(l.ctrl.id) ? "&#10003; In your starting set — remove" : "Add to starting set") + '</button>'
+      + (o.feas === false ? "" : feasBlock(l.ctrl))
+      + commitBtn(l.ctrl, {m:f.m, qid:f.q.id}, true)
+      + commitControls(l.ctrl.id)
       + '</div>';
   }).join("");
 
@@ -2542,13 +2618,102 @@ function ensureSnapshot(m, sub){
   return state.snap[k];
 }
 
-/* the starting set — control IDs the user has committed to */
+/* ===========================================================================
+   THE STARTING SET, AS COMMITMENTS RATHER THAN IDS
+
+   `state.starting` was a flat array of control IDs and nothing else. The
+   moment a control left the card it was committed from, it lost the gap that
+   produced it, the rule it serves, and any reason a reader could reconstruct.
+   It is the one object meant to outlive the session and it carried the least
+   of any object in the file.
+
+   The array STAYS an array of IDs. It is the committed order, other screens
+   index it, an older export still loads, and the render harness reads it. What
+   is added is a parallel `state.commit` map keyed by the same ID, holding the
+   provenance and the disposition. Two consequences of that choice, both
+   deliberate:
+
+     - A commitment with no `state.commit` entry is legal, and renders as a
+       control committed before this was recorded, or from a screen with no gap
+       context. It is not silently backfilled with a guess.
+     - Nothing in `commit` feeds a score. It is a plan, not a measurement, and
+       the moment a disposition moved a number the tool would be rewarding
+       people for typing rather than for doing.
+   =========================================================================== */
+const DISPOS = ["planned", "in progress", "done", "deferred"];
+
 function inStarting(id){ return (state.starting || []).indexOf(id) >= 0; }
-function toggleStarting(id){
+function commitOf(id){ return (state.commit || {})[id] || null; }
+
+/* `ctx` is {m, qid} when the commitment came from a gap, absent when it came
+   from browsing the library. The difference is recorded, not smoothed over. */
+function toggleStarting(id, ctx){
   state.starting = state.starting || [];
+  state.commit = state.commit || {};
   const i = state.starting.indexOf(id);
-  if(i >= 0) state.starting.splice(i, 1); else state.starting.push(id);
+  if(i >= 0){
+    state.starting.splice(i, 1);
+    delete state.commit[id];
+  } else {
+    state.starting.push(id);
+    state.commit[id] = {
+      from: (ctx && ctx.m && ctx.qid) ? (ctx.m + ":" + ctx.qid) : null,
+      disp: "planned",
+      owner: "",
+      due: "",
+      at: new Date().toISOString().slice(0, 10)
+    };
+  }
   rerender();
+}
+function setCommit(id, k, v){
+  if(!inStarting(id)) return;
+  state.commit = state.commit || {};
+  const c = state.commit[id] || (state.commit[id] = {from:null, disp:"planned", owner:"", due:"", at:""});
+  c[k] = v;
+  save();
+  rerender();
+}
+
+/* The commit button, wherever it appears. `ctx` is passed only where the
+   screen actually knows which gap this came from — the chain cards do, the
+   library does not, and inventing one there would be a fabricated provenance
+   on the one record meant to survive. */
+function commitBtn(c, ctx, small){
+  const on = inStarting(c.id);
+  const arg = (ctx && ctx.m && ctx.qid)
+    ? ",{m:'" + esc(ctx.m) + "',qid:'" + esc(String(ctx.qid).replace(/'/g, "")) + "'}" : "";
+  return '<button class="addbtn' + (on ? " on" : "") + (small ? " sm" : "") + '"'
+    + ' onclick="toggleStarting(\'' + esc(c.id) + '\'' + arg + ')">'
+    + (on ? "&#10003; In your starting set — remove" : "Add to starting set") + '</button>';
+}
+
+/* Disposition, owner and target date on a committed control. `onchange`
+   rather than `oninput` on the text fields: the view re-renders from scratch
+   on every state write, and an input handler would take the focus away on
+   each keystroke. */
+function commitControls(id){
+  const k = commitOf(id);
+  if(!k) return "";
+  return '<div class="cmt">'
+    + '<div class="cmt-row"><span class="cmt-l">Status</span>'
+    +   DISPOS.map(d => '<button class="disp' + (k.disp === d ? " on" : "") + '"'
+          + ' aria-pressed="' + (k.disp === d) + '"'
+          + ' onclick="setCommit(\'' + esc(id) + '\',\'disp\',\'' + esc(d) + '\')">'
+          + esc(d) + '</button>').join("")
+    + '</div>'
+    + '<div class="cmt-row"><span class="cmt-l">Owner</span>'
+    +   '<input type="text" value="' + esc(k.owner || "") + '" placeholder="who is accountable"'
+    +   ' onchange="setCommit(\'' + esc(id) + '\',\'owner\',this.value)"></div>'
+    + '<div class="cmt-row"><span class="cmt-l">Target</span>'
+    +   '<input type="text" value="' + esc(k.due || "") + '" placeholder="e.g. Q4, or a date"'
+    +   ' onchange="setCommit(\'' + esc(id) + '\',\'due\',this.value)"></div>'
+    + '<div class="cmt-why">' + (k.from
+        ? 'Committed from ' + esc(k.from) + (k.at ? ' on ' + esc(k.at) : "") + '.'
+        : 'Committed from the controls library' + (k.at ? ' on ' + esc(k.at) : "")
+          + ', not from a specific gap — so nothing here records which of your answers it was meant to address.')
+      + ' Nothing on this row feeds any score.</div>'
+    + '</div>';
 }
 
 /* what a control involves. The library carries no effort, cost or duration
@@ -2570,8 +2735,8 @@ function ctrlCard(c, why){
     +   (c.system_touchpoint? '<dt>Where it lands</dt><dd>' + esc(c.system_touchpoint) + '</dd>' : "")
     +   (c.citation_text    ? '<dt>Anchor</dt><dd>' + esc(c.citation_text) + '</dd>' : "")
     + '</dl>'
-    + '<button class="addbtn' + (inStarting(c.id) ? " on" : "") + '" onclick="toggleStarting(\'' + esc(c.id) + '\')">'
-    +   (inStarting(c.id) ? "&#10003; In your starting set — remove" : "Add to starting set") + '</button>'
+    + commitBtn(c, null, false)
+    + commitControls(c.id)
     + '</div>';
 }
 
@@ -2905,7 +3070,7 @@ function viewReport(){
 
   /* the chain — the reason this report is not a dead end. Scoped to whatever
      the matrix above is pointing at. */
-  h += gapChainPanel(heatSel) + reqCoveragePanel(heatSel);
+  h += gapChainPanel(heatSel) + evidenceRequestPanel(heatSel) + reqCoveragePanel(heatSel);
 
   /* the starting set */
   h += '<div class="panel"><h3>Your starting set</h3>' + startingSetHtml() + '</div>';
@@ -3055,6 +3220,120 @@ function gapChainPanel(sel){
        true before you answer anything. Shown because "no preventive control
        exists for this rule anywhere in the library" is the finding, and it
        would be dishonest to present it as something your answers produced. */
+/* ---------------------------------------------------------------------------
+   THE EVIDENCE REQUEST LIST
+
+   The one artifact a compliance officer can take into a room. Every control
+   the library carries records an `evidence_artifact` — the proof that it ran —
+   and every requirement records `evidence_required`. Both were already on
+   screen, one control at a time, and nothing collected them.
+
+   Collected here they answer a different question from the chain above. The
+   chain says *what would close this gap*; this says *what you will be asked to
+   produce, who in your organisation owns it, and how often it should already
+   exist*. It is the only panel in the toolkit with no coverage caveat: all 87
+   controls a citation-backed link can reach carry an evidence artifact.
+
+   Two deliberate omissions. Nothing here claims you HAVE the artifact — the
+   assessment answer is the only thing that speaks to that, and it is printed
+   beside each row. And the list is not deduplicated across owners: the same
+   artifact demanded by two controls with different owners is two requests,
+   because that is how it will actually be asked for.
+   --------------------------------------------------------------------------- */
+function evidenceRequestPanel(sel){
+  const q = sel ? {mod:sel.m, comp:sel.k} : {};
+  const fs = findings(q).filter(f => f.kind === "weak");
+
+  /* artifact -> the controls demanding it, the gaps behind them, the rules */
+  const rows = {};
+  fs.forEach(f => f.links.forEach(l => {
+    const c = l.ctrl;
+    /* Three of the 160 authored artifacts use `artifact | corroboration note`
+       — the corroboration is guidance about how to stand the proof up, not
+       part of its name, and running the two together makes a 170-character
+       cell. Split on the first pipe only; everything after it is the note,
+       verbatim. Nothing is dropped and nothing is reworded. */
+    const raw = (c.evidence_artifact || "").trim();
+    if(!raw) return;
+    const bar = raw.indexOf("|");
+    const art = (bar >= 0 ? raw.slice(0, bar) : raw).trim();
+    const corro = bar >= 0 ? raw.slice(bar + 1).trim() : "";
+    const key = art + "||" + (c.owner || "");
+    const r = rows[key] || (rows[key] = {art:art, corro:{}, owner:c.owner || "", freq:{}, ctrls:{}, gaps:{}, reqs:{}, src:{}});
+    if(corro) r.corro[corro] = 1;
+    if(c.frequency) r.freq[c.frequency] = 1;
+    r.ctrls[c.id] = 1;
+    r.gaps[f.m + ":" + f.q.id] = {m:f.m, sub:f.sub, id:f.q.id, sc:f.score};
+    reqsFor(c).forEach(x => { if(!x.missing && x.cit) r.reqs[x.cit] = 1; });
+    sourcesFor(c).forEach(s => { r.src[s.id] = s; });
+  }));
+  const keys = Object.keys(rows);
+
+  if(!keys.length){
+    return '<div class="panel"><h3>What you will be asked to produce</h3>' + scopeLine(sel)
+      + '<p class="note" style="margin-bottom:0">Nothing to request yet. This list is built from the controls a '
+      + 'citation-backed link puts behind your answered gaps; either there are no such gaps '
+      + (sel ? "in this part of the matrix " : "") + 'yet, or the gaps you have carry no linked control. '
+      + 'The panel above says which.</p></div>';
+  }
+
+  /* Heaviest first: an artifact demanded by several controls, or sitting
+     behind the worst-scoring gap, is the one to chase first. */
+  keys.sort((a, b) => {
+    const ra = rows[a], rb = rows[b];
+    const wa = Math.min.apply(null, Object.keys(ra.gaps).map(k => ra.gaps[k].sc));
+    const wb = Math.min.apply(null, Object.keys(rb.gaps).map(k => rb.gaps[k].sc));
+    if(wa !== wb) return wa - wb;
+    return Object.keys(rb.ctrls).length - Object.keys(ra.ctrls).length;
+  });
+
+  const owners = {};
+  keys.forEach(k => { owners[rows[k].owner || "(no owner recorded)"] = 1; });
+
+  let h = '<div class="panel"><h3>What you will be asked to produce</h3>' + scopeLine(sel)
+    + '<p class="note">' + keys.length + ' distinct artifact' + (keys.length === 1 ? "" : "s")
+    + ' across ' + Object.keys(owners).length + ' owner' + (Object.keys(owners).length === 1 ? "" : "s")
+    + ', collected from the controls behind your answered gaps. This is a request list, not a claim that you hold '
+    + 'any of it — your own answer is printed against each row. Every control in the library records the proof it '
+    + 'leaves, so unlike the link set this list has no coverage gap: if a control is on the chain above, its '
+    + 'artifact is here.</p>'
+    + '<div style="overflow-x:auto"><table class="ev">'
+    + '<tr><th>Artifact to produce</th><th>Who owns it</th><th>How often it should exist</th>'
+    + '<th>Because you scored</th><th>Demanded by</th></tr>';
+
+  keys.forEach(k => {
+    const r = rows[k];
+    const gks = Object.keys(r.gaps);
+    const srcs = Object.keys(r.src).map(id => r.src[id]);
+    const shut = srcs.filter(s => !srcOpen(s));
+    h += '<tr>'
+      + '<td class="art">' + esc(r.art)
+      +   (Object.keys(r.corro).length
+            ? '<span class="src">Corroborate with: ' + esc(Object.keys(r.corro).join(" ")) + '</span>' : "")
+      +   (Object.keys(r.reqs).length
+            ? '<span class="src">Required by: ' + esc(Object.keys(r.reqs).join("; ")) + '</span>' : "")
+      +   (srcs.length
+            ? '<span class="src">Runs on ' + esc(srcs.map(s => s.id).join(", "))
+              + (shut.length ? ' — ' + shut.length + ' not openly available' : "") + '</span>' : "")
+      + '</td>'
+      + '<td class="who">' + esc(r.owner || "—") + '</td>'
+      + '<td class="who">' + esc(Object.keys(r.freq).join(" / ") || "—") + '</td>'
+      + '<td>' + gks.map(g => {
+            const x = r.gaps[g], si = subIndexOf(x.m, x.sub);
+            return '<div>' + (si >= 0 ? '<a href="#/assess/' + esc(x.m) + '/' + si + '">' + esc(x.id) + '</a>'
+                                      : esc(x.id)) + ' — ' + x.sc + '</div>';
+          }).join("") + '</td>'
+      + '<td class="who">' + esc(Object.keys(r.ctrls).join(", ")) + '</td>'
+      + '</tr>';
+  });
+
+  return h + '</table></div>'
+    + '<p class="note" style="margin:10px 0 0"><b>Draft.</b> Artifact names are the library\'s authored '
+    + '<code>evidence_artifact</code> and the requirement registry\'s <code>evidence_required</code>, not a list '
+    + 'anyone has agreed with your auditor. Confirm what is actually being asked for before you send this.</p>'
+    + '</div>';
+}
+
 function reqCoveragePanel(sel){
   /* Answered gaps only, for the same reason the chain uses them: a
      requirement reachable from a question nobody answered is not a
@@ -3132,17 +3411,64 @@ function startingSetHtml(){
   });
   const mods = Object.keys(byMod).sort();
   const order = {Preventive:0, Detective:1, Corrective:2};
+
+  /* Where each commitment came from, and where it has got to. A plan the
+     reader cannot audit is a list; these two counts are what make it a plan.
+     `orphan` is commitments with no recorded provenance — either made before
+     provenance was recorded, or made from the library rather than from a gap.
+     It is shown rather than hidden, because a starting set half of which
+     nobody can explain is the thing to know about it. */
+  const live = ids.filter(id => CONTROLS.some(x => x.id === id));
+  const byDisp = {};
+  live.forEach(id => { const k = commitOf(id); byDisp[(k && k.disp) || "planned"] = (byDisp[(k && k.disp) || "planned"] || 0) + 1; });
+  const orphan = live.filter(id => { const k = commitOf(id); return !k || !k.from; }).length;
+
   let h = '<p class="note">' + ids.length + ' control' + (ids.length === 1 ? "" : "s")
     + ' committed to across ' + mods.length + ' module' + (mods.length === 1 ? "" : "s")
     + '. Preventive first within each — the case base puts most alleged dollars in the enrolment and authorisation '
-    + 'stages, which is where a starting set earns its keep.</p>';
+    + 'stages, which is where a starting set earns its keep.</p>'
+    + '<div class="covrow" style="flex-wrap:wrap">'
+    +   DISPOS.filter(d => byDisp[d]).map(d =>
+          '<span class="sd ' + esc(d.replace(/\s+/g, "")) + '" style="background:#eef1f7;border-radius:10px;'
+          + 'padding:2px 10px;font-size:11.5px">' + byDisp[d] + ' ' + esc(d) + '</span>').join(" ")
+    + '</div>'
+    + (orphan
+        ? '<p class="note"><b>' + orphan + ' of these record no originating gap.</b> They were committed from the '
+          + 'controls library rather than from a failed question, so nothing here can say which of your answers '
+          + 'they were meant to address. That is worth resolving before this list goes to a committee — a control '
+          + 'nobody can trace to a finding is the first one someone will ask about.</p>'
+        : '<p class="note">Every commitment here traces back to a question you answered at 0 or 1.</p>');
+
   mods.forEach(m => {
     byMod[m].sort((a, b) => (order[a.type] == null ? 3 : order[a.type]) - (order[b.type] == null ? 3 : order[b.type]));
     h += '<div class="setgrp"><h4>' + esc(NAV[m] ? NAV[m].name : "Module " + m)
       + ' <span style="font-weight:400;color:var(--mut)">' + byMod[m].length + '</span></h4>'
-      + byMod[m].map(c => ctrlCard(c, "")).join("") + '</div>';
+      + byMod[m].map(c => ctrlCard(c, commitWhy(c.id))).join("") + '</div>';
   });
   return h;
+}
+
+/* The one-line reason a control is on the list, reconstructed from the
+   commitment record rather than from anything this screen infers. */
+function commitWhy(id){
+  const k = commitOf(id);
+  if(!k) return "";
+  let why = "";
+  if(k.from){
+    const m = k.from.split(":")[0], qid = k.from.split(":").slice(1).join(":");
+    const D = qData(), mod = D.modules[m];
+    const q = mod ? mod.questions.filter(x => x.id === qid)[0] : null;
+    const a = q ? qAns(m, q.id) : null;
+    why = "Committed against " + k.from
+        + (q ? ' — "' + q.q.slice(0, 80) + (q.q.length > 80 ? "…" : "") + '"' : "")
+        + (q && a && a.sel >= 0 ? ", which you scored " + qScore(q, a) : "")
+        + ".";
+  } else {
+    why = "Committed from the controls library, not from a gap — no originating question recorded.";
+  }
+  return why + " Status: " + (k.disp || "planned")
+    + (k.owner ? ", owned by " + k.owner : ", no owner named")
+    + (k.due ? ", target " + k.due : "") + ".";
 }
 
 /* ===========================================================================
@@ -3299,8 +3625,8 @@ function controlDetail(c){
     +   (c.gb_principle ? '<dt style="color:var(--mut);font-weight:700">Green Book</dt><dd style="margin:0">' + esc(c.gb_principle) + '</dd>' : "")
     +   (c.analytics_technique ? '<dt style="color:var(--mut);font-weight:700">Technique</dt><dd style="margin:0">' + esc(c.analytics_technique) + '</dd>' : "")
     + '</dl>'
-    + '<button class="addbtn' + (inStarting(c.id) ? " on" : "") + '" onclick="toggleStarting(\'' + esc(c.id) + '\')">'
-    +   (inStarting(c.id) ? "&#10003; In your starting set — remove" : "Add to starting set") + '</button>'
+    + commitBtn(c, null, false)
+    + commitControls(c.id)
     + reqBlock(c)
     + backRefs(c)
     + '</div></details>';
@@ -3360,8 +3686,8 @@ function viewControls(args){
 
   return '<h2>' + esc(NAV[fam] ? NAV[fam].name : "Module " + fam) + ' controls</h2>'
     + '<p class="note">' + all.length + ' control' + (all.length === 1 ? "" : "s") + ' in this family. '
-    + 'Each one opens to what it stops, the proof it leaves, who runs it, its anchor, and the assessment questions '
-    + 'tagged to the same Green Book principles.</p>'
+    + 'Each one opens to what it stops, the proof it leaves, who runs it, the requirement it is meant to achieve, '
+    + 'and the assessment questions whose authored anchor names the same rule it cites.</p>'
     + '<div class="filters">'
     +   '<b style="font-size:11.5px;color:var(--navy)">Filter:</b>'
     +   '<button aria-pressed="' + !f.type + '" onclick="setCFilter(\'type\',\'\')">All ' + all.length + '</button>'
@@ -3605,8 +3931,14 @@ function readiness(d){
       + 'from. This screen will not guess at your readiness.</p>'};
   }
   if(!qs.length){
-    return {kind:"none", html:'<p class="note" style="margin:0">No in-scope assessment question is tagged to the '
-      + 'Green Book principles these controls record, so there is nothing to compute a readiness from.</p>'};
+    /* This used to say "tagged to the same Green Book principles", which
+       stopped being true when questionsFor() moved onto citation-backed
+       edges. The reason a readiness cannot be computed is now narrower and
+       more specific, and the screen has to give the real one. */
+    return {kind:"none", html:'<p class="note" style="margin:0">No in-scope assessment question shares a citation '
+      + 'with the controls this finding names, so there is nothing to compute a readiness from. Their anchors and '
+      + 'these controls\' citations do not resolve to a common rule — which is a limit of the link set, not a '
+      + 'statement that nothing in the instrument bears on this finding.</p>'};
   }
   let sum = 0, ans = 0;
   qs.forEach(x => {
@@ -3711,8 +4043,8 @@ function viewRespond(args){
       +   (c.owner ? '<dt>Who runs it</dt><dd>' + esc(c.owner) + '</dd>' : "")
       +   (c.frequency ? '<dt>How often</dt><dd>' + esc(c.frequency) + '</dd>' : "")
       + '</dl>'
-      + '<button class="addbtn' + (inStarting(c.id) ? " on" : "") + '" onclick="toggleStarting(\'' + esc(c.id) + '\')">'
-      +   (inStarting(c.id) ? "&#10003; In your starting set — remove" : "Add to starting set") + '</button></div>').join("");
+      + commitBtn(c, null, false)
+      + commitControls(c.id) + '</div>').join("");
   }
   if(legacyOnly.length){
     h += '<p class="kbd" style="margin-top:9px">The matrix also names: ' + legacyOnly.map(f => '<i>' + esc(f) + '</i>').join("; ")
@@ -3848,16 +4180,82 @@ function viewDeploy(){
     .map(m => ({m:m, pc: (g.mods[m] && g.mods[m].x) ? g.mods[m].s / g.mods[m].x * 100 : 0}))
     .sort((a, b) => a.pc - b.pc);
 
+  /* This screen was the last one still recommending by module: every
+     preventive control filed under your three weakest modules, sliced to
+     three, without reference to which question failed. It disagreed with the
+     assessment screen and the report, which by then were both answering the
+     narrower question. A deployment plan is the worst place of the three to
+     be vague — it is the one someone costs and staffs.
+
+     It now recommends only controls a citation-backed link puts behind a
+     question you actually answered at 0 or 1, and it says how many of your
+     gaps in that module it does NOT cover. */
   let rec = "";
   if(mods.length){
     rec = mods.slice(0, 3).map(x => {
-      const cs = CONTROLS.filter(c => c.mod === x.m && c.type === "Preventive" && profScope(c).ok).slice(0, 3);
-      if(!cs.length) return '<div class="panel"><h3>' + esc(NAV[x.m].name) + ' — ' + x.pc.toFixed(0) + '%</h3>'
-        + '<p class="note" style="margin:0">No control in the library is assigned to this module, so there is nothing '
-        + 'to put in a starting set for it.</p></div>';
-      return '<div class="panel"><h3>' + esc(NAV[x.m].name) + ' — ' + x.pc.toFixed(0) + '%</h3>'
-        + '<p class="note">Your weakest answered ' + (mods.indexOf(x) === 0 ? "module" : "areas") + '. Preventive controls first.</p>'
-        + cs.map(c => ctrlCard(c, "")).join("") + '</div>';
+      const fs = findings({mod:x.m}).filter(f => f.kind === "weak");
+      const head = '<div class="panel"><h3>' + esc(NAV[x.m].name) + ' — ' + x.pc.toFixed(0) + '%</h3>';
+      if(!fs.length){
+        return head + '<p class="note" style="margin:0">Nothing you answered in this module scored 0 or 1. It is '
+          + 'among your lowest-scoring modules because of what is still unanswered, and an unanswered question is '
+          + 'not something to deploy a control against. <a href="#/assess">Answer more of it</a> first.</p></div>';
+      }
+      /* Preventive first, then by how many of your gaps the control speaks to:
+         a control that answers three failed questions is a better first move
+         than one that answers one, and that is computable now. */
+      const seen = {}, picks = [];
+      fs.forEach(f => f.links.forEach(l => {
+        if(!profScope(l.ctrl).ok) return;
+        const p = seen[l.ctrl.id] || (seen[l.ctrl.id] = {ctrl:l.ctrl, gaps:[], tier:l.tier});
+        p.gaps.push(f);
+        if(picks.indexOf(p) < 0) picks.push(p);
+      }));
+      picks.sort((a, b) => {
+        const ta = TYPEORD[a.ctrl.type] == null ? 3 : TYPEORD[a.ctrl.type];
+        const tb = TYPEORD[b.ctrl.type] == null ? 3 : TYPEORD[b.ctrl.type];
+        if(ta !== tb) return ta - tb;
+        return b.gaps.length - a.gaps.length;
+      });
+      const uncovered = fs.filter(f => !f.links.some(l => profScope(l.ctrl).ok)).length;
+
+      if(!picks.length){
+        return head + '<p class="note" style="margin:0">' + fs.length + ' gap'
+          + (fs.length === 1 ? "" : "s") + ' here, and no control in scope for your profile is linked to any of them '
+          + 'by a shared citation. ' + (CONTROLS.filter(c => c.mod === x.m).length
+              ? 'Controls are filed under this module, but none of their citations meets one of these questions\' '
+                + 'anchors — <a href="#/controls/' + esc(x.m) + '">browse the family</a> and judge for yourself.'
+              : 'No control in the library is assigned to this module at all.')
+          + ' There is nothing honest to put in a deployment plan for it.</p></div>';
+      }
+      return head
+        + '<p class="note">' + fs.length + ' answered gap' + (fs.length === 1 ? "" : "s") + ' here. '
+        + picks.length + ' control' + (picks.length === 1 ? "" : "s")
+        + ' in scope for your profile ' + (picks.length === 1 ? "is" : "are") + ' linked to '
+        + (fs.length - uncovered) + ' of them by a shared citation, preventive first, then by how many of your gaps '
+        + 'each one answers. '
+        + (uncovered
+            ? '<b>' + uncovered + ' gap' + (uncovered === 1 ? " has" : "s have") + ' no linked control in scope</b> '
+              + 'and cannot be deployed against — that is a coverage gap in the library, and leaving it out of the '
+              + 'plan silently would be the wrong kind of tidy.'
+            : "")
+        + '</p>'
+        /* A tier B edge means the control is filed under a different module
+           from the question it answers. That is legitimate — a control can
+           serve a question the workbook filed elsewhere — but under a heading
+           naming this module it would read as a filing error unless said. */
+        + picks.slice(0, 4).map(p =>
+            ctrlCard(p.ctrl, "Answers " + p.gaps.length + " of your gaps here: "
+              + p.gaps.map(f => f.q.id + " (scored " + f.score + ")").join(", ")
+              + (p.ctrl.mod !== x.m
+                  ? ". Filed under " + (NAV[p.ctrl.mod] ? NAV[p.ctrl.mod].name : "another module")
+                    + ", not this one — it is here because it cites the same rule."
+                  : ""))
+            + feasBlock(p.ctrl)).join("")
+        + (picks.length > 4
+            ? '<p class="kbd">' + (picks.length - 4) + ' more linked control'
+              + (picks.length - 4 === 1 ? "" : "s") + ' for this module in <a href="#/report">the report</a>.</p>'
+            : "")
+        + '</div>';
     }).join("");
   } else {
     rec = '<div class="empty"><div class="big">Nothing answered yet, so nothing to prioritise.</div>'
