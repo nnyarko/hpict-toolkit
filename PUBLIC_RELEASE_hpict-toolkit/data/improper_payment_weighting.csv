@@ -1,6 +1,0 @@
-cause,program,fy2025_signal,control_family,primary_modules,representative_control_ids,weight,rationale
-Insufficient documentation,PERM (Medicaid/CHIP) + CERT,77.17% of FY2025 Medicaid improper payments (56.07% CHIP); leading Medicare FFS/CERT cause,Documentation & medical-record integrity,05;03,CD-*;CB-*,High,Largest single national leak by share; documentation controls directly address it. Insufficient documentation is generally NOT indicative of fraud.
-Medical necessity not supported,CERT,Recurring CERT cause; central to coverage denials and takedown charges,Clinical review / coverage determination / prior authorization,04;05,PA-*;CD-*,High,Prior-auth and coverage-documentation controls are front-line prevention.
-Incorrect coding,CERT,"Persistent CERT driver (up/downcoding, mismatched codes)",Coding integrity,03,CB-*,Medium,NCCI/coding-edit and outlier analytics mitigate; smaller share than documentation.
-No documentation,CERT/PERM,"Smaller share than insufficient documentation, higher per-claim severity",Documentation integrity,05;03,CD-*;CB-*,Medium,Same family as insufficient documentation; Medium given smaller national share.
-Other / administrative errors,CERT/PERM,"Residual category (eligibility, pricing, admin)",Compliance program / general program integrity,02,PI-*,Low,Diffuse residual; general governance rather than a targeted family.
