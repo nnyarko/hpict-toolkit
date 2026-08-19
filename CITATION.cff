@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use HPI-CT, please cite it as below."
+title: "HPI-CT: Healthcare Program Integrity Control Toolkit"
+abstract: "A free, open internal-control framework and toolkit that helps healthcare payers, providers, and program-integrity agencies find and close the control gaps that fraud, waste, and abuse exploit before payment. Aligned to the GAO Green Book (2025) and COSO; grounded in over 1,550 coded U.S. DOJ healthcare-fraud enforcement actions."
+type: software
+authors:
+  - family-names: Nyarko
+    given-names: Nicholas
+    email: nicholasnyarko@gmail.com
+version: "1.0.0"
+date-released: "2026-08-13"
+license: MIT
+license-url: "https://github.com/nnyarko/hpict-toolkit/blob/main/LICENSE"
+repository-code: "https://github.com/nnyarko/hpict-toolkit"
+keywords:
+  - healthcare
+  - fraud-prevention
+  - program-integrity
+  - internal-controls
+  - COSO
+  - green-book
+  - medicaid
+  - medicare
+doi: 10.5281/zenodo.22003348

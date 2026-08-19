@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "artifact": "improper_payment_weighting",
+    "status": "DRAFT \u2014 confirm all figures vs CMS FY2025 improper-payment materials",
+    "method": "qualitative High/Med/Low (numeric needs cause-level dollar splits not cleanly published)",
+    "scope": "advisory/organizational; no claims or protected data; distinct from PARKED transaction-level deep-check",
+    "cms_fy2025_published": "2026-03-03",
+    "generated": "2026-07-13",
+    "sources": [
+      "https://www.cms.gov/newsroom/fact-sheets/fiscal-year-2025-improper-payments-fact-sheet",
+      "https://www.cms.gov/data-research/monitoring-programs/improper-payment-measurement-programs/comprehensive-error-rate-testing-cert",
+      "https://www.cms.gov/files/document/2025-perm-medicaid-improper-payment-rates.pdf"
+    ]
+  },
+  "program_context": [
+    {
+      "program": "Medicaid",
+      "rate": "6.12%",
+      "dollars": "$37.39B",
+      "insufficient_doc_share": "77.17%",
+      "measurement": "PERM"
+    },
+    {
+      "program": "CHIP",
+      "rate": "7.05%",
+      "dollars": "$1.37B",
+      "insufficient_doc_share": "56.07%",
+      "measurement": "PERM"
+    },
+    {
+      "program": "Medicare FFS",
+      "rate": "6.55%",
+      "dollars": "$28.83B",
+      "insufficient_doc_share": "leading cause",
+      "measurement": "CERT"
+    }
+  ],
+  "cause_weighting": [
+    {
+      "cause": "Insufficient documentation",
+      "program": "PERM (Medicaid/CHIP) + CERT",
+      "fy2025_signal": "77.17% of FY2025 Medicaid improper payments (56.07% CHIP); leading Medicare FFS/CERT cause",
+      "control_family": "Documentation & medical-record integrity",
+      "primary_modules": [
+        "05",
+        "03"
+      ],
+      "representative_control_ids": [
+        "CD-*",
+        "CB-*"
+      ],
+      "weight": "High",
+      "rationale": "Largest single national leak by share; documentation controls directly address it. Insufficient documentation is generally NOT indicative of fraud."
+    },
+    {
+      "cause": "Medical necessity not supported",
+      "program": "CERT",
+      "fy2025_signal": "Recurring CERT cause; central to coverage denials and takedown charges",
+      "control_family": "Clinical review / coverage determination / prior authorization",
+      "primary_modules": [
+        "04",
+        "05"
+      ],
+      "representative_control_ids": [
+        "PA-*",
+        "CD-*"
+      ],
+      "weight": "High",
+      "rationale": "Prior-auth and coverage-documentation controls are front-line prevention."
+    },
+    {
+      "cause": "Incorrect coding",
+      "program": "CERT",
+      "fy2025_signal": "Persistent CERT driver (up/downcoding, mismatched codes)",
+      "control_family": "Coding integrity",
+      "primary_modules": [
+        "03"
+      ],
+      "representative_control_ids": [
+        "CB-*"
+      ],
+      "weight": "Medium",
+      "rationale": "NCCI/coding-edit and outlier analytics mitigate; smaller share than documentation."
+    },
+    {
+      "cause": "No documentation",
+      "program": "CERT/PERM",
+      "fy2025_signal": "Smaller share than insufficient documentation, higher per-claim severity",
+      "control_family": "Documentation integrity",
+      "primary_modules": [
+        "05",
+        "03"
+      ],
+      "representative_control_ids": [
+        "CD-*",
+        "CB-*"
+      ],
+      "weight": "Medium",
+      "rationale": "Same family as insufficient documentation; Medium given smaller national share."
+    },
+    {
+      "cause": "Other / administrative errors",
+      "program": "CERT/PERM",
+      "fy2025_signal": "Residual category (eligibility, pricing, admin)",
+      "control_family": "Compliance program / general program integrity",
+      "primary_modules": [
+        "02"
+      ],
+      "representative_control_ids": [
+        "PI-*"
+      ],
+      "weight": "Low",
+      "rationale": "Diffuse residual; general governance rather than a targeted family."
+    }
+  ],
+  "control_family_weights": [
+    {
+      "module": "05",
+      "family": "Coverage & Documentation",
+      "weight": "High",
+      "driver": "Insufficient documentation; medical necessity"
+    },
+    {
+      "module": "04",
+      "family": "Prior Authorization",
+      "weight": "High",
+      "driver": "Medical necessity not supported"
+    },
+    {
+      "module": "03",
+      "family": "Coding & Billing",
+      "weight": "High",
+      "driver": "Insufficient documentation; incorrect coding"
+    },
+    {
+      "module": "02",
+      "family": "Program Integrity",
+      "weight": "Low",
+      "driver": "Other / administrative errors"
+    },
+    {
+      "module": "01",
+      "family": "Provider Enrollment",
+      "weight": null,
+      "driver": "Not an improper-payment-cause family"
+    },
+    {
+      "module": "06",
+      "family": "Managed Care (Part C/D)",
+      "weight": null,
+      "driver": "Encounter/RA integrity \u2014 separate mechanism"
+    },
+    {
+      "module": "07",
+      "family": "Medicaid & CHIP",
+      "weight": "High",
+      "driver": "Insufficient documentation (77.17% Medicaid)"
+    }
+  ]
+}
