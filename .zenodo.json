@@ -1,0 +1,34 @@
+{
+  "title": "HPI-CT: Healthcare Program Integrity Control Toolkit",
+  "description": "<p>HPI-CT is a free, open toolkit that helps healthcare payers, providers and program-integrity agencies find and close the internal-control gaps that fraud, waste and abuse exploit &mdash; <em>before</em> payment. Aligned to the GAO Green Book (2025) and COSO.</p><p>It includes <strong>172 workflow-integrated controls</strong> (78 preventive, 87 detective, 7 corrective) across <strong>10 modules</strong>, a <strong>246-question</strong> evidence-anchored self-assessment mapped to the Green Book's five components and seventeen principles, a control-failure diagnosis matrix, a regulatory rules dictionary, a data-source registry, and de-identified case exemplars distilled from <strong>1,586 coded U.S. DOJ healthcare-fraud enforcement actions</strong> (2023&ndash;2026), each mapped to the control that failed. The toolkit runs entirely offline in a browser &mdash; no server, no account, and nothing you type leaves your machine.</p><p>Code is licensed MIT; content and data CC BY 4.0. Advisory only: it recommends controls and decides nothing. All case references are allegations from public sources and defendants are presumed innocent. Created and maintained by Nicholas Nyarko in a personal capacity from public sources.</p>",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Nyarko, Nicholas"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "1.0.1",
+  "language": "eng",
+  "keywords": [
+    "healthcare",
+    "fraud prevention",
+    "program integrity",
+    "internal controls",
+    "COSO",
+    "GAO Green Book",
+    "Medicare",
+    "Medicaid",
+    "fraud waste and abuse",
+    "control self-assessment"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nnyarko/hpict-toolkit",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Correction release. The toolkit binary is unchanged from v1.0.0 (md5 4a3dfea3a9244b081eca5fb79d223d50); the published data, README and landing page are corrected to match it. See CHANGELOG.md."
+}
