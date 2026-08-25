@@ -1,15 +1,19 @@
 cff-version: 1.2.0
 message: "If you use HPI-CT, please cite it as below."
 title: "HPI-CT: Healthcare Program Integrity Control Toolkit"
-abstract: "A free, open internal-control framework and toolkit that helps healthcare payers, providers, and program-integrity agencies find and close the control gaps that fraud, waste, and abuse exploit before payment. Aligned to the GAO Green Book (2025) and COSO; grounded in over 1,550 coded U.S. DOJ healthcare-fraud enforcement actions."
+abstract: "A free, open internal-control framework and toolkit that helps healthcare payers, providers, and program-integrity agencies find and close the control gaps that fraud, waste, and abuse exploit before payment. Aligned to the GAO Green Book (2025) and COSO; grounded in 1,586 coded U.S. DOJ healthcare-fraud enforcement actions."
 type: software
 authors:
   - family-names: Nyarko
     given-names: Nicholas
     email: nicholasnyarko@gmail.com
-version: "1.0.0"
-date-released: "2026-08-13"
-license: MIT
+version: "1.0.1"
+date-released: "2026-08-24"
+# Dual-licensed: MIT for code, CC BY 4.0 for content and data. CFF takes a single
+# license field, so both are listed; LICENSE and LICENSE-CONTENT are authoritative.
+license:
+  - MIT
+  - CC-BY-4.0
 license-url: "https://github.com/nnyarko/hpict-toolkit/blob/main/LICENSE"
 repository-code: "https://github.com/nnyarko/hpict-toolkit"
 keywords:
@@ -21,4 +25,9 @@ keywords:
   - green-book
   - medicaid
   - medicare
-doi: 10.5281/zenodo.22003348
+# CONCEPT DOI — deliberately not a version DOI. Zenodo mints one DOI per version
+# (v1.0.0 is 10.5281/zenodo.22003348) plus one that always resolves to the newest
+# release. Using the concept DOI means this line never has to be touched again and
+# no citation can be left pointing at a superseded version. Verified 2026-08-24:
+# 10.5281/zenodo.22003347 redirects to the current record.
+doi: 10.5281/zenodo.22003347

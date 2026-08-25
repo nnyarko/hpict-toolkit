@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "generated": "2026-08-18",
+    "generated": "2026-08-24",
     "status": "DRAFT for review",
     "note": "Derived file - regenerated from the HPI-CT workbooks (source of truth). Do not hand-edit. Public-source, personal-capacity work; all case figures reflect allegations/settlements as described in cited public documents, not findings of fact unless a court so determined.",
-    "record_count": 160
+    "record_count": 172
   },
   "controls": [
     {
@@ -30,7 +30,9 @@
       "system_touchpoint": "PECOS / credentialing system",
       "evidence_artifact": "Verification log per data element",
       "frequency": "Per app",
-      "failure_mode": "Fabricated identity/credential enrollment"
+      "failure_mode": "Fabricated identity/credential enrollment",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-02",
@@ -58,7 +60,9 @@
       "system_touchpoint": "PECOS extract + QA tool",
       "evidence_artifact": "Reconciliation exception report",
       "frequency": "Quarterly",
-      "failure_mode": "Stale/inaccurate record enabling fraud"
+      "failure_mode": "Stale/inaccurate record enabling fraud",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-03",
@@ -84,7 +88,9 @@
       "system_touchpoint": "855 / ownership module",
       "evidence_artifact": "Completed ownership schedule | Corroborate vs CMS/state disclosure + SOS/SAM (FinCEN BOI retired 2026-08-14) — self-report = ceiling 2 unless registry-matched.",
       "frequency": "Per app/change",
-      "failure_mode": "Hidden ownership / straw owners"
+      "failure_mode": "Hidden ownership / straw owners",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-04",
@@ -109,7 +115,9 @@
       "system_touchpoint": "Screening engine",
       "evidence_artifact": "Owner-match exception resolution | Corroborate vs SAM.gov (DS-02) + SOS registry; FinCEN BOI retired 2026-08-14.",
       "frequency": "Per app",
-      "failure_mode": "Excluded/adverse owner slips through (OIG 3/4 mismatch)"
+      "failure_mode": "Excluded/adverse owner slips through (OIG 3/4 mismatch)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-05",
@@ -133,7 +141,9 @@
       "system_touchpoint": "Graph analytics platform",
       "evidence_artifact": "Network-link alert disposition",
       "frequency": "Monthly",
-      "failure_mode": "Shell-company rings (Gold Rush)"
+      "failure_mode": "Shell-company rings (Gold Rush)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-06",
@@ -159,7 +169,9 @@
       "system_touchpoint": "PECOS + external data feed",
       "evidence_artifact": "Change-report tracking log",
       "frequency": "Continuous",
-      "failure_mode": "Undisclosed control changes"
+      "failure_mode": "Undisclosed control changes",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-07",
@@ -184,7 +196,9 @@
       "system_touchpoint": "Exclusion-screening tool",
       "evidence_artifact": "Dated LEIE file version + SAM check + party snapshot screened + match output (retain 'no matches' result); retain >=6 yrs",
       "frequency": "At onboarding / pre-enrollment (point-in-time)",
-      "failure_mode": "Excluded provider enrollment"
+      "failure_mode": "Excluded provider enrollment",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-08",
@@ -206,7 +220,9 @@
       "system_touchpoint": "Exclusion-screening tool",
       "evidence_artifact": "Dated LEIE file version used + active-roster snapshot screened + match output (retain 'no matches' result); confirmed matches remediated <=5 business days; retain >=6 yrs",
       "frequency": "Monthly, aligned to OIG LEIE release (~10th; file covers actions through prior month)",
-      "failure_mode": "Post-enrollment exclusion not caught"
+      "failure_mode": "Post-enrollment exclusion not caught",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-09",
@@ -230,7 +246,9 @@
       "system_touchpoint": "Multi-source screening",
       "evidence_artifact": "Multi-list screening log",
       "frequency": "Per app + periodic",
-      "failure_mode": "Cross-program excluded actors"
+      "failure_mode": "Cross-program excluded actors",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-10",
@@ -254,7 +272,9 @@
       "system_touchpoint": "Enrollment workflow",
       "evidence_artifact": "Risk-tier determination record",
       "frequency": "Per app",
-      "failure_mode": "Under-screening high-risk types"
+      "failure_mode": "Under-screening high-risk types",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-11",
@@ -278,7 +298,9 @@
       "system_touchpoint": "Site-visit system",
       "evidence_artifact": "Site-visit report + photos",
       "frequency": "Per app + cyclic",
-      "failure_mode": "Phantom/virtual storefront suppliers"
+      "failure_mode": "Phantom/virtual storefront suppliers",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-12",
@@ -302,7 +324,9 @@
       "system_touchpoint": "Enrollment workflow",
       "evidence_artifact": "Decision-vs-finding reconciliation",
       "frequency": "Per visit",
-      "failure_mode": "Approval despite adverse site visit (OIG)"
+      "failure_mode": "Approval despite adverse site visit (OIG)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-13",
@@ -326,7 +350,9 @@
       "system_touchpoint": "FBI/contractor system",
       "evidence_artifact": "Fingerprint clearance record",
       "frequency": "Per app",
-      "failure_mode": "Criminal actors owning High-risk suppliers"
+      "failure_mode": "Criminal actors owning High-risk suppliers",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-14",
@@ -352,7 +378,9 @@
       "system_touchpoint": "PECOS revalidation queue",
       "evidence_artifact": "Revalidation status report",
       "frequency": "Per cycle",
-      "failure_mode": "Dormant/abandoned billing numbers misused"
+      "failure_mode": "Dormant/abandoned billing numbers misused",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-15",
@@ -374,7 +402,9 @@
       "system_touchpoint": "Claims analytics",
       "evidence_artifact": "Velocity-alert disposition",
       "frequency": "Continuous",
-      "failure_mode": "Rapid bust-out billing post-enrollment"
+      "failure_mode": "Rapid bust-out billing post-enrollment",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-16",
@@ -398,7 +428,9 @@
       "system_touchpoint": "Graph + enrollment analytics",
       "evidence_artifact": "Acquisition-velocity alert | Ownership corroboration via SOS/SAM + CMS disclosure; FinCEN BOI retired 2026-08-14.",
       "frequency": "Monthly",
-      "failure_mode": "Mass acquisition of suppliers (Gold Rush)"
+      "failure_mode": "Mass acquisition of suppliers (Gold Rush)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-17",
@@ -420,7 +452,9 @@
       "system_touchpoint": "NSC / accreditation data",
       "evidence_artifact": "Bond + accreditation on file",
       "frequency": "Per app/cycle",
-      "failure_mode": "Unaccountable DMEPOS suppliers"
+      "failure_mode": "Unaccountable DMEPOS suppliers",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-18",
@@ -442,7 +476,9 @@
       "system_touchpoint": "CAQH ProView",
       "evidence_artifact": "Attestation/PSV record",
       "frequency": "Per app + 120 days",
-      "failure_mode": "Stale credentialing data (payer networks)"
+      "failure_mode": "Stale credentialing data (payer networks)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-19",
@@ -464,7 +500,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "SoD matrix + approval policy",
       "frequency": "Annual",
-      "failure_mode": "Single-point approval abuse"
+      "failure_mode": "Single-point approval abuse",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-01",
@@ -490,7 +528,9 @@
       "system_touchpoint": "Claims/encounter analytics",
       "evidence_artifact": "Outlier-alert disposition log",
       "frequency": "Monthly",
-      "failure_mode": "Undetected aberrant billing"
+      "failure_mode": "Undetected aberrant billing",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-02",
@@ -514,7 +554,9 @@
       "system_touchpoint": "Risk-scoring engine",
       "evidence_artifact": "Risk-ranked review queue",
       "frequency": "Monthly",
-      "failure_mode": "Mis-targeted review effort"
+      "failure_mode": "Mis-targeted review effort",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-03",
@@ -538,7 +580,9 @@
       "system_touchpoint": "Integrated data platform",
       "evidence_artifact": "Network-link alert disposition",
       "frequency": "Monthly",
-      "failure_mode": "Cross-provider schemes missed"
+      "failure_mode": "Cross-provider schemes missed",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-04",
@@ -560,7 +604,9 @@
       "system_touchpoint": "Claims adjudication edits",
       "evidence_artifact": "Edit-hit & denial report",
       "frequency": "Continuous",
-      "failure_mode": "Improper payment before any recovery"
+      "failure_mode": "Improper payment before any recovery",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-05",
@@ -584,7 +630,9 @@
       "system_touchpoint": "MR case system",
       "evidence_artifact": "Sampling plan + extrapolation memo",
       "frequency": "Per project",
-      "failure_mode": "Unsupported claims paid, weak recovery basis"
+      "failure_mode": "Unsupported claims paid, weak recovery basis",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-06",
@@ -608,7 +656,9 @@
       "system_touchpoint": "BI case system",
       "evidence_artifact": "MR-for-BI case file",
       "frequency": "Per case",
-      "failure_mode": "Fraud not developed for action/referral"
+      "failure_mode": "Fraud not developed for action/referral",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-07",
@@ -632,7 +682,9 @@
       "system_touchpoint": "Overpayment tracking system",
       "evidence_artifact": "Refund + 60-day timestamp",
       "frequency": "Per event",
-      "failure_mode": "Retained overpayment becomes FCA exposure"
+      "failure_mode": "Retained overpayment becomes FCA exposure",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-08",
@@ -656,7 +708,9 @@
       "system_touchpoint": "Self-audit workpapers",
       "evidence_artifact": "Self-audit report + repayment",
       "frequency": "Quarterly",
-      "failure_mode": "Provider exposure at UPIC/RAC review"
+      "failure_mode": "Provider exposure at UPIC/RAC review",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-09",
@@ -681,7 +735,9 @@
       "system_touchpoint": "Recovery/AR system",
       "evidence_artifact": "Recovery aging report",
       "frequency": "Continuous",
-      "failure_mode": "Missed/time-barred recoveries"
+      "failure_mode": "Missed/time-barred recoveries",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-10",
@@ -706,7 +762,9 @@
       "system_touchpoint": "CAPA tracker",
       "evidence_artifact": "Root-cause CAPA record",
       "frequency": "Per finding",
-      "failure_mode": "Repeat errors; recurring improper payments"
+      "failure_mode": "Repeat errors; recurring improper payments",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-11",
@@ -730,7 +788,9 @@
       "system_touchpoint": "CAPA tracker + analytics",
       "evidence_artifact": "Re-measurement / trend report",
       "frequency": "Quarterly",
-      "failure_mode": "Ineffective fixes left in place"
+      "failure_mode": "Ineffective fixes left in place",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-12",
@@ -754,7 +814,9 @@
       "system_touchpoint": "Education/outreach log",
       "evidence_artifact": "Education notice + acknowledgment",
       "frequency": "Quarterly",
-      "failure_mode": "Recurring billing errors"
+      "failure_mode": "Recurring billing errors",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-13",
@@ -779,7 +841,9 @@
       "system_touchpoint": "ADR tracking system",
       "evidence_artifact": "ADR response + timeliness log",
       "frequency": "Per ADR",
-      "failure_mode": "Default denials from missed deadlines"
+      "failure_mode": "Default denials from missed deadlines",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-14",
@@ -803,7 +867,9 @@
       "system_touchpoint": "Referral case system",
       "evidence_artifact": "Referral package + log",
       "frequency": "Per case",
-      "failure_mode": "Fraud unreferred; mandatory-referral breach"
+      "failure_mode": "Fraud unreferred; mandatory-referral breach",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-15",
@@ -827,7 +893,9 @@
       "system_touchpoint": "Audit-tracking register",
       "evidence_artifact": "Coordination/de-dup log",
       "frequency": "Continuous",
-      "failure_mode": "Duplicate/conflicting reviews; provider burden"
+      "failure_mode": "Duplicate/conflicting reviews; provider burden",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-16",
@@ -852,7 +920,9 @@
       "system_touchpoint": "Payment-suspension system",
       "evidence_artifact": "Suspension determination memo",
       "frequency": "Per case",
-      "failure_mode": "Continued payment during active fraud"
+      "failure_mode": "Continued payment during active fraud",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-17",
@@ -876,7 +946,9 @@
       "system_touchpoint": "TPL / eligibility match",
       "evidence_artifact": "TPL cost-avoidance report",
       "frequency": "Continuous",
-      "failure_mode": "Medicaid pays where another payer liable"
+      "failure_mode": "Medicaid pays where another payer liable",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-18",
@@ -898,7 +970,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "SoD matrix + PI charter",
       "frequency": "Annual",
-      "failure_mode": "Conflicted/under-authorized PI function"
+      "failure_mode": "Conflicted/under-authorized PI function",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-19",
@@ -920,7 +994,9 @@
       "system_touchpoint": "PI dashboard/BI",
       "evidence_artifact": "Governance metrics report",
       "frequency": "Quarterly",
-      "failure_mode": "No oversight of PI effectiveness"
+      "failure_mode": "No oversight of PI effectiveness",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-20",
@@ -946,7 +1022,9 @@
       "system_touchpoint": "Claims + enrollment (PECOS/MMIS) join",
       "evidence_artifact": "Footprint-inconsistency alert log + dispositions",
       "frequency": "Continuous / near-real-time",
-      "failure_mode": "Legitimately-enrolled NPI billed by an unrelated party for services the named provider never rendered (SC Operation Border War 2025 pattern)"
+      "failure_mode": "Legitimately-enrolled NPI billed by an unrelated party for services the named provider never rendered (SC Operation Border War 2025 pattern)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-21",
@@ -971,7 +1049,9 @@
       "system_touchpoint": "Enrollment + claims + HR roster join",
       "evidence_artifact": "Recruiter-cluster + roster-overlap exception report + dispositions",
       "frequency": "Monthly",
-      "failure_mode": "Beneficiary as paid participant - cash-bribe enrollment / employee-as-recipient (Zhu SADC 2026; Irving NEMT 2026 patterns)"
+      "failure_mode": "Beneficiary as paid participant - cash-bribe enrollment / employee-as-recipient (Zhu SADC 2026; Irving NEMT 2026 patterns)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-22",
@@ -996,7 +1076,9 @@
       "system_touchpoint": "Claims + payment + ownership/entity data",
       "evidence_artifact": "Entity-network transfer-pattern alert + dispositions",
       "frequency": "Quarterly",
-      "failure_mode": "Laundering entities converting claim proceeds into bribe cash (Zhu SADC self-funding loop 2026)"
+      "failure_mode": "Laundering entities converting claim proceeds into bribe cash (Zhu SADC self-funding loop 2026)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-23",
@@ -1022,7 +1104,9 @@
       "system_touchpoint": "Claims + Open Payments + ownership-disclosure data",
       "evidence_artifact": "MSO-distribution vs referral-volume correlation report",
       "frequency": "Annual / on-trigger",
-      "failure_mode": "Kickbacks disguised as MSO investment returns, invisible in transaction-level views (Boston Heart >$61M since 2019)"
+      "failure_mode": "Kickbacks disguised as MSO investment returns, invisible in transaction-level views (Boston Heart >$61M since 2019)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-01",
@@ -1046,7 +1130,9 @@
       "system_touchpoint": "Encoder / EHR coding module",
       "evidence_artifact": "Coding policy + coder credential file",
       "frequency": "Continuous",
-      "failure_mode": "Up-coding to maximize reimbursement"
+      "failure_mode": "Up-coding to maximize reimbursement",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-02",
@@ -1068,7 +1154,9 @@
       "system_touchpoint": "Encoder / chargemaster",
       "evidence_artifact": "Code-set update change log",
       "frequency": "Annual",
-      "failure_mode": "Billing with retired/invalid codes"
+      "failure_mode": "Billing with retired/invalid codes",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-03",
@@ -1090,7 +1178,9 @@
       "system_touchpoint": "Claims analytics",
       "evidence_artifact": "E&M distribution / outlier report",
       "frequency": "Monthly",
-      "failure_mode": "Systematic E&M upcoding (levels 4-5)"
+      "failure_mode": "Systematic E&M upcoding (levels 4-5)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-04",
@@ -1116,7 +1206,9 @@
       "system_touchpoint": "Claim scrubber / edit engine",
       "evidence_artifact": "PTP edit hit / disposition log",
       "frequency": "Per claim",
-      "failure_mode": "Payment for improperly bundled code pairs"
+      "failure_mode": "Payment for improperly bundled code pairs",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-05",
@@ -1140,7 +1232,9 @@
       "system_touchpoint": "Claim edit engine",
       "evidence_artifact": "Modifier-use audit sample",
       "frequency": "Monthly",
-      "failure_mode": "Modifier abuse to defeat PTP edits"
+      "failure_mode": "Modifier abuse to defeat PTP edits",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-06",
@@ -1166,7 +1260,9 @@
       "system_touchpoint": "Medicaid claims (MES)",
       "evidence_artifact": "NCCI methodology attestation",
       "frequency": "Quarterly",
-      "failure_mode": "Unedited Medicaid claims / improper payment"
+      "failure_mode": "Unedited Medicaid claims / improper payment",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-07",
@@ -1192,7 +1288,9 @@
       "system_touchpoint": "Claim scrubber / edit engine",
       "evidence_artifact": "MUE hit / adjudication log",
       "frequency": "Per claim",
-      "failure_mode": "Payment for medically-unlikely quantities"
+      "failure_mode": "Payment for medically-unlikely quantities",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-08",
@@ -1216,7 +1314,9 @@
       "system_touchpoint": "Claims analytics + edits",
       "evidence_artifact": "Frequency-limit exception report",
       "frequency": "Continuous",
-      "failure_mode": "Overpayment for CCM / over-limit items"
+      "failure_mode": "Overpayment for CCM / over-limit items",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-09",
@@ -1241,7 +1341,9 @@
       "system_touchpoint": "Claim edit engine",
       "evidence_artifact": "Modifier-vs-documentation review",
       "frequency": "Per claim + sample",
-      "failure_mode": "Improper surgery/assistant payments (OIG)"
+      "failure_mode": "Improper surgery/assistant payments (OIG)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-10",
@@ -1265,7 +1367,9 @@
       "system_touchpoint": "Claims analytics",
       "evidence_artifact": "Global-period conflict report",
       "frequency": "Monthly",
-      "failure_mode": "Separate billing of bundled post-op care"
+      "failure_mode": "Separate billing of bundled post-op care",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-11",
@@ -1287,7 +1391,9 @@
       "system_touchpoint": "Claim scrubber vs NCD/LCD",
       "evidence_artifact": "Necessity-edit disposition",
       "frequency": "Per claim",
-      "failure_mode": "Payment without supporting diagnosis"
+      "failure_mode": "Payment without supporting diagnosis",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-12",
@@ -1311,7 +1417,9 @@
       "system_touchpoint": "Prepayment edit engine",
       "evidence_artifact": "Required-dx edit specification",
       "frequency": "Per claim",
-      "failure_mode": "Payment absent policy-required diagnosis"
+      "failure_mode": "Payment absent policy-required diagnosis",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-13",
@@ -1336,7 +1444,9 @@
       "system_touchpoint": "Claims system (CWF) edits",
       "evidence_artifact": "POS-vs-rate exception report",
       "frequency": "Continuous",
-      "failure_mode": "Higher non-facility rate paid in error"
+      "failure_mode": "Higher non-facility rate paid in error",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-14",
@@ -1361,7 +1471,9 @@
       "system_touchpoint": "Claims analytics / edits",
       "evidence_artifact": "Discharge-status audit sample",
       "frequency": "Monthly",
-      "failure_mode": "Full DRG paid where transfer applies"
+      "failure_mode": "Full DRG paid where transfer applies",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-15",
@@ -1386,7 +1498,9 @@
       "system_touchpoint": "Claim edit engine",
       "evidence_artifact": "Duplicate-hit disposition log",
       "frequency": "Per claim",
-      "failure_mode": "Duplicate payment for one service"
+      "failure_mode": "Duplicate payment for one service",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-16",
@@ -1408,7 +1522,9 @@
       "system_touchpoint": "Claims analytics",
       "evidence_artifact": "Unbundling pattern alert",
       "frequency": "Monthly",
-      "failure_mode": "Revenue inflation via fragmented billing / same-sample UDT code-stacking"
+      "failure_mode": "Revenue inflation via fragmented billing / same-sample UDT code-stacking",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-17",
@@ -1433,7 +1549,9 @@
       "system_touchpoint": "Prepayment edit library",
       "evidence_artifact": "Edit-change board record",
       "frequency": "Quarterly",
-      "failure_mode": "Known vulnerabilities left unedited"
+      "failure_mode": "Known vulnerabilities left unedited",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-18",
@@ -1455,7 +1573,9 @@
       "system_touchpoint": "Claim scrubber",
       "evidence_artifact": "Scrubber edit / clean-claim rate",
       "frequency": "Per claim",
-      "failure_mode": "Dirty claims / avoidable denials"
+      "failure_mode": "Dirty claims / avoidable denials",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-19",
@@ -1480,7 +1600,9 @@
       "system_touchpoint": "Audit workpaper system",
       "evidence_artifact": "Coding-audit report + error rate",
       "frequency": "Quarterly",
-      "failure_mode": "Undetected systematic coding error"
+      "failure_mode": "Undetected systematic coding error",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-20",
@@ -1502,7 +1624,9 @@
       "system_touchpoint": "LMS / feedback workflow",
       "evidence_artifact": "Corrective-action + re-audit record",
       "frequency": "Per finding",
-      "failure_mode": "Repeat errors uncorrected"
+      "failure_mode": "Repeat errors uncorrected",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-21",
@@ -1526,7 +1650,9 @@
       "system_touchpoint": "BI / analytics dashboard",
       "evidence_artifact": "Governance monitoring pack",
       "frequency": "Monthly",
-      "failure_mode": "Emerging coding risk unseen by leadership"
+      "failure_mode": "Emerging coding risk unseen by leadership",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CB-22",
@@ -1548,7 +1674,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "SoD matrix + coding-compliance plan",
       "frequency": "Annual",
-      "failure_mode": "Revenue pressure driving coding"
+      "failure_mode": "Revenue pressure driving coding",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-01",
@@ -1573,7 +1701,9 @@
       "system_touchpoint": "PA workflow + item master",
       "evidence_artifact": "PA-applicability determination",
       "frequency": "Per order",
-      "failure_mode": "Furnishing a listed item/service without required PA (auto-denial)"
+      "failure_mode": "Furnishing a listed item/service without required PA (auto-denial)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-02",
@@ -1599,7 +1729,9 @@
       "system_touchpoint": "Item master / mapping table",
       "evidence_artifact": "List-version change log",
       "frequency": "Quarterly",
-      "failure_mode": "Stale PA list misses newly-listed items"
+      "failure_mode": "Stale PA list misses newly-listed items",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-03",
@@ -1623,7 +1755,9 @@
       "system_touchpoint": "Document mgmt / PA portal",
       "evidence_artifact": "PA package checklist",
       "frequency": "Per request",
-      "failure_mode": "Insufficient-documentation non-affirmation"
+      "failure_mode": "Insufficient-documentation non-affirmation",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-04",
@@ -1647,7 +1781,9 @@
       "system_touchpoint": "EHR / PA portal",
       "evidence_artifact": "F2F note + WOPD on file",
       "frequency": "Per order",
-      "failure_mode": "Delivery before a valid written order"
+      "failure_mode": "Delivery before a valid written order",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-05",
@@ -1669,7 +1805,9 @@
       "system_touchpoint": "Claims + PA system",
       "evidence_artifact": "UTN present on claim",
       "frequency": "Per claim",
-      "failure_mode": "Billing without an affirmed PA"
+      "failure_mode": "Billing without an affirmed PA",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-06",
@@ -1691,7 +1829,9 @@
       "system_touchpoint": "Clinical review platform",
       "evidence_artifact": "Medical-necessity rationale record",
       "frequency": "Per request",
-      "failure_mode": "Payment for non-covered / unnecessary item"
+      "failure_mode": "Payment for non-covered / unnecessary item",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-07",
@@ -1715,7 +1855,9 @@
       "system_touchpoint": "EHR + supplier records",
       "evidence_artifact": "Timely continued-need record",
       "frequency": "Per event",
-      "failure_mode": "Repairs/rentals billed without current need (OIG PMD)"
+      "failure_mode": "Repairs/rentals billed without current need (OIG PMD)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-08",
@@ -1737,7 +1879,9 @@
       "system_touchpoint": "PA portal",
       "evidence_artifact": "Category eligibility checklist",
       "frequency": "Per request",
-      "failure_mode": "Denials/overpayments for documentation gaps (OIG catheters)"
+      "failure_mode": "Denials/overpayments for documentation gaps (OIG catheters)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-09",
@@ -1761,7 +1905,9 @@
       "system_touchpoint": "Coverage-rules engine",
       "evidence_artifact": "Criteria-to-coverage crosswalk",
       "frequency": "Per review",
-      "failure_mode": "Improper denial via over-restrictive plan criteria (OIG MAO)"
+      "failure_mode": "Improper denial via over-restrictive plan criteria (OIG MAO)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-10",
@@ -1783,7 +1929,9 @@
       "system_touchpoint": "Claims + utilization datamart",
       "evidence_artifact": "Data-completeness attestation",
       "frequency": "Per determination",
-      "failure_mode": "Coverage decision made on incomplete data (OIG 2025)"
+      "failure_mode": "Coverage decision made on incomplete data (OIG 2025)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-11",
@@ -1805,7 +1953,9 @@
       "system_touchpoint": "PA workflow timer",
       "evidence_artifact": "SLA timeliness report",
       "frequency": "Continuous",
-      "failure_mode": "Untimely decisions / access-to-care harm (CMS-0057-F)"
+      "failure_mode": "Untimely decisions / access-to-care harm (CMS-0057-F)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-12",
@@ -1827,7 +1977,9 @@
       "system_touchpoint": "PA portal / FHIR PA API",
       "evidence_artifact": "Denial notice with specific reason",
       "frequency": "Per denial",
-      "failure_mode": "Vague denials that impede appeal (CMS-0057-F)"
+      "failure_mode": "Vague denials that impede appeal (CMS-0057-F)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-13",
@@ -1849,7 +2001,9 @@
       "system_touchpoint": "ABN workflow",
       "evidence_artifact": "Signed ABN (CMS-R-131)",
       "frequency": "Per event",
-      "failure_mode": "Improper beneficiary liability / no advance notice"
+      "failure_mode": "Improper beneficiary liability / no advance notice",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-14",
@@ -1873,7 +2027,9 @@
       "system_touchpoint": "PA system + audit tool",
       "evidence_artifact": "Denial-sample review workpaper",
       "frequency": "Quarterly",
-      "failure_mode": "Systemic inappropriate denials undetected (OIG OEI-09-19-00350)"
+      "failure_mode": "Systemic inappropriate denials undetected (OIG OEI-09-19-00350)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-15",
@@ -1897,7 +2053,9 @@
       "system_touchpoint": "External-review referral",
       "evidence_artifact": "External-review disposition",
       "frequency": "Per upheld denial",
-      "failure_mode": "Inappropriate denials not independently checked (OIG)"
+      "failure_mode": "Inappropriate denials not independently checked (OIG)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-16",
@@ -1921,7 +2079,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "EPSDT PA policy statement",
       "frequency": "Annual",
-      "failure_mode": "Improper PA barriers to EPSDT services (GAO-24-106532)"
+      "failure_mode": "Improper PA barriers to EPSDT services (GAO-24-106532)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-17",
@@ -1943,7 +2103,9 @@
       "system_touchpoint": "PA analytics / reporting",
       "evidence_artifact": "Published PA metrics report",
       "frequency": "Annual",
-      "failure_mode": "No transparency into PA performance (CMS-0057-F)"
+      "failure_mode": "No transparency into PA performance (CMS-0057-F)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-18",
@@ -1965,7 +2127,9 @@
       "system_touchpoint": "Claims + POD records",
       "evidence_artifact": "POD-to-PA reconciliation",
       "frequency": "Monthly",
-      "failure_mode": "Billing for items not delivered / not matching the PA"
+      "failure_mode": "Billing for items not delivered / not matching the PA",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PA-19",
@@ -1989,7 +2153,9 @@
       "system_touchpoint": "Clinical review platform",
       "evidence_artifact": "Clinician sign-off + SoD matrix",
       "frequency": "Per denial",
-      "failure_mode": "Improper automated denials (42 CFR 422.101(c))"
+      "failure_mode": "Improper automated denials (42 CFR 422.101(c))",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-01",
@@ -2011,7 +2177,9 @@
       "system_touchpoint": "Coverage-rules engine + MCD",
       "evidence_artifact": "Coverage-criteria crosswalk",
       "frequency": "Per service",
-      "failure_mode": "Billing a service that is not covered / not reasonable-and-necessary"
+      "failure_mode": "Billing a service that is not covered / not reasonable-and-necessary",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-02",
@@ -2035,7 +2203,9 @@
       "system_touchpoint": "MCD monitor / policy repository",
       "evidence_artifact": "Policy-change log",
       "frequency": "Monthly",
-      "failure_mode": "Stale criteria misapply coverage rules (GAO-25-107623)"
+      "failure_mode": "Stale criteria misapply coverage rules (GAO-25-107623)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-03",
@@ -2059,7 +2229,9 @@
       "system_touchpoint": "EHR",
       "evidence_artifact": "R&N-supporting progress note",
       "frequency": "Per service",
-      "failure_mode": "Insufficient-documentation improper payment (SSA 1862(a)(1)(A))"
+      "failure_mode": "Insufficient-documentation improper payment (SSA 1862(a)(1)(A))",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-04",
@@ -2083,7 +2255,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "Doc-requirement effectiveness memo",
       "frequency": "Annual",
-      "failure_mode": "Ineffective/burdensome documentation fails to catch improper payments (GAO-19-277)"
+      "failure_mode": "Ineffective/burdensome documentation fails to catch improper payments (GAO-19-277)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-05",
@@ -2105,7 +2279,9 @@
       "system_touchpoint": "Claim scrubber",
       "evidence_artifact": "Category eligibility checklist",
       "frequency": "Per claim",
-      "failure_mode": "Category-specific insufficient-documentation overpayment (OIG catheters)"
+      "failure_mode": "Category-specific insufficient-documentation overpayment (OIG catheters)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-06",
@@ -2129,7 +2305,9 @@
       "system_touchpoint": "EHR signature log",
       "evidence_artifact": "Signature or signature-attestation",
       "frequency": "Per record",
-      "failure_mode": "Unsigned/illegible records denied on review (PIM 100-08 Ch.3)"
+      "failure_mode": "Unsigned/illegible records denied on review (PIM 100-08 Ch.3)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-07",
@@ -2151,7 +2329,9 @@
       "system_touchpoint": "EHR audit log",
       "evidence_artifact": "Cloned-note audit result",
       "frequency": "Quarterly",
-      "failure_mode": "Cloned/templated notes that do not support the billed service"
+      "failure_mode": "Cloned/templated notes that do not support the billed service",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-08",
@@ -2176,7 +2356,9 @@
       "system_touchpoint": "EHR / order management + NPPES/PECOS",
       "evidence_artifact": "Signed order on file + source-verified ordering-provider identity",
       "frequency": "Per service",
-      "failure_mode": "Service furnished without a valid order, or under a stolen/forged clinician identity (42 CFR 410.32)"
+      "failure_mode": "Service furnished without a valid order, or under a stolen/forged clinician identity (42 CFR 410.32)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-09",
@@ -2201,7 +2383,9 @@
       "system_touchpoint": "POD system",
       "evidence_artifact": "Complete POD record",
       "frequency": "Per delivery",
-      "failure_mode": "Billing for items not delivered / POD incomplete (42 CFR 410.38)"
+      "failure_mode": "Billing for items not delivered / POD incomplete (42 CFR 410.38)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-10",
@@ -2225,7 +2409,9 @@
       "system_touchpoint": "EHR",
       "evidence_artifact": "Continued-need / recert note",
       "frequency": "Per interval",
-      "failure_mode": "Ongoing services billed without current documented need"
+      "failure_mode": "Ongoing services billed without current documented need",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-11",
@@ -2249,7 +2435,9 @@
       "system_touchpoint": "Records management",
       "evidence_artifact": "Retention schedule + index",
       "frequency": "Continuous",
-      "failure_mode": "Records unavailable/unretrievable on request (42 CFR 424.516)"
+      "failure_mode": "Records unavailable/unretrievable on request (42 CFR 424.516)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-12",
@@ -2273,7 +2461,9 @@
       "system_touchpoint": "ADR tracker",
       "evidence_artifact": "ADR response log",
       "frequency": "Per ADR",
-      "failure_mode": "Automatic denial/overpayment for non-response (PIM 100-08 Ch.3)"
+      "failure_mode": "Automatic denial/overpayment for non-response (PIM 100-08 Ch.3)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-13",
@@ -2297,7 +2487,9 @@
       "system_touchpoint": "EHR versioning",
       "evidence_artifact": "Amendment audit trail",
       "frequency": "Per amendment",
-      "failure_mode": "Improper record alteration undermining review (PIM 100-08 Ch.3)"
+      "failure_mode": "Improper record alteration undermining review (PIM 100-08 Ch.3)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-14",
@@ -2321,7 +2513,9 @@
       "system_touchpoint": "Denials analytics",
       "evidence_artifact": "CAPA record",
       "frequency": "Quarterly",
-      "failure_mode": "Recurring documentation errors left uncorrected (GAO-19-277)"
+      "failure_mode": "Recurring documentation errors left uncorrected (GAO-19-277)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-15",
@@ -2343,7 +2537,9 @@
       "system_touchpoint": "LMS",
       "evidence_artifact": "Training completion record",
       "frequency": "As needed",
-      "failure_mode": "Repeat category-specific documentation errors (OIG catheters/psychotherapy)"
+      "failure_mode": "Repeat category-specific documentation errors (OIG catheters/psychotherapy)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-16",
@@ -2365,7 +2561,9 @@
       "system_touchpoint": "Pre-payment edit",
       "evidence_artifact": "Enhanced-review workpaper",
       "frequency": "Per claim/sample",
-      "failure_mode": "High-dollar improper payment for unsupported high-cost service (OIG molecular pathology)"
+      "failure_mode": "High-dollar improper payment for unsupported high-cost service (OIG molecular pathology)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-17",
@@ -2387,7 +2585,9 @@
       "system_touchpoint": "Eligibility / COB check",
       "evidence_artifact": "COB documentation",
       "frequency": "Per claim",
-      "failure_mode": "Duplicate/incorrect payment across settings (OIG hospice outpatient)"
+      "failure_mode": "Duplicate/incorrect payment across settings (OIG hospice outpatient)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-18",
@@ -2409,7 +2609,9 @@
       "system_touchpoint": "EHR / claim modifier",
       "evidence_artifact": "Modality-supporting note + modifier",
       "frequency": "Per service",
-      "failure_mode": "Billed modality not supported by the record (OIG psychotherapy telehealth)"
+      "failure_mode": "Billed modality not supported by the record (OIG psychotherapy telehealth)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-19",
@@ -2431,7 +2633,9 @@
       "system_touchpoint": "GRC / reporting",
       "evidence_artifact": "Documentation-integrity report",
       "frequency": "Quarterly",
-      "failure_mode": "No governance oversight of documentation risk (Green Book P16)"
+      "failure_mode": "No governance oversight of documentation risk (Green Book P16)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-01",
@@ -2456,7 +2660,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "Board-approved compliance plan",
       "frequency": "Annual",
-      "failure_mode": "Ineffective/absent compliance program (422.503); clinicians pressured to suspend medical judgment (Gehrke/King wound-graft 2025)"
+      "failure_mode": "Ineffective/absent compliance program (422.503); clinicians pressured to suspend medical judgment (Gehrke/King wound-graft 2025)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-02",
@@ -2481,7 +2687,9 @@
       "system_touchpoint": "Governance charter",
       "evidence_artifact": "Committee charter + minutes",
       "frequency": "Quarterly",
-      "failure_mode": "No high-level oversight of FWA"
+      "failure_mode": "No high-level oversight of FWA",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-03",
@@ -2506,7 +2714,9 @@
       "system_touchpoint": "LMS",
       "evidence_artifact": "Training completion report",
       "frequency": "Annual",
-      "failure_mode": "Untrained staff/FDRs miss FWA"
+      "failure_mode": "Untrained staff/FDRs miss FWA",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-04",
@@ -2531,7 +2741,9 @@
       "system_touchpoint": "Encounter Data System / RA engine",
       "evidence_artifact": "Coding validation log",
       "frequency": "Per cycle",
-      "failure_mode": "Unsupported diagnoses inflate risk scores (OIG RADV)"
+      "failure_mode": "Unsupported diagnoses inflate risk scores (OIG RADV)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-05",
@@ -2555,7 +2767,9 @@
       "system_touchpoint": "RA submission workflow",
       "evidence_artifact": "Add/delete reconciliation report",
       "frequency": "Per project",
-      "failure_mode": "Revenue-only chart review (one-directional)"
+      "failure_mode": "Revenue-only chart review (one-directional)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-06",
@@ -2577,7 +2791,9 @@
       "system_touchpoint": "HRA + encounter data",
       "evidence_artifact": "HRA-only diagnosis exception report",
       "frequency": "Monthly",
-      "failure_mode": "Unconfirmed HRA diagnoses drive overpayments (OIG 2024 open rec)"
+      "failure_mode": "Unconfirmed HRA diagnoses drive overpayments (OIG 2024 open rec)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-07",
@@ -2601,7 +2817,9 @@
       "system_touchpoint": "Sampling + medical review",
       "evidence_artifact": "Internal RADV workpapers",
       "frequency": "Annual",
-      "failure_mode": "Undetected risk-score overpayments; RADV extrapolation exposure"
+      "failure_mode": "Undetected risk-score overpayments; RADV extrapolation exposure",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-08",
@@ -2626,7 +2844,9 @@
       "system_touchpoint": "RA analytics platform",
       "evidence_artifact": "Coding-intensity trend report",
       "frequency": "Quarterly",
-      "failure_mode": "Aberrant HCC capture / upcoding (GAO-16-76)"
+      "failure_mode": "Aberrant HCC capture / upcoding (GAO-16-76)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-09",
@@ -2651,7 +2871,9 @@
       "system_touchpoint": "Case-management system",
       "evidence_artifact": "SIU case file + disposition",
       "frequency": "Continuous",
-      "failure_mode": "Leads not investigated; fraud persists"
+      "failure_mode": "Leads not investigated; fraud persists",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-10",
@@ -2675,7 +2897,9 @@
       "system_touchpoint": "Claims/PDE analytics",
       "evidence_artifact": "Aberrancy alert disposition",
       "frequency": "Monthly",
-      "failure_mode": "Aberrant billing undetected"
+      "failure_mode": "Aberrant billing undetected",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-11",
@@ -2702,7 +2926,9 @@
       "system_touchpoint": "FDR register + audit tool",
       "evidence_artifact": "FDR audit report",
       "frequency": "Annual",
-      "failure_mode": "Downstream entity fraud unmonitored (423.504 F)"
+      "failure_mode": "Downstream entity fraud unmonitored (423.504 F)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-12",
@@ -2727,7 +2953,9 @@
       "system_touchpoint": "Exclusion-screening tool",
       "evidence_artifact": "Monthly screening report + hits",
       "frequency": "Monthly",
-      "failure_mode": "Excluded party paid via plan or FDR"
+      "failure_mode": "Excluded party paid via plan or FDR",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-13",
@@ -2752,7 +2980,9 @@
       "system_touchpoint": "PDE + pharmacy records",
       "evidence_artifact": "Pharmacy audit report + recovery",
       "frequency": "Per plan/cyclic",
-      "failure_mode": "Billing for undispensed drugs"
+      "failure_mode": "Billing for undispensed drugs",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-14",
@@ -2776,7 +3006,9 @@
       "system_touchpoint": "DUR / DMP system",
       "evidence_artifact": "DMP case & POS-edit log",
       "frequency": "Continuous",
-      "failure_mode": "Opioid overutilization / doctor-shopping"
+      "failure_mode": "Opioid overutilization / doctor-shopping",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-15",
@@ -2801,7 +3033,9 @@
       "system_touchpoint": "Formulary + rebate data",
       "evidence_artifact": "Formulary/rebate review memo",
       "frequency": "Annual",
-      "failure_mode": "Rebate-driven formulary distortion (GAO-23-105270 open rec)"
+      "failure_mode": "Rebate-driven formulary distortion (GAO-23-105270 open rec)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-16",
@@ -2823,7 +3057,9 @@
       "system_touchpoint": "Enrollment + complaint system",
       "evidence_artifact": "Agent oversight scorecard",
       "frequency": "Monthly",
-      "failure_mode": "Marketing misrepresentation / churn fraud"
+      "failure_mode": "Marketing misrepresentation / churn fraud",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-17",
@@ -2848,7 +3084,9 @@
       "system_touchpoint": "Provider data / HSD tool",
       "evidence_artifact": "Provider-data validation log",
       "frequency": "Per filing",
-      "failure_mode": "Invalid MAO provider data (GAO-15-710 open rec)"
+      "failure_mode": "Invalid MAO provider data (GAO-15-710 open rec)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-18",
@@ -2872,7 +3110,9 @@
       "system_touchpoint": "MLR reporting system",
       "evidence_artifact": "MLR filing + support",
       "frequency": "Annual",
-      "failure_mode": "MLR misstatement / unremitted recoveries"
+      "failure_mode": "MLR misstatement / unremitted recoveries",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-19",
@@ -2896,7 +3136,9 @@
       "system_touchpoint": "Overpayment tracking log",
       "evidence_artifact": "Refund + disclosure record",
       "frequency": "Continuous",
-      "failure_mode": "Retained overpayments / FCA exposure"
+      "failure_mode": "Retained overpayments / FCA exposure",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-20",
@@ -2920,7 +3162,9 @@
       "system_touchpoint": "State + encounter systems",
       "evidence_artifact": "438.608 PI safeguards evidence",
       "frequency": "Ongoing",
-      "failure_mode": "Medicaid MCO program-integrity gaps"
+      "failure_mode": "Medicaid MCO program-integrity gaps",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-21",
@@ -2944,7 +3188,9 @@
       "system_touchpoint": "CAP tracker",
       "evidence_artifact": "CAP register + board pack",
       "frequency": "Quarterly",
-      "failure_mode": "Findings not remediated; repeat deficiencies"
+      "failure_mode": "Findings not remediated; repeat deficiencies",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-22",
@@ -2966,7 +3212,9 @@
       "system_touchpoint": "Benefit-fund / disbursement system",
       "evidence_artifact": "Dual-approval record + recipient-pattern review log",
       "frequency": "Per disbursement + quarterly pattern review",
-      "failure_mode": "Employee with sole processing authority routing discretionary funds to self/family (CareOregon HRSF 2026 pattern)"
+      "failure_mode": "Employee with sole processing authority routing discretionary funds to self/family (CareOregon HRSF 2026 pattern)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-01",
@@ -2993,7 +3241,9 @@
       "system_touchpoint": "MMIS / provider enrollment system",
       "evidence_artifact": "Risk-level & screening determination record",
       "frequency": "Per app",
-      "failure_mode": "Unscreened/ineligible provider enrolled"
+      "failure_mode": "Unscreened/ineligible provider enrolled",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-02",
@@ -3017,7 +3267,9 @@
       "system_touchpoint": "Enrollment revalidation queue",
       "evidence_artifact": "Revalidation status report",
       "frequency": "Per cycle",
-      "failure_mode": "Dormant/stale provider record misused"
+      "failure_mode": "Dormant/stale provider record misused",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-03",
@@ -3041,7 +3293,9 @@
       "system_touchpoint": "Disclosure module",
       "evidence_artifact": "Completed disclosure schedule",
       "frequency": "Per app/change",
-      "failure_mode": "Hidden ownership / undisclosed affiliates"
+      "failure_mode": "Hidden ownership / undisclosed affiliates",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-04",
@@ -3071,7 +3325,9 @@
       "system_touchpoint": "Exclusion-screening engine",
       "evidence_artifact": "Monthly screening log + hit disposition",
       "frequency": "Monthly",
-      "failure_mode": "Excluded/adverse actor bills Medicaid"
+      "failure_mode": "Excluded/adverse actor bills Medicaid",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-05",
@@ -3095,7 +3351,9 @@
       "system_touchpoint": "Site-visit system",
       "evidence_artifact": "Site-visit report + fingerprint clearance",
       "frequency": "Per app + cyclic",
-      "failure_mode": "Phantom/criminal-owned providers enrolled"
+      "failure_mode": "Phantom/criminal-owned providers enrolled",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-06",
@@ -3119,7 +3377,9 @@
       "system_touchpoint": "Eligibility system / data hub",
       "evidence_artifact": "Verification record per data element",
       "frequency": "Per determination",
-      "failure_mode": "Ineligible enrollee receives benefits"
+      "failure_mode": "Ineligible enrollee receives benefits",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-07",
@@ -3147,7 +3407,9 @@
       "system_touchpoint": "PARIS interface",
       "evidence_artifact": "Match-resolution & termination log",
       "frequency": "Quarterly",
-      "failure_mode": "Duplicate cross-state enrollment/benefits"
+      "failure_mode": "Duplicate cross-state enrollment/benefits",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-08",
@@ -3176,7 +3438,9 @@
       "system_touchpoint": "T-MSIS/eligibility + DMF feed",
       "evidence_artifact": "DMF-match exception disposition",
       "frequency": "Monthly",
-      "failure_mode": "Capitation/FFS paid for deceased enrollee"
+      "failure_mode": "Capitation/FFS paid for deceased enrollee",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-09",
@@ -3201,7 +3465,9 @@
       "system_touchpoint": "Enrollment analytics",
       "evidence_artifact": "Concurrent-enrollment alert log",
       "frequency": "Monthly",
-      "failure_mode": "Duplicate capitation across states"
+      "failure_mode": "Duplicate capitation across states",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-10",
@@ -3225,7 +3491,9 @@
       "system_touchpoint": "Contract management system",
       "evidence_artifact": "Executed PI contract provisions",
       "frequency": "Annual",
-      "failure_mode": "MCO fails to detect/return FWA overpayments"
+      "failure_mode": "MCO fails to detect/return FWA overpayments",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-11",
@@ -3249,7 +3517,9 @@
       "system_touchpoint": "Rate-setting & 438.6 documentation",
       "evidence_artifact": "Actuarial certification + approval file",
       "frequency": "Per rate cycle",
-      "failure_mode": "Unsound/unallowable directed payments"
+      "failure_mode": "Unsound/unallowable directed payments",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-12",
@@ -3274,7 +3544,9 @@
       "system_touchpoint": "PERM/MEQC sampling system",
       "evidence_artifact": "Sampled-case workpapers + error rate",
       "frequency": "Per cycle",
-      "failure_mode": "Undetected improper-payment error rate"
+      "failure_mode": "Undetected improper-payment error rate",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-13",
@@ -3299,7 +3571,9 @@
       "system_touchpoint": "CAP tracker",
       "evidence_artifact": "CAP with owner, milestone, closure evidence",
       "frequency": "Per finding",
-      "failure_mode": "Recurring improper payments (no root-cause fix)"
+      "failure_mode": "Recurring improper payments (no root-cause fix)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-14",
@@ -3323,7 +3597,9 @@
       "system_touchpoint": "SURS analytics",
       "evidence_artifact": "Medical-review case dispositions",
       "frequency": "Continuous",
-      "failure_mode": "Medically unnecessary / aberrant utilization"
+      "failure_mode": "Medically unnecessary / aberrant utilization",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-15",
@@ -3348,7 +3624,9 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "Documentation-requirement review memo",
       "frequency": "Annual",
-      "failure_mode": "Weak documentation enables improper claims"
+      "failure_mode": "Weak documentation enables improper claims",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-16",
@@ -3374,7 +3652,9 @@
       "system_touchpoint": "T-MSIS pipeline + DQ tool",
       "evidence_artifact": "T-MSIS data-quality exception report",
       "frequency": "Monthly",
-      "failure_mode": "Incomplete data blinds PI analytics"
+      "failure_mode": "Incomplete data blinds PI analytics",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-17",
@@ -3399,7 +3679,9 @@
       "system_touchpoint": "Encounter data warehouse",
       "evidence_artifact": "Encounter-completeness reconciliation",
       "frequency": "Monthly",
-      "failure_mode": "Incomplete encounter data hides FWA"
+      "failure_mode": "Incomplete encounter data hides FWA",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-18",
@@ -3424,7 +3706,9 @@
       "system_touchpoint": "Case management + suspension flag",
       "evidence_artifact": "Suspension notice + MFCU referral record",
       "frequency": "Per case",
-      "failure_mode": "Continued payment to fraudulent provider"
+      "failure_mode": "Continued payment to fraudulent provider",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-19",
@@ -3446,7 +3730,9 @@
       "system_touchpoint": "Governance & analytics platform",
       "evidence_artifact": "PI plan + UPIC coordination MOU",
       "frequency": "Annual",
-      "failure_mode": "Fragmented PI without analytics capacity"
+      "failure_mode": "Fragmented PI without analytics capacity",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-20",
@@ -3471,7 +3757,9 @@
       "system_touchpoint": "Child Core Set reporting system",
       "evidence_artifact": "Child Core Set submission + gap analysis",
       "frequency": "Annual",
-      "failure_mode": "Children miss required screenings; poor oversight"
+      "failure_mode": "Children miss required screenings; poor oversight",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-21",
@@ -3496,7 +3784,9 @@
       "system_touchpoint": "FMR workpaper system",
       "evidence_artifact": "Completed FMR report + findings log",
       "frequency": "Per cycle",
-      "failure_mode": "Untimely reviews leave PI gaps open"
+      "failure_mode": "Untimely reviews leave PI gaps open",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-22",
@@ -3524,7 +3814,9 @@
       "system_touchpoint": "Eligibility system + corrections data feed",
       "evidence_artifact": "Monthly incarceration-match exception report + dispositions",
       "frequency": "Monthly",
-      "failure_mode": "PCA/home-care billing while recipient incarcerated (Missouri MFCU 2026 pattern); capitation for incarcerated enrollees"
+      "failure_mode": "PCA/home-care billing while recipient incarcerated (Missouri MFCU 2026 pattern); capitation for incarcerated enrollees",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-23",
@@ -3546,7 +3838,9 @@
       "system_touchpoint": "Rate-setting system + state revenue / licensure / court data",
       "evidence_artifact": "Financial-distress screen result attached to each accepted cost report",
       "frequency": "Each cost-report cycle",
-      "failure_mode": "Inflated self-reported costs driving overpaid per-diem rates at a financially-distressed facility (Skyline/Schwartz AR 2025 pattern)"
+      "failure_mode": "Inflated self-reported costs driving overpaid per-diem rates at a financially-distressed facility (Skyline/Schwartz AR 2025 pattern)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-24",
@@ -3572,7 +3866,9 @@
       "system_touchpoint": "EVV / claims + representative & attendant registries",
       "evidence_artifact": "Conflict-screen result + representative-approved-claim sampling disposition",
       "frequency": "Continuous screen + quarterly sample",
-      "failure_mode": "Representative-approver with a financial tie to the caregiver approving fabricated time (TennCare/Hughlett 2026 pattern)"
+      "failure_mode": "Representative-approver with a financial tie to the caregiver approving fabricated time (TennCare/Hughlett 2026 pattern)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-25",
@@ -3596,7 +3892,9 @@
       "system_touchpoint": "Case-management / referral system + audit trail",
       "evidence_artifact": "Dated escalation record + auditor confirmation",
       "frequency": "Event-driven + annual attestation",
-      "failure_mode": "Detected systemic scheme (e.g., foreign-based mass enrollment) not escalated to law enforcement/oversight (OHCA/OK 2026 pattern)"
+      "failure_mode": "Detected systemic scheme (e.g., foreign-based mass enrollment) not escalated to law enforcement/oversight (OHCA/OK 2026 pattern)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MD-26",
@@ -3621,7 +3919,9 @@
       "system_touchpoint": "NEMT claims + trip/EVV data",
       "evidence_artifact": "Shared-ride / unit-inflation exception report",
       "frequency": "Monthly",
-      "failure_mode": "Per-passenger-as-separate-trip inflation + phantom/implausible trips (Irving NM NEMT 2026 pattern)"
+      "failure_mode": "Per-passenger-as-separate-trip inflation + phantom/implausible trips (Irving NM NEMT 2026 pattern)",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PE-20",
@@ -3647,7 +3947,9 @@
       "system_touchpoint": "PECOS / credentialing intake + ID-verification service",
       "evidence_artifact": "Identity-proofing log (liveness result + registry cross-match) per applicant",
       "frequency": "Per app / high-risk change",
-      "failure_mode": "AI-fabricated (synthetic or deepfaked) provider/beneficiary identity passing screening"
+      "failure_mode": "AI-fabricated (synthetic or deepfaked) provider/beneficiary identity passing screening",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "PI-24",
@@ -3674,7 +3976,9 @@
       "system_touchpoint": "Claims + external corroboration feeds",
       "evidence_artifact": "Corroboration-mismatch exception report",
       "frequency": "Continuous / per review cycle",
-      "failure_mode": "Payment on AI-generated fabricated documentation that passes visual audit"
+      "failure_mode": "Payment on AI-generated fabricated documentation that passes visual audit",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "CD-20",
@@ -3696,7 +4000,9 @@
       "system_touchpoint": "Document-management / intake system",
       "evidence_artifact": "Provenance & metadata screening result per high-risk document",
       "frequency": "Per high-risk submission",
-      "failure_mode": "Fabricated or AI-altered documents/images accepted as valid support"
+      "failure_mode": "Fabricated or AI-altered documents/images accepted as valid support",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "AG-01",
@@ -3720,7 +4026,9 @@
       "system_touchpoint": null,
       "evidence_artifact": null,
       "frequency": null,
-      "failure_mode": null
+      "failure_mode": null,
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-23",
@@ -3746,7 +4054,9 @@
       "system_touchpoint": "Encounter/claims + risk-score warehouse",
       "evidence_artifact": "Under-service exception report vs risk-matched peer benchmark",
       "frequency": "Quarterly",
-      "failure_mode": "Stinting — denial/delay of necessary care to increase capitation margin"
+      "failure_mode": "Stinting — denial/delay of necessary care to increase capitation margin",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-24",
@@ -3771,7 +4081,9 @@
       "system_touchpoint": "Enrollment/disenrollment + risk-score data",
       "evidence_artifact": "Risk-mix skew & disenroll-timing exception report",
       "frequency": "Quarterly (annual risk-mix)",
-      "failure_mode": "Favorable selection — recruiting healthy, shedding high-cost members"
+      "failure_mode": "Favorable selection — recruiting healthy, shedding high-cost members",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-25",
@@ -3796,7 +4108,9 @@
       "system_touchpoint": "Contract / arrangement repository",
       "evidence_artifact": "Safe-harbor guardrail conformance checklist per arrangement",
       "frequency": "Per arrangement + annual",
-      "failure_mode": "Kickbacks/steering/stinting disguised as value-based payment"
+      "failure_mode": "Kickbacks/steering/stinting disguised as value-based payment",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-26",
@@ -3821,7 +4135,9 @@
       "system_touchpoint": "Quality-measure & utilization data",
       "evidence_artifact": "Measure-numerator reconciliation sample",
       "frequency": "Annual (per measure set)",
-      "failure_mode": "Quality-metric gaming to unlock shared-savings/bonus"
+      "failure_mode": "Quality-metric gaming to unlock shared-savings/bonus",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-27",
@@ -3845,7 +4161,9 @@
       "system_touchpoint": "Diagnosis/HCC submission + risk-score data",
       "evidence_artifact": "Acuity-drift / model-delta report",
       "frequency": "Quarterly",
-      "failure_mode": "Upcoding masked by model-transition acuity inflation"
+      "failure_mode": "Upcoding masked by model-transition acuity inflation",
+      "provenance": "workbook",
+      "verification": ""
     },
     {
       "id": "MC-28",
@@ -3869,7 +4187,334 @@
       "system_touchpoint": "NLP/AI coding tool + HCC/diagnosis submission (RAPS/EDS) workflow",
       "evidence_artifact": "Per-submission (or sampled) human sign-off log + AI-vs-human back-test report",
       "frequency": "Per submission (sampled); back-test quarterly",
-      "failure_mode": "Unreviewed AI-generated/suggested diagnoses inflate risk scores (AI-enabled upcoding without human oversight)"
+      "failure_mode": "Unreviewed AI-generated/suggested diagnoses inflate risk scores (AI-enabled upcoding without human oversight)",
+      "provenance": "workbook",
+      "verification": ""
+    },
+    {
+      "id": "FR-01",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Central inventory of referral-source financial arrangements",
+      "type": "Preventive",
+      "stage": 1,
+      "stage_name": "Governance",
+      "gb_principle": "P12, P2",
+      "citation_text": "SSA 1128B(b); SSA 1877; 42 CFR 411.350-.357",
+      "reg_ids": [
+        "REG-101",
+        "REG-102"
+      ],
+      "ds_ids": [
+        "DS-09"
+      ],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "New arrangement, renewal, amendment, or acquisition",
+      "owner": "Compliance officer",
+      "system_touchpoint": "Contract management system",
+      "evidence_artifact": "Arrangement register with counterparty, term, compensation basis, owner, last-review date",
+      "frequency": "Continuous; register reviewed quarterly",
+      "failure_mode": "Unknown or orphaned referral-source arrangements escape every downstream control",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-02",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Pre-execution exception / safe-harbor mapping gate",
+      "type": "Preventive",
+      "stage": 1,
+      "stage_name": "Governance",
+      "gb_principle": "P10, P3",
+      "citation_text": "42 CFR 411.353-.357; 42 CFR 1001.952; OIG Special Fraud Alerts (PODs 2013, speaker programs 2020, telemedicine 2022)",
+      "reg_ids": [
+        "REG-101",
+        "REG-102",
+        "REG-106"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "Arrangement submitted for signature",
+      "owner": "Legal / compliance counsel",
+      "system_touchpoint": "Contract workflow",
+      "evidence_artifact": "Per-arrangement Stark-exception / AKS-safe-harbor mapping memo, retained in the arrangement file",
+      "frequency": "Per arrangement",
+      "failure_mode": "Arrangement executed that satisfies no exception or safe harbor — strict Stark liability",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-03",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Independent FMV and commercial-reasonableness determination",
+      "type": "Preventive",
+      "stage": 1,
+      "stage_name": "Documentation",
+      "gb_principle": "P10",
+      "citation_text": "42 CFR 411.351 (FMV & commercial reasonableness, 2020 final rule); 42 CFR 1001.952(d)",
+      "reg_ids": [
+        "REG-102",
+        "REG-101"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "New or amended compensation with a referral source; defined refresh triggers",
+      "owner": "Compliance officer / external valuator",
+      "system_touchpoint": "Arrangement file",
+      "evidence_artifact": "FMV support (appraisal or documented methodology) + separate commercial-reasonableness determination",
+      "frequency": "Per arrangement + on trigger",
+      "failure_mode": "Above-FMV or commercially unreasonable compensation functioning as payment for referrals",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-04",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Compensation-plan referral-sensitivity screen",
+      "type": "Preventive",
+      "stage": 1,
+      "stage_name": "Governance",
+      "gb_principle": "P10",
+      "citation_text": "SSA 1877; 42 CFR 411.354(d)",
+      "reg_ids": [
+        "REG-102"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Employers/contractors of physicians and other referring practitioners",
+      "dmepos": "no",
+      "trigger": "Compensation plan designed or amended",
+      "owner": "Compensation committee + compliance",
+      "system_touchpoint": "HR / compensation system",
+      "evidence_artifact": "Design-time test memo: no volume/value-of-referrals variation; wRVU rates vs benchmark; stacking review",
+      "frequency": "Per plan change",
+      "failure_mode": "Compensation that varies with referrals — the core Stark/AKS failure in hospital-physician cases",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-05",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Written-agreement completeness and expiry monitoring",
+      "type": "Detective",
+      "stage": 5,
+      "stage_name": "Documentation",
+      "gb_principle": "P16, P12",
+      "citation_text": "42 CFR 411.354(e) (writing, signature, 90-day rule); 42 CFR 411.357 (holdover)",
+      "reg_ids": [
+        "REG-102"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "Continuous against the arrangement register",
+      "owner": "Contract administrator",
+      "system_touchpoint": "Contract management system",
+      "evidence_artifact": "Exception report: unsigned, expired, holdover and missing-writing arrangements with aging",
+      "frequency": "Monthly",
+      "failure_mode": "Services and payment continuing under expired or unwritten arrangements",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-06",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Time-log substantiation of directorships and personal services",
+      "type": "Detective",
+      "stage": 5,
+      "stage_name": "Documentation",
+      "gb_principle": "P16",
+      "citation_text": "42 CFR 1001.952(d); OIG Compliance Program Guidance",
+      "reg_ids": [
+        "REG-101",
+        "REG-102"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Entities paying medical directors or personal-services fees",
+      "dmepos": "no",
+      "trigger": "Invoice / payment cycle",
+      "owner": "Accounts payable + compliance",
+      "system_touchpoint": "AP system",
+      "evidence_artifact": "Time logs matched to contracted hours and duties before release of payment; variance log",
+      "frequency": "Per payment cycle",
+      "failure_mode": "Payment for services not rendered — a directorship functioning as a referral reward",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-07",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Referral-pattern analytics joined to the arrangement inventory",
+      "type": "Detective",
+      "stage": 7,
+      "stage_name": "Monitoring",
+      "gb_principle": "P16, P8",
+      "citation_text": "SSA 1128B(b); SSA 1877",
+      "reg_ids": [
+        "REG-101",
+        "REG-102"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "Scheduled analytic run",
+      "owner": "Program-integrity analytics",
+      "system_touchpoint": "Claims / referral data warehouse",
+      "evidence_artifact": "Referral-concentration and pre/post-arrangement volume-shift report with dispositioned alerts",
+      "frequency": "Quarterly",
+      "failure_mode": "Referral-linked compensation invisible because referral data is never joined to who is being paid",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-08",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Marketing and lead-generation arrangement review",
+      "type": "Preventive",
+      "stage": 2,
+      "stage_name": "Governance",
+      "gb_principle": "P10",
+      "citation_text": "SSA 1128B(b); 18 U.S.C. 220 (EKRA); OIG Special Fraud Alert: telemedicine (2022)",
+      "reg_ids": [
+        "REG-101",
+        "REG-104",
+        "REG-106"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "New marketing, lead-generation, call-center or recruiter arrangement",
+      "owner": "Compliance officer",
+      "system_touchpoint": "Contract workflow",
+      "evidence_artifact": "Compensation-basis review: no per-patient/per-lead/per-test pay; EKRA analysis where labs/SUD involved",
+      "frequency": "Per arrangement",
+      "failure_mode": "Volume-based marketing pay — the engine of telefraud, lab and SUD-treatment schemes",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-09",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Beneficiary inducement and cost-sharing waiver controls",
+      "type": "Preventive",
+      "stage": 2,
+      "stage_name": "Governance",
+      "gb_principle": "P10",
+      "citation_text": "SSA 1128A(a)(5); OIG nominal-value policy (2016: $15/$75); 42 CFR 1001.952(k)",
+      "reg_ids": [
+        "REG-103"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "Any beneficiary gift, incentive or waiver",
+      "owner": "Compliance officer",
+      "system_touchpoint": "POS / billing system",
+      "evidence_artifact": "Gift-value tracking per beneficiary-year; individualized financial-need determinations for waivers",
+      "frequency": "Continuous",
+      "failure_mode": "Routine copay waivers or gifts steering beneficiaries — a CMP and AKS exposure",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-10",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Open Payments reconciliation",
+      "type": "Detective",
+      "stage": 7,
+      "stage_name": "Monitoring",
+      "gb_principle": "P16",
+      "citation_text": "SSA 1128G; 42 CFR 403.900-.914",
+      "reg_ids": [
+        "REG-105"
+      ],
+      "ds_ids": [
+        "DS-09"
+      ],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Entities with physicians named in CMS Open Payments",
+      "dmepos": "no",
+      "trigger": "Annual Open Payments publication",
+      "owner": "Compliance analyst",
+      "system_touchpoint": "CMS Open Payments download + COI system",
+      "evidence_artifact": "Reconciliation of Open Payments records vs internal arrangement inventory and COI disclosures, variances dispositioned",
+      "frequency": "Annual",
+      "failure_mode": "Industry payments to your physicians that your own inventory does not know about",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-11",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Non-monetary compensation tracking",
+      "type": "Detective",
+      "stage": 7,
+      "stage_name": "Monitoring",
+      "gb_principle": "P16",
+      "citation_text": "42 CFR 411.357(k),(m)",
+      "reg_ids": [
+        "REG-102"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Entities providing non-monetary compensation or staff benefits to physicians",
+      "dmepos": "no",
+      "trigger": "Any non-monetary item provided",
+      "owner": "Compliance analyst",
+      "system_touchpoint": "COI / expense system",
+      "evidence_artifact": "Per-physician per-year running total against the CMS-indexed limits",
+      "frequency": "Continuous",
+      "failure_mode": "Unrecorded gifts and benefits breaching the annual limit with no exception path",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "FR-12",
+      "module": "Module 09 — Financial Relationships & Referral Integrity",
+      "name": "Arrangement remediation and self-disclosure pathway",
+      "type": "Corrective",
+      "stage": 8,
+      "stage_name": "Corrective action",
+      "gb_principle": "P17",
+      "citation_text": "SRDP (SSA 1877; ACA 6409); OIG Self-Disclosure Protocol; 42 CFR 401.305",
+      "reg_ids": [
+        "REG-101",
+        "REG-102"
+      ],
+      "ds_ids": [],
+      "open_oversight_rec": null,
+      "analytics_technique": "Manual / none",
+      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "dmepos": "no",
+      "trigger": "Non-compliant arrangement identified",
+      "owner": "Compliance officer + counsel",
+      "system_touchpoint": "Case management",
+      "evidence_artifact": "Worked case file: stop/fix, lookback quantification, counseled SRDP / OIG SDP / repayment election",
+      "frequency": "Per event",
+      "failure_mode": "Silent forward-only fixes that leave the lookback exposure unquantified and undisclosed",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
     }
   ]
 }

@@ -7897,11 +7897,830 @@
      }
     }
    ]
+  },
+  "09": {
+   "name": "Financial Relationships & Referral Integrity",
+   "questions": [
+    {
+     "id": "A1",
+     "sub": "Arrangement inventory & governance",
+     "q": "Your inventory of financial relationships with actual or potential referral sources (physician compensation, medical directorships, space/equipment leases, management/MSO agreements, joint ventures, marketing and lead-generation arrangements) is:",
+     "w": 3,
+     "anchor": "COSO P12 / GB P12 · FRMG P2 · OIG GCPG 2023 (AKS/Stark risk areas) · SSA 1128B(b); SSA 1877",
+     "comp": "CA",
+     "prin": "P12",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Exists but incomplete or outdated — known categories (e.g. leases, marketing) are missing or unreviewed",
+       "s": 2
+      },
+      {
+       "t": "Complete and current — every such arrangement is listed with the counterparty, term, compensation basis, an accountable owner and a last-review date, maintained on a defined cadence",
+       "s": 3
+      },
+      {
+       "t": "Assembled ad hoc when a question arises; no maintained register",
+       "s": 1
+      },
+      {
+       "t": "No inventory — arrangements are known only to the departments that signed them",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "A2",
+     "sub": "Arrangement inventory & governance",
+     "q": "Before a financial arrangement with a referral source takes effect (or renews), compliance/legal review is:",
+     "w": 3,
+     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 1 · 42 CFR 411.353–.357; 42 CFR 1001.952",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Required by policy, but bypassable or not evidenced for a known share of arrangements",
+       "s": 2
+      },
+      {
+       "t": "Performed only after execution, or only for arrangements above a dollar threshold",
+       "s": 1
+      },
+      {
+       "t": "Required and evidenced — each arrangement is mapped to a specific Stark exception and/or AKS safe harbor before signature, and the mapping is retained",
+       "s": 3
+      },
+      {
+       "t": "No pre-execution review — business units contract directly",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "A3",
+     "sub": "Arrangement inventory & governance",
+     "q": "Governing-body or compliance-committee visibility of financial-relationship risk (exception mappings, expired agreements, FMV outliers) is evidenced by minutes:",
+     "w": 2,
+     "anchor": "COSO P2 / GB P2 · OIG Element 2",
+     "comp": "CE",
+     "prin": "P2",
+     "frmg": 0,
+     "oig": 1,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Occasionally — the topic appears in minutes without exception-level detail",
+       "s": 2
+      },
+      {
+       "t": "Raised only when a problem has already surfaced",
+       "s": 1
+      },
+      {
+       "t": "No governing-body visibility of arrangement risk",
+       "s": 0
+      },
+      {
+       "t": "On a defined cadence, with exceptions reported and documented decisions recorded",
+       "s": 3
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "B1",
+     "sub": "Fair market value & commercial reasonableness",
+     "q": "Fair-market-value support for compensation paid to (or received from) a referral source is established:",
+     "w": 3,
+     "anchor": "COSO P10 / GB P10 · FRMG P3 · 42 CFR 411.351 (FMV, 2020 final rule); 42 CFR 1001.952(d)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Before execution, by a qualified independent method (external appraisal or a documented internal methodology), retained in the arrangement file",
+       "s": 3
+      },
+      {
+       "t": "From benchmark tables, but the method and the specific arrangement’s facts are not documented",
+       "s": 2
+      },
+      {
+       "t": "Only for arrangements above a dollar threshold; the rest are negotiated without an FMV file",
+       "s": 1
+      },
+      {
+       "t": "Compensation is whatever was negotiated — no FMV support exists",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "B2",
+     "sub": "Fair market value & commercial reasonableness",
+     "q": "Commercial reasonableness — whether the arrangement makes business sense without reference to expected referrals — is:",
+     "w": 2,
+     "anchor": "42 CFR 411.351 (commercial reasonableness, 2020 final rule) · COSO P10 / GB P10",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Assessed only for high-dollar or flagged arrangements",
+       "s": 2
+      },
+      {
+       "t": "Documented per arrangement as a determination separate from FMV, including why the service is needed at this volume",
+       "s": 3
+      },
+      {
+       "t": "Treated as satisfied whenever FMV is supported — never separately assessed",
+       "s": 1
+      },
+      {
+       "t": "Not addressed anywhere",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "B3",
+     "sub": "Fair market value & commercial reasonableness",
+     "q": "FMV and commercial-reasonableness determinations are refreshed:",
+     "w": 2,
+     "anchor": "COSO P16 / GB P16 · FRMG P5",
+     "comp": "MON",
+     "prin": "P16",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Only when an arrangement is renegotiated at the counterparty’s request",
+       "s": 2
+      },
+      {
+       "t": "Only at initial execution; long-running arrangements carry their original support indefinitely",
+       "s": 1
+      },
+      {
+       "t": "On defined triggers — renewal, amendment, material change in duties or market rates — with the refresh logged",
+       "s": 3
+      },
+      {
+       "t": "Never — no refresh has occurred",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "C1",
+     "sub": "Compensation design & referral sensitivity",
+     "q": "Compensation formulas for employed or contracted physicians are tested for whether they vary with the volume or value of the physician’s referrals or other business generated:",
+     "w": 3,
+     "anchor": "SSA 1877; 42 CFR 411.354(d) · FRMG P3 · COSO P10 / GB P10",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Policy prohibits referral-linked compensation, but formulas are not actually tested against it",
+       "s": 2
+      },
+      {
+       "t": "Not addressed — formulas are set by the business without a referral-sensitivity review",
+       "s": 1
+      },
+      {
+       "t": "Tested at design and at every amendment — including wRVU rates against survey benchmarks and stacking across roles — with the test documented",
+       "s": 3
+      },
+      {
+       "t": "At least one formula includes revenue from services the physician orders or refers (downstream revenue)",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "C2",
+     "sub": "Compensation design & referral sensitivity",
+     "q": "Medical directorship and personal-services payments are substantiated by:",
+     "w": 2,
+     "anchor": "42 CFR 1001.952(d) (personal services) · OIG Compliance Guidance · DOJ enforcement pattern",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Time logs collected but not reviewed against hours paid or duties performed",
+       "s": 2
+      },
+      {
+       "t": "An annual attestation only — no time records",
+       "s": 1
+      },
+      {
+       "t": "Paid without any substantiation of services rendered",
+       "s": 0
+      },
+      {
+       "t": "Contemporaneous time logs matched against contracted hours and duties before payment, with the review evidenced",
+       "s": 3
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "C3",
+     "sub": "Compensation design & referral sensitivity",
+     "q": "Space and equipment leases with referral sources are:",
+     "w": 2,
+     "anchor": "42 CFR 411.357(a),(b) · 42 CFR 1001.952(b),(c)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Written, at set-in-advance FMV rent for a term of at least one year, with actual use audited against the lease",
+       "s": 3
+      },
+      {
+       "t": "Written and signed, but rent basis and actual use have not been verified",
+       "s": 2
+      },
+      {
+       "t": "Some run on expired terms (holdover) without review",
+       "s": 1
+      },
+      {
+       "t": "At least one uses per-click or percentage rent tied to referred business, or is unwritten",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "C4",
+     "sub": "Compensation design & referral sensitivity",
+     "q": "Value-based or risk-sharing arrangements with referral sources are tested against the AKS value-based safe harbors / Stark value-based exceptions for their risk tier (accountable body, governing document, anti-stinting and anti-steering safeguards):",
+     "w": 2,
+     "anchor": "42 CFR 1001.952(ee)–(gg); 42 CFR 411.357(aa) · COSO P10 / GB P10",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Reviewed once at launch; never re-tested",
+       "s": 2
+      },
+      {
+       "t": "Each arrangement is tested and mapped to its tier before launch, and re-tested when the risk model changes",
+       "s": 3
+      },
+      {
+       "t": "Described as value-based but never tested against the safe-harbor elements",
+       "s": 1
+      },
+      {
+       "t": "No such review — or no one knows whether these arrangements exist",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "D1",
+     "sub": "Arrangement lifecycle & documentation",
+     "q": "The signed-writing status of your active referral-source arrangements is:",
+     "w": 3,
+     "anchor": "42 CFR 411.354(e) (writing & signature; 90-day rule) · 42 CFR 411.357",
+     "comp": "CA",
+     "prin": "P12",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Agreements exist but are scattered across departments — not centrally retrievable on request",
+       "s": 2
+      },
+      {
+       "t": "A known share run past expiry under holdover without review",
+       "s": 1
+      },
+      {
+       "t": "Every active arrangement has a current signed agreement, centrally retrievable; missing signatures are tracked as exceptions against the 90-day special rule",
+       "s": 3
+      },
+      {
+       "t": "Unwritten arrangements with referral sources exist",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "D2",
+     "sub": "Arrangement lifecycle & documentation",
+     "q": "Expiry and renewal of referral-source arrangements are monitored by:",
+     "w": 2,
+     "anchor": "COSO P16 / GB P16 · 42 CFR 411.357 (holdover limits)",
+     "comp": "MON",
+     "prin": "P16",
+     "frmg": 0,
+     "oig": 0,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "A periodic manual review of the contract register",
+       "s": 2
+      },
+      {
+       "t": "Departments are expected to track their own renewals; nothing central",
+       "s": 1
+      },
+      {
+       "t": "Not monitored — lapses surface only when someone notices",
+       "s": 0
+      },
+      {
+       "t": "Automated alerts ahead of expiry, with payment held on lapsed agreements until renewal or wind-down",
+       "s": 3
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "D3",
+     "sub": "Arrangement lifecycle & documentation",
+     "q": "Non-monetary compensation and medical-staff incidental benefits provided to physicians are:",
+     "w": 2,
+     "anchor": "42 CFR 411.357(k),(m) (CMS-indexed annual limits)",
+     "comp": "MON",
+     "prin": "P16",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Tracked per physician per calendar year against the CMS-indexed limits, with the running total visible before a new item is approved",
+       "s": 3
+      },
+      {
+       "t": "Tracked for employed physicians only",
+       "s": 2
+      },
+      {
+       "t": "A policy states the limits, but nothing is tracked",
+       "s": 1
+      },
+      {
+       "t": "Not addressed — gifts, meals and event tickets are unrecorded",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "D4",
+     "sub": "Arrangement lifecycle & documentation",
+     "q": "CMS Open Payments records naming your physicians (or your entity) are:",
+     "w": 2,
+     "anchor": "SSA 1128G; 42 CFR 403.900–.914 · CMS Open Payments",
+     "comp": "MON",
+     "prin": "P16",
+     "frmg": 0,
+     "oig": 1,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Reviewed when published, but not reconciled against internal records",
+       "s": 2
+      },
+      {
+       "t": "Reconciled at least annually against your own arrangement inventory and COI disclosures, with variances dispositioned",
+       "s": 3
+      },
+      {
+       "t": "Checked only for specific physicians when a question arises",
+       "s": 1
+      },
+      {
+       "t": "Never reviewed",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "E1",
+     "sub": "Marketing, leads & beneficiary inducements",
+     "q": "Arrangements with marketers, lead generators, call centers or patient recruiters are:",
+     "w": 3,
+     "anchor": "SSA 1128B(b) · OIG Special Fraud Alert: telemedicine arrangements (Jul 2022) · 18 U.S.C. §220 (EKRA)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "None exist — verified against accounts-payable and contract records, not just assumed",
+       "s": 3
+      },
+      {
+       "t": "Inventoried, but the compensation basis has not been reviewed",
+       "s": 2
+      },
+      {
+       "t": "Inventoried, with compensation verified to be volume-independent (no per-patient, per-lead or per-test pay) and telefraud red flags screened before signing",
+       "s": 3
+      },
+      {
+       "t": "Such arrangements exist and at least one pays per patient, per lead or per test — or nobody has looked",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "E2",
+     "sub": "Marketing, leads & beneficiary inducements",
+     "q": "Where laboratory testing or substance-use-disorder treatment/recovery services are involved, remuneration to recruiters and marketers (including percentage or volume-based W-2 compensation) is:",
+     "w": 2,
+     "anchor": "18 U.S.C. §220 (EKRA) · DOJ EKRA enforcement",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "No lab or SUD-treatment lines of business — verified, not assumed",
+       "s": 3
+      },
+      {
+       "t": "Reviewed under EKRA specifically — which is narrower than the AKS employment safe harbor — with the analysis documented",
+       "s": 3
+      },
+      {
+       "t": "Assumed lawful because the marketers are W-2 employees (AKS employment safe harbor reasoning only)",
+       "s": 1
+      },
+      {
+       "t": "Not assessed at all",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "E3",
+     "sub": "Marketing, leads & beneficiary inducements",
+     "q": "Gifts, incentives and cost-sharing waivers offered to beneficiaries are governed by:",
+     "w": 2,
+     "anchor": "SSA 1128A(a)(5) · OIG nominal-value policy ($15 item / $75 aggregate per patient-year, 2016) · 42 CFR 1001.952(k)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "A policy applying the OIG nominal-value limits, with per-beneficiary value tracking, and cost-sharing waivers granted only on documented individualized financial-need determinations",
+       "s": 3
+      },
+      {
+       "t": "A policy stating the limits, but nothing is tracked and waivers are not individually documented",
+       "s": 2
+      },
+      {
+       "t": "Practice varies by department; no single policy",
+       "s": 1
+      },
+      {
+       "t": "Copay/deductible waivers are routine or advertised, or gifts are unmanaged",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "E4",
+     "sub": "Marketing, leads & beneficiary inducements",
+     "q": "Speaker-program, consulting and advisory-board payments flowing to or from your clinicians are:",
+     "w": 2,
+     "anchor": "OIG Special Fraud Alert: speaker programs (Nov 2020)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 0,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Captured in COI disclosures, but never substantiated or reviewed",
+       "s": 2
+      },
+      {
+       "t": "Known to occur; not inventoried",
+       "s": 1
+      },
+      {
+       "t": "No visibility at all",
+       "s": 0
+      },
+      {
+       "t": "Inventoried through COI disclosure, with need, attendance and deliverables substantiated for payments your entity makes",
+       "s": 3
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "F1",
+     "sub": "Monitoring, analytics & remediation",
+     "q": "Referral-pattern analytics joined to the arrangement inventory (referral concentration, pre-vs-post-arrangement volume shift, reciprocal referrals) are:",
+     "w": 3,
+     "anchor": "COSO P16 / GB P16 · FRMG P5 · DOJ enforcement pattern (referral-linked compensation)",
+     "comp": "MON",
+     "prin": "P16",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Referral analytics exist, but are not joined to who has a financial arrangement",
+       "s": 2
+      },
+      {
+       "t": "Run on a defined cadence against the inventory, with alerts dispositioned and escalation documented",
+       "s": 3
+      },
+      {
+       "t": "Looked at only when an allegation arrives",
+       "s": 1
+      },
+      {
+       "t": "No referral-pattern analytics of any kind",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "F2",
+     "sub": "Monitoring, analytics & remediation",
+     "q": "Screening of vendors and suppliers for physician or physician-family ownership (physician-owned distributorships and similar) is:",
+     "w": 2,
+     "anchor": "OIG Special Fraud Alert: physician-owned distributorships (2013) · SSA 1128B(b)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "A disclosure form exists, but responses are not verified",
+       "s": 2
+      },
+      {
+       "t": "Asked only for implant/device vendors",
+       "s": 1
+      },
+      {
+       "t": "Built into vendor onboarding and refreshed — ownership disclosures required and verified against the vendor master and COI data",
+       "s": 3
+      },
+      {
+       "t": "Not addressed",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "F3",
+     "sub": "Monitoring, analytics & remediation",
+     "q": "When an arrangement is found non-compliant (missing writing, above-FMV, referral-linked), the response pathway is:",
+     "w": 3,
+     "anchor": "SRDP — SSA 1877 / ACA §6409 · OIG Self-Disclosure Protocol · 42 CFR 401.305",
+     "comp": "MON",
+     "prin": "P17",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Core",
+     "options": [
+      {
+       "t": "Defined and exercised — stop/fix the arrangement, quantify the lookback exposure, and make a counseled election among SRDP, OIG SDP and repayment; evidenced by at least one worked case or tabletop",
+       "s": 3
+      },
+      {
+       "t": "Handled ad hoc by counsel when it happens; no defined pathway",
+       "s": 2
+      },
+      {
+       "t": "Arrangements are quietly fixed going forward without lookback quantification",
+       "s": 0
+      },
+      {
+       "t": "No response pathway exists",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+     "id": "F4",
+     "sub": "Monitoring, analytics & remediation",
+     "q": "Financial-relationship diligence at practice acquisition, physician onboarding or M&A covers:",
+     "w": 2,
+     "anchor": "FRMG P2 · OIG GCPG 2023 (new-entrant and investor section)",
+     "comp": "RA",
+     "prin": "P9",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Deal-counsel diligence at signing, but assumed arrangements are never integrated into ongoing review",
+       "s": 2
+      },
+      {
+       "t": "Only employment agreements are reviewed; leases, directorships and vendor ties are not",
+       "s": 1
+      },
+      {
+       "t": "No financial-relationship diligence in transactions",
+       "s": 0
+      },
+      {
+       "t": "Successor-liability review of the target’s referral-source arrangements plus post-close integration of every assumed arrangement into your inventory and review cycle",
+       "s": 3
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    }
+   ]
   }
  },
  "_meta": {
-  "artifact": "HPI-CT full v3 baseline questionnaire (all 9 modules, 00-08)",
-  "total_questions": 224,
+  "artifact": "HPI-CT full v3 baseline questionnaire (all 10 modules, 00-09)",
+  "total_questions": 246,
   "by_module": {
    "00": 46,
    "01": 23,
@@ -7911,10 +8730,11 @@
    "05": 22,
    "06": 27,
    "07": 21,
-   "08": 20
+   "08": 20,
+   "09": 22
   },
-  "generated": "2026-08-18",
-  "source": "03_Toolkit/Modules/HPI-CT_Module_00-08 (v3, promoted) 3.Assessment + hidden ScoringKey",
+  "generated": "2026-08-24",
+  "source": "03_Toolkit/Modules/HPI-CT_Module_00-08 (v3, promoted) 3.Assessment + hidden ScoringKey; Module 09 from HPI-CT_Module_09_Financial_Relationships_AUTHORED.json (hand-authored, see its _meta)",
   "scoring": "final = MIN(hidden non-monotonic 0-3 key for chosen option, evidence-class ceiling); Oral->1, Documentary->2, System/Independent/Re-performable->3 only when provenance is source-obtained/re-performable or independently verified (subject-provided documents cap at 2 per Rule 12); class>Oral requires a named basis else capped 1; Don't-know=0; profile-scoped questions excluded from numerator AND denominator when the flag is off",
   "note": "DRAFT - hidden scoring keys mirror the module workbooks; confirm framework mappings vs primary sources. Public-source, personal-capacity."
  }
