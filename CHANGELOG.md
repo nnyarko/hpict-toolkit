@@ -2,9 +2,9 @@
 
 All notable changes to HPI-CT are recorded here.
 
-This project publishes a [correction policy](https://github.com/nnyarko/hpict-toolkit) and holds
-itself to it. Corrections appear here in plain language, including the ones that were our own
-mistake — a release history that only records improvements is not one anyone should rely on.
+This project publishes a [correction policy](CORRECTION_POLICY.md) and holds itself to it.
+Corrections appear here in plain language, including the ones that were the project's own mistake —
+a release history that only records improvements is not one anyone should rely on.
 
 ---
 
@@ -23,9 +23,9 @@ Upgrading from 1.0.0 changes nothing about how the tool behaves.
 - **The published data now matches the toolkit.** `/data/controls.json` shipped 160 controls and
   `/data/questionnaire.json` shipped 224 questions, while the toolkit itself contained 172 and 246.
   Module 09 — the newest and largest addition — was missing from the machine-readable data
-  entirely. Anyone who took us up on "reuse it freely under CC BY 4.0" received a different
-  library from the one the tool displays. `/data` is regenerated from the same source the toolkit
-  is built from, so the two cannot diverge again.
+  entirely. Anyone who reused that data under CC BY 4.0 received a smaller control library than
+  the tool displays, and should re-download. `/data` is now generated from the same source the
+  toolkit is built from, so the two cannot diverge again.
 
 - **The README and the landing page described a user interface that did not exist.** Both promised
   "three modes — Assess, Look up, Why" and a "15-question triage". Those belong to a pre-release
@@ -79,30 +79,29 @@ Upgrading from 1.0.0 changes nothing about how the tool behaves.
   - Every bracketed placeholder is gone, including one that named a manuscript under review at a
     named venue — which had no business in a permanently citable document.
 
-### Note on how this happened
+### Cause
 
-Module 09 was authored directly into the released toolkit file rather than into the source the
-build pipeline reads. The tool was therefore correct and everything generated from the pipeline —
-the published data, the counts in the README, the landing page — was a version behind. Module 09
-has since been merged into the pipeline. The underlying cause was a build step bypassed under time
-pressure, and it is recorded here because it is the kind of thing that recurs silently if it is
-not named.
+Module 09, and a number of interface features, were authored directly into the released toolkit
+file rather than into the source the build pipeline reads. The tool was therefore correct while
+everything generated from the pipeline — the published data, the counts in the README and on the
+landing page — described an earlier version.
 
-It did recur. Preparing this release we found that Module 09 was not the only thing authored
-straight into the shipped HTML: a number of interface features were too, and the build pipeline
-does not yet know about them. A rebuild therefore produces a toolkit **missing** features that
-1.0.0 shipped. That is why 1.0.1 ships the 1.0.0 file unchanged rather than a rebuilt one — the
-safe choice, and an honest admission that the pipeline is not yet the single source of truth this
-project claims it should be.
+Because the pipeline does not yet know about those interface features, a rebuild produces a
+toolkit *missing* functionality that v1.0.0 shipped. This release therefore publishes the v1.0.0
+file unchanged rather than a regenerated one. Reconciling the pipeline with the shipped file is
+the priority for the next release.
 
-The check that should have caught this could not have: it compared a fresh build against the
-release folder, which the build had just overwritten. It could only ever pass. Parity is now
-measured against the previously released artifact instead. Closing the gap between the pipeline
-and the shipped file is tracked work and gates the next release, not this one.
+The parity check that should have caught the divergence could not have: it compared a fresh build
+against the release folder that the build had just overwritten, so it could only ever pass. Parity
+is now measured against the previously released artifact.
 
-**v1.0.0 remains available and is unchanged.** Zenodo versions rather than replaces, which is the
-correct behaviour: the 2026-08-18 release is the record of what was published on that date. Cite
-1.0.1 for the corrected data.
+### Known limitation carried by v1.0.0
+
+The `/data` files published with v1.0.0 contain 160 controls and 224 questions against the
+toolkit's 172 and 246. That version remains available and unchanged — Zenodo versions rather than
+replaces, and the 2026-08-18 record is the correct record of what was published on that date — but
+anyone who reused its data should upgrade. Cite v1.0.1 for the corrected data, or the concept DOI
+`10.5281/zenodo.22003347` to always resolve to the current release.
 
 ---
 
