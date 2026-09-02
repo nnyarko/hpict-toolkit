@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nnyarko.github.io/hpict-toolkit/sitemap.xml
