@@ -54,6 +54,10 @@ Propose a control, fix a citation, suggest a case correction, or share how you u
 
 Adoption helps this stay funded with attention and improve. If your organization uses HPI-CT, we'd value a one-line note or testimonial — open a Discussion or email nicholasnyarko@gmail.com. See **[`PRIVACY.md`](PRIVACY.md)** for exactly what the toolkit does and does not collect (short version: it runs offline and collects nothing unless you opt in).
 
+## Acknowledgements
+
+Built from public records — DOJ, Free Law Project / CourtListener, HHS-OIG, GAO, CMS, and state enforcement sources — using public tools, including the Program Integrity Alliance's PIA Connect for discovery and harvest. Full credits in **[`ACKNOWLEDGEMENTS.md`](ACKNOWLEDGEMENTS.md)**. Acknowledgement is not endorsement.
+
 ## Scope & honesty
 
 This is a **methodology and toolkit, advisory only** — it recommends controls; it never blocks or decides a payment, coverage, or eligibility action. Maturity scores are expert-judgment and self-reported. All case references are **allegations from public sources; defendants are presumed innocent**. See **[`SCOPE_AND_LIMITATIONS.md`](SCOPE_AND_LIMITATIONS.md)**. Confirm regulatory citations against primary `.gov` sources before relying on them.

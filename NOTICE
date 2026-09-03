@@ -20,12 +20,18 @@ Required attribution:
 
 Citation:
   Nyarko, N. (2026). HPI-CT: Healthcare Program Integrity Control Toolkit
-  (v1.0.0) [Framework and toolkit]. Zenodo. https://doi.org/10.5281/zenodo.22003348
+  [Framework and toolkit]. Zenodo. https://doi.org/10.5281/zenodo.22003347
+  (concept DOI - always resolves to the current release.)
 
 Third-party standards: maps to the GAO Green Book (public domain) and refers to
 COSO / COSO-ACFE Fraud Risk Management Guide by number in original wording; their
 text/diagrams are not reproduced or redistributed. No endorsement or affiliation
 claimed.
+
+Acknowledgements: built from public records (DOJ, Free Law Project / CourtListener,
+HHS-OIG, GAO, CMS, and state enforcement sources) using public tools, including the
+Program Integrity Alliance's PIA Connect for discovery and harvest. See
+ACKNOWLEDGEMENTS.md. Acknowledgement is not endorsement.
 
 Disclaimers: Personal-capacity, public-source. Not legal, compliance, or
 professional advice. All referenced enforcement cases are allegations; defendants

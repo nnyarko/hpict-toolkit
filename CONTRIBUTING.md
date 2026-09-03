@@ -19,6 +19,7 @@ Open a GitHub **Issue** (or **Discussion** for open-ended ideas); for concrete e
 - Contributions are accepted under the project's open licenses — **CC BY 4.0** (content/data) and **MIT** (code) — with **Nicholas Nyarko as maintainer and steward** of the canonical version.
 - You confirm you have the right to contribute the material and that it contains **no PHI, claim-level data, beneficiary/provider identifiers, or other non-public data** — public sources only.
 - Contributors are credited in `CHANGELOG.md`. **Credit is not ownership:** contributing does not transfer ownership of the framework, its name, or the maintainer-held identified dataset.
+- **Respect third-party standards.** Do not paste COSO or ACFE text, principle statements, points of focus, or diagrams into a contribution. Reference them by number and describe them in your own words; Green Book wording (public domain) is fine to use. See `THIRD_PARTY_RIGHTS.md`.
 
 ## Scope & safety
 

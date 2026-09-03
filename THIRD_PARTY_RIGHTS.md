@@ -24,7 +24,7 @@ Attribution is given as a matter of scholarly practice. GAO asks that its work n
 
 **What this project does:** refers to COSO components and principles by name and number, and describes them in original wording, so that private-sector adopters — for whom COSO rather than the Green Book is the authoritative source — can locate the corresponding requirement. Facts, ideas, systems and methods of operation are not protected by copyright (17 U.S.C. § 102(b)), and citing a framework by its own reference numbers is ordinary professional practice across the audit literature.
 
-**What this project does not do, and must not start doing:**
+**What this project does not do, and will not:**
 
 - reproduce COSO's framework text, principle statements verbatim at scale, or its "points of focus"
 - reproduce the COSO cube or any COSO diagram
@@ -33,7 +33,7 @@ Attribution is given as a matter of scholarly practice. GAO asks that its work n
 
 "COSO" and "ACFE" are the trademarks of their owners. They are used here descriptively, to identify the standards being mapped to — nominative use, not a claim of association.
 
-**If in doubt, reference the Green Book instead.** Where a piece of wording must appear in the product, it should come from the public-domain source.
+Where wording must appear in the product, it is taken from the public-domain Green Book rather than from COSO.
 
 ## 3. Federal regulatory and enforcement sources — public domain
 
@@ -49,11 +49,11 @@ The underlying facts are public and uncopyrightable. **What is original here —
 
 ### On the Program Integrity Alliance
 
-**No PIA-held data is in this project.** The internal case identifier prefix `PIA-NNN` is a naming convention only; it does not indicate a PIA source. The project's own run log records the PIA Connect lane as never connected across the entire harvest period, and every coded row carries a DOJ, court, OIG, GAO or state-enforcement source type.
+**PIA Connect was used as a discovery and harvest tool, not as a source of PIA-held data.** The project's automated case-base harvest used the Program Integrity Alliance's PIA Connect / Integrity Lab tooling as one access layer to locate public **DOJ, HHS-OIG, and GAO** enforcement and oversight records. What was coded and retained is the **underlying primary public record** in each case — the government announcement, court opinion or docket, or oversight finding — and every coded row carries a DOJ, court, OIG, GAO, or state-enforcement source type. No PIA-curated compilation is reproduced or redistributed in this project. PIA Connect is credited in `ACKNOWLEDGEMENTS.md`.
 
-PIA appears in two other ways, both ordinary: as an organisation this project has approached about collaboration, and as a cited author of a published policy paper (*Transparency by Design*), referenced in one control the way any source is referenced.
+This distinction is the load-bearing one. A curated database can carry rights in its **selection and arrangement** even where the underlying facts are free, and in some jurisdictions a separate database right applies. This project's case base is assembled from, and cites, the primary public records themselves; it does not copy PIA's selection or arrangement. If a PIA-held dataset (as distinct from public records reached through PIA's tools) were ever ingested as such, that would require written terms first, recorded here, before the data enters the case base.
 
-**If any PIA-held dataset is ever ingested, this changes.** A curated database can carry rights in its selection and arrangement even where the underlying facts are free, and in some jurisdictions a separate database right applies. Ingesting one requires written terms first, recorded here, before the data enters the case base — not after.
+PIA also appears in two ordinary ways: as an organisation this project has approached about collaboration, and as a cited author of a published policy paper, referenced the way any source is referenced. The internal case identifier prefix `PIA-NNN` is a naming convention only and does not indicate a PIA data source.
 
 ## 5. Professional bodies and taxonomies
 
@@ -78,4 +78,4 @@ Anyone using HPI-CT under CC BY 4.0 receives rights in **this project's original
 
 ---
 
-*Last reviewed 2026-08. Standards, terms of use, and the project's own sources change; this file should be revisited whenever a new source class is added.*
+*Last reviewed 2026-09. This file is revisited whenever a new source class is added, since standards, terms of use, and the project's own sources change over time.*
