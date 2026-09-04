@@ -7,8 +7,8 @@ authors:
   - family-names: Nyarko
     given-names: Nicholas
     email: nicholasnyarko@gmail.com
-version: "1.0.1"
-date-released: "2026-08-24"
+version: "1.0.2"
+date-released: "2026-09-03"
 # Dual-licensed: MIT for code, CC BY 4.0 for content and data. CFF takes a single
 # license field, so both are listed; LICENSE and LICENSE-CONTENT are authoritative.
 license:

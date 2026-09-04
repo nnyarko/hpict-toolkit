@@ -8,6 +8,41 @@ a release history that only records improvements is not one anyone should rely o
 
 ---
 
+## [1.0.2] — 2026-09-03
+
+A transparency and documentation release. No change to the toolkit or the underlying data — the
+controls, the questions, and the case coding are identical to 1.0.1. What changed is how the
+project credits its sources and describes itself.
+
+### Added
+
+- **`ACKNOWLEDGEMENTS.md`.** A front-facing credit page for the public sources behind the case base
+  and the controls — the U.S. Department of Justice, the Free Law Project / CourtListener, HHS-OIG,
+  GAO, CMS, and state enforcement authorities — and for the Program Integrity Alliance's PIA Connect,
+  used as a discovery and harvest layer to reach those public records. Standards and software are
+  credited too. Acknowledgement is not endorsement.
+
+### Fixed
+
+- **`THIRD_PARTY_RIGHTS.md` corrected a factual error about PIA.** The prior text stated the PIA
+  Connect lane was "never connected." That was wrong: PIA Connect was used to locate the public
+  DOJ/OIG/GAO records that feed the case base. The section now describes that role accurately, while
+  keeping the load-bearing point — the project codes the underlying primary public records, not any
+  PIA-curated selection or arrangement.
+- **External-facing rules reworded as commitments.** The COSO/ACFE section mixed a public compliance
+  statement with a self-directed instruction ("must not start doing"). The public statement now
+  reads as a commitment; the contributor-facing rule moved to `CONTRIBUTING.md`, where the people it
+  addresses will see it.
+- **Data files no longer labelled "DRAFT for review."** The export generator hard-stamped that
+  status on every derived data file; released data now reads `"status": "released"`, and the
+  generator is fixed so it stays that way.
+- **`NOTICE` citation** updated from the v1.0.0 version DOI to the concept DOI, consistent with
+  `CITATION.cff`.
+
+Nothing here changes how the tool behaves or what the data contains.
+
+---
+
 ## [1.0.1] — 2026-08-24
 
 A correction release. No new content, and **the toolkit itself is unchanged** —
