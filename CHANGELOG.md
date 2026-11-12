@@ -10,11 +10,18 @@ a release history that only records improvements is not one anyone should rely o
 
 ## [1.1.0] - 2026-11-11
 
-A correction and extension release. The case base was re-screened against an inclusion rule that earlier versions never stated, and the
-number of cases counted fell from 1,586 to 877. (1,586 was the count published with versions 1.0.0 to 1.0.2. The harvest went on adding
-rows after that count was taken, so the base that was re-screened held 1,605 rows, and `docs/How_the_case_base_is_scoped.md` accounts for
-all 1,605.) This was the project's own mistake: the case base was built by keyword harvest and its rows
-were never checked against the rule that a case must concern health care and a claim on a payer. This release says so and shows the working.
+Version 1.1.0 extends the toolkit and sharpens the method behind its evidence. New in this release: 128 reference detection tests in
+8 families, each tied to the controls it tests and run on synthetic data; a Preclusion List control (MC-29) with its assessment question;
+registry additions; citations labelled as binding, guidance or case evidence and checked against their sources; the Graph screen's
+question-to-control links re-derived; and a reworked Scope and Assess flow.
+
+The case base now follows four written inclusion tests: health care; a claim on a payer; one matter in its own source; a Justice
+Department source from 2023 on. Versions 1.0.x counted matters that showed a control failure whether or not a claim was made on a payer.
+This release counts only matters with a claim on a health care payer, because the toolkit's controls protect payments. The 292 matters
+outside that scope, mainly controlled-substance prescribing or diversion and pandemic relief fraud, are kept on an uncounted watch list.
+The re-screen also merged repeat entries of the same matter and set aside announcements, matters outside health care and a few others (391 rows in all),
+and 45 rows remain borderline or not yet read. The counted base is 877 cases. (Versions 1.0.0 to 1.0.2 published a count of 1,586; the
+harvest went on adding rows after that count, so 1,605 rows were re-screened, and `docs/How_the_case_base_is_scoped.md` accounts for all of them.)
 
 ### Changed
 
