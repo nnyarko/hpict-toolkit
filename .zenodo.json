@@ -1,7 +1,8 @@
 {
   "title": "HPI-CT: Healthcare Program Integrity Control Toolkit",
-  "description": "<p>HPI-CT is a free, open toolkit that helps healthcare payers, providers and program-integrity agencies find and close the internal-control gaps that fraud, waste and abuse exploit &mdash; <em>before</em> payment. Aligned to the GAO Green Book (2025) and COSO.</p><p>It includes <strong>172 workflow-integrated controls</strong> (78 preventive, 87 detective, 7 corrective) across <strong>10 modules</strong>, a <strong>246-question</strong> evidence-anchored self-assessment mapped to the Green Book's five components and seventeen principles, a control-failure diagnosis matrix, a regulatory rules dictionary, a data-source registry, and de-identified case exemplars distilled from <strong>1,586 coded U.S. DOJ healthcare-fraud enforcement actions</strong> (2023&ndash;2026), each mapped to the control that failed. The toolkit runs entirely offline in a browser &mdash; no server, no account, and nothing you type leaves your machine.</p><p>Code is licensed MIT; content and data CC BY 4.0. Advisory only: it recommends controls and decides nothing. All case references are allegations from public sources and defendants are presumed innocent. Created and maintained by Nicholas Nyarko in a personal capacity from public sources.</p>",
+  "description": "<p>HPI-CT is a free, open toolkit that helps healthcare payers, providers and program-integrity agencies find and close the internal-control gaps that fraud, waste and abuse exploit, <em>before</em> payment. Aligned to the GAO Green Book (2025) and cross-referenced to COSO by principle number.</p><p>It includes <strong>173 workflow-integrated controls</strong> (79 preventive, 87 detective, 7 corrective) across <strong>10 modules</strong>, a <strong>247-question</strong> evidence-anchored self-assessment mapped to the Green Book's five components and seventeen principles, a control-failure diagnosis matrix, a regulatory rules dictionary, a data-source registry, and de-identified case exemplars distilled from <strong>877 coded U.S. DOJ healthcare-fraud enforcement actions</strong> (2023&ndash;2026). The published tier carries 871 cases in 21 categories plus 9 state-derived patterns; the 21 categories name the kind of control that failed in the case base's own shorthand, and only the 9 state patterns link to controls in the library. It also includes 128 reference detection tests, tested on synthetic data only. The toolkit runs entirely offline in a browser, no server, no account, and nothing you type leaves your machine.</p><p>Code, including the SQL in the detection tests, is licensed MIT; content and data CC BY 4.0. Embedded third-party libraries keep their own MIT licenses (see THIRD_PARTY_LICENSES.md). Advisory only: it recommends controls and decides nothing. All case references are allegations from public sources and defendants are presumed innocent. Created and maintained by Nicholas Nyarko in a personal capacity from public sources. Screening of the case base and checking of citations and detection tests were done with AI agents on one model; this is internal checking, not independent review.</p>",
   "upload_type": "software",
+  "publication_date": "2026-11-11",
   "creators": [
     {
       "name": "Nyarko, Nicholas"
@@ -9,10 +10,11 @@
   ],
   "license": "cc-by-4.0",
   "access_right": "open",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "language": "eng",
   "keywords": [
     "healthcare",
+    "FWA prevention",
     "fraud prevention",
     "program integrity",
     "internal controls",
@@ -30,5 +32,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "Correction release. The toolkit binary is unchanged from v1.0.0 (md5 4a3dfea3a9244b081eca5fb79d223d50); the published data, README and landing page are corrected to match it. See CHANGELOG.md."
+  "notes": "Correction and extension release. The case base was re-screened against a written inclusion rule (1,586 rows to 877 counted), case figures and citations were recomputed and corrected, a Preclusion List control and assessment question were added, and 128 reference detection tests were added. See CHANGELOG.md. Licensing: this record carries one license field (CC BY 4.0, for content and data); the code, including SQL, is under MIT (see LICENSE). AI assistance: screening and checking were done with AI agents on one model, directed by the author; not independent review. See SCOPE_AND_LIMITATIONS.md for known limits, including an internal hold-out test that fell below its preset line."
 }

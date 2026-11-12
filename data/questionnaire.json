@@ -3471,7 +3471,7 @@
      "sub": "E. Dx & necessity",
      "q": "Where a payer policy mandates a specific diagnosis for a service (e.g., an OUD diagnosis for OTP services), that requirement is:",
      "w": 2,
-     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · OIG OTP required-diagnosis edit (o",
+     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · OIG OTP required-diagnosis edit (r",
      "comp": "CA",
      "prin": "P10",
      "frmg": 1,
@@ -4161,7 +4161,7 @@
      "sub": "Coverage rules",
      "q": "Coverage criteria applied to PA/necessity decisions are:",
      "w": 3,
-     "anchor": "COSO P10 / GB P10 · OIG Element 6 · OIG OEI-09-18-00260 (open rec)",
+     "anchor": "COSO P10 / GB P10 · OIG Element 6 · OIG OEI-09-18-00260 (recs closed)",
      "comp": "CA",
      "prin": "P10",
      "frmg": 0,
@@ -4671,7 +4671,7 @@
      "sub": "Coverage currency",
      "q": "NCD/LCD changes (new/revised/retired) are detected through:",
      "w": 2,
-     "anchor": "COSO P9 / GB P9 · GAO-25-107623 (open rec); CMS MCD",
+     "anchor": "COSO P9 / GB P9 · CMS MCD",
      "comp": "RA",
      "prin": "P9",
      "frmg": 0,
@@ -4951,7 +4951,7 @@
      "sub": "Orders & delivery",
      "q": "Proof of delivery for DMEPOS items is:",
      "w": 3,
-     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · 42 CFR 410.38; PIM 100-08 Ch.5",
+     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · 42 CFR 424.57(c)(12); PIM 100-08 C",
      "comp": "CA",
      "prin": "P10",
      "frmg": 1,
@@ -5201,7 +5201,7 @@
      "sub": "Root cause & CAPA",
      "q": "High-cost / high-risk tests and services receive:",
      "w": 2,
-     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · OIG molecular pathology 2023 (open",
+     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · OIG molecular pathology 2023 (recs",
      "comp": "CA",
      "prin": "P10",
      "frmg": 1,
@@ -5236,7 +5236,7 @@
      "sub": "Coordination & modality",
      "q": "Duplicate/incorrect-setting payments (e.g., services billed outside the hospice/bundle) are prevented by:",
      "w": 2,
-     "anchor": "COSO P10 / GB P10 · FRMG P5 · OIG Element 6 · OIG hospice OP 2024 (open rec)",
+     "anchor": "COSO P10 / GB P10 · FRMG P5 · OIG Element 6 · OIG hospice OP 2024 (recs closed)",
      "comp": "CA",
      "prin": "P10",
      "frmg": 1,
@@ -6375,6 +6375,43 @@
       }
      ],
      "scope": null
+    },
+    {
+     "id": "A28",
+     "sub": "D. FDR oversight",
+     "q": "Before payment, are claims and prescriptions checked against the CMS Preclusion List, with newly listed parties handled under the notice and 60-day payment-protection rules?",
+     "w": 2,
+     "anchor": "COSO P10 / GB P10 · FRMG P3 · OIG Element 6 · 42 CFR 422.222; 423.120(c)(6)",
+     "comp": "CA",
+     "prin": "P10",
+     "frmg": 1,
+     "oig": 1,
+     "tier": "Deep",
+     "options": [
+      {
+       "t": "Every claim and prescription is checked against the current list at adjudication, the list is reloaded at each monthly release, and newly listed parties follow the notice and 60-day rules with records kept",
+       "s": 3
+      },
+      {
+       "t": "Checked at adjudication, but list reloads are late or irregular, or notice handling for newly listed parties is not documented",
+       "s": 2
+      },
+      {
+       "t": "Checked only after payment, or only for some claim types or lines of business",
+       "s": 1
+      },
+      {
+       "t": "No Preclusion List check",
+       "s": 0
+      },
+      {
+       "t": "Don’t know / not documented",
+       "s": 0
+      }
+     ],
+     "scope": null,
+     "provenance": "hand-authored",
+     "verification": "hand-authored 2026-10-31; 42 CFR 422.222 and 423.120(c)(6) read on eCFR 2026-10-31; subject-matter review of option keying outstanding"
     }
    ]
   },
@@ -6631,7 +6668,7 @@
      "sub": "D. Eligibility integrity",
      "q": "Deceased-enrollee detection (SSA Death Master File match):",
      "w": 2,
-     "anchor": "COSO P16 / GB P16 · FRMG P5 · OIG Element 6 · OIG A-42109005",
+     "anchor": "COSO P16 / GB P16 · FRMG P5 · OIG Element 6 · OIG A-04-21-09005",
      "comp": "MON",
      "prin": "P16",
      "frmg": 1,
@@ -6926,7 +6963,7 @@
      "sub": "H. Data quality",
      "q": "T-MSIS submissions:",
      "w": 3,
-     "anchor": "COSO P13 / GB P13 · OIG Element 6 · SSA 1903(r); OIG OEI-03-20-00330",
+     "anchor": "COSO P13 / GB P13 · OIG Element 6 · SSA 1903(r); OIG OEI-02-19-00180",
      "comp": "IC",
      "prin": "P13",
      "frmg": 0,
@@ -8720,7 +8757,7 @@
  },
  "_meta": {
   "artifact": "HPI-CT full v3 baseline questionnaire (all 10 modules, 00-09)",
-  "total_questions": 246,
+  "total_questions": 247,
   "by_module": {
    "00": 46,
    "01": 23,
@@ -8728,14 +8765,14 @@
    "03": 22,
    "04": 21,
    "05": 22,
-   "06": 27,
+   "06": 28,
    "07": 21,
    "08": 20,
    "09": 22
   },
-  "generated": "2026-08-24",
+  "generated": "2026-11-11",
   "source": "03_Toolkit/Modules/HPI-CT_Module_00-08 (v3, promoted) 3.Assessment + hidden ScoringKey; Module 09 from HPI-CT_Module_09_Financial_Relationships_AUTHORED.json (hand-authored, see its _meta)",
   "scoring": "final = MIN(hidden non-monotonic 0-3 key for chosen option, evidence-class ceiling); Oral->1, Documentary->2, System/Independent/Re-performable->3 only when provenance is source-obtained/re-performable or independently verified (subject-provided documents cap at 2 per Rule 12); class>Oral requires a named basis else capped 1; Don't-know=0; profile-scoped questions excluded from numerator AND denominator when the flag is off",
-  "note": "DRAFT - hidden scoring keys mirror the module workbooks; confirm framework mappings vs primary sources. Public-source, personal-capacity."
+  "note": "Hidden scoring keys mirror the module workbooks. Green Book principle numbers checked against the 2025 revision (GAO-25-107721). Public-source, personal-capacity."
  }
 }

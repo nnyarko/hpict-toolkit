@@ -1,11 +1,12 @@
-HPI-CT — Healthcare Program Integrity Control Toolkit
+HPI-CT: Healthcare Program Integrity Control Toolkit
 
 Created and maintained by Nicholas Nyarko (personal capacity, public-source).
 Originator, author, and steward.
 
 Licensing (fully open):
-  - Code    -> MIT License (see LICENSE)
-  - Content & data -> CC BY 4.0 (see LICENSE-CONTENT) — attribution required
+  - Code    -> MIT License (see LICENSE). This includes the SQL in the
+    detection tests (data/analytics_tests.json and analytics/*.md).
+  - Content & data -> CC BY 4.0 (see LICENSE-CONTENT); attribution required
   Use, adapt, redistribute, and deploy freely, commercially or not; just credit
   the author.
 
@@ -26,13 +27,23 @@ Citation:
 Third-party standards: maps to the GAO Green Book (public domain) and refers to
 COSO / COSO-ACFE Fraud Risk Management Guide by number in original wording; their
 text/diagrams are not reproduced or redistributed. No endorsement or affiliation
-claimed.
+claimed. See THIRD_PARTY_RIGHTS.md.
+
+Third-party software: the toolkit file embeds Chart.js 4.4.1, @kurkle/color 0.3.2
+and Cytoscape.js 3.28.1 (with the MIT-licensed code Cytoscape.js bundles), each
+under the MIT License of its own authors. Copyright lines and the license text
+are in THIRD_PARTY_LICENSES.md.
+
+Trademarks: CPT is a registered trademark of the American Medical Association.
+CPT code numbers are cited for identification only; no CPT descriptors are
+reproduced. "COSO" and "ACFE" are marks of their owners, used descriptively.
 
 Acknowledgements: built from public records (DOJ, Free Law Project / CourtListener,
 HHS-OIG, GAO, CMS, and state enforcement sources) using public tools, including the
-Program Integrity Alliance's PIA Connect for discovery and harvest. See
-ACKNOWLEDGEMENTS.md. Acknowledgement is not endorsement.
+Program Integrity Alliance's PIA Connect for discovery and harvest. Screening and
+checking were done with AI agents on one model; this is internal checking, not
+independent review. See ACKNOWLEDGEMENTS.md. Acknowledgement is not endorsement.
 
 Disclaimers: Personal-capacity, public-source. Not legal, compliance, or
 professional advice. All referenced enforcement cases are allegations; defendants
-presumed innocent. Advisory only — recommends controls, decides nothing.
+presumed innocent. Advisory only: recommends controls, decides nothing.

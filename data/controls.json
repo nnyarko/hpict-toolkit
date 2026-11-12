@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "generated": "2026-08-24",
+    "generated": "2026-11-11",
     "status": "released",
     "note": "Derived file - regenerated from the HPI-CT workbooks (source of truth). Do not hand-edit. Public-source, personal-capacity work; all case figures reflect allegations/settlements as described in cited public documents, not findings of fact unless a court so determined.",
-    "record_count": 172
+    "record_count": 173
   },
   "controls": [
     {
@@ -14,7 +14,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 424 Subpart P; CMS PIM Pub 100-08 Ch.10",
+      "citation_text": "42 CFR 424 Subpart P [binding]; CMS PIM Pub 100-08 Ch.10 [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -42,7 +42,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "OIG OEI-03-13-00050 (Enhanced Enrollment Screening of Medicare Providers); GAO-25-106976 (2025) - interstate enrollment data-matching (PARIS) (open rec)",
+      "citation_text": "OIG OEI-03-13-00050 (Enhanced Enrollment Screening of Medicare Providers; 27 Apr 2016) [case evidence]",
       "reg_ids": [
         "REG-050",
         "REG-062",
@@ -51,7 +51,7 @@
       "ds_ids": [
         "DS-07"
       ],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": null,
       "analytics_technique": "Data qa",
       "applies_to": "Enrolling providers & suppliers (Medicare/Medicaid); DMEPOS where noted",
       "dmepos": "no",
@@ -72,7 +72,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 424 Subpart P; 42 CFR 424.516",
+      "citation_text": "42 CFR 424.510(d)(2) (enrollment application and supporting documentation, including ownership and management) [binding]; 42 CFR 424.516(d)-(e) (changes of ownership or control reported within 30 days) [binding]",
       "reg_ids": [
         "REG-017"
       ],
@@ -100,7 +100,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 455 Subpart E / 455.436; OIG 2016 - Medicare Vulnerabilities: Provider Enrollment & Ownership Disclosure",
+      "citation_text": "42 CFR 455 Subpart E / 455.436 [binding]; OIG 2016 - Medicare Vulnerabilities: Provider Enrollment & Ownership Disclosure [case evidence]",
       "reg_ids": [],
       "ds_ids": [
         "DS-02",
@@ -127,7 +127,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "DOJ 2025 Operation Gold Rush; Program Integrity Alliance - Transparency by Design (company registry / single identifier)",
+      "citation_text": "DOJ 2025 Operation Gold Rush [case evidence]; Program Integrity Alliance - Transparency by Design (company registry / single identifier) [case evidence]",
       "reg_ids": [],
       "ds_ids": [
         "DS-06"
@@ -153,7 +153,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 424.516; OIG (2025) - EFT payment-diversion fraud (open rec)",
+      "citation_text": "42 CFR 424.516 [binding]; OIG OEI-07-23-00180 (25 Feb 2025) - EFT payment-diversion fraud; rec 25-E-07-017.03 open, .01 and .02 closed [case evidence]",
       "reg_ids": [
         "REG-017"
       ],
@@ -181,7 +181,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "OIG Compliance Program Guidance (2023)",
+      "citation_text": "OIG Compliance Program Guidance (2023) [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-01",
@@ -208,9 +208,13 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "OIG Compliance Program Guidance (2023)",
+      "citation_text": "OIG Compliance Program Guidance (2023) [guidance]",
       "reg_ids": [],
-      "ds_ids": [],
+      "ds_ids": [
+        "DS-01",
+        "DS-02",
+        "DS-17"
+      ],
       "open_oversight_rec": null,
       "analytics_technique": "Matching",
       "applies_to": "Enrolling providers & suppliers (Medicare/Medicaid); DMEPOS where noted | Monthly re-screen (PE-08) applies where an active-provider roster is maintained (Entity Profile B16=Y); at-enrollment screening (PE-07) is universal.",
@@ -232,11 +236,16 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 455 Subpart E / 455.436; OIG OEI-05-13-00520 (Medicaid Enhanced Provider Screenings)",
+      "citation_text": "42 CFR 455 Subpart E / 455.436 [binding]; OIG OEI-05-13-00520 (Medicaid Enhanced Provider Screenings) [case evidence]",
       "reg_ids": [
-        "REG-076"
+        "REG-076",
+        "REG-110"
       ],
-      "ds_ids": [],
+      "ds_ids": [
+        "DS-03",
+        "DS-19",
+        "DS-20"
+      ],
       "open_oversight_rec": null,
       "analytics_technique": "Matching",
       "applies_to": "Enrolling providers & suppliers (Medicare/Medicaid); DMEPOS where noted",
@@ -258,7 +267,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 424 Subpart P; 42 CFR 424.518",
+      "citation_text": "42 CFR 424 Subpart P [binding]; 42 CFR 424.518 [binding]",
       "reg_ids": [
         "REG-018"
       ],
@@ -279,12 +288,12 @@
     {
       "id": "PE-11",
       "module": "Module 01 — Provider Enrollment",
-      "name": "Unannounced site visits for Moderate/High-risk providers",
+      "name": "On-site visits for Moderate/High-risk providers",
       "type": "Preventive",
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 424 Subpart P; 42 CFR 424.518",
+      "citation_text": "42 CFR 424 Subpart P [binding]; 42 CFR 424.518 [binding]",
       "reg_ids": [
         "REG-018"
       ],
@@ -310,7 +319,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "OIG OEI-03-13-00050 (Enhanced Enrollment Screening of Medicare Providers)",
+      "citation_text": "OIG OEI-03-13-00050 (Enhanced Enrollment Screening of Medicare Providers) [case evidence]",
       "reg_ids": [
         "REG-074"
       ],
@@ -336,7 +345,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 424.518",
+      "citation_text": "42 CFR 424.518 [binding]",
       "reg_ids": [
         "REG-018"
       ],
@@ -362,7 +371,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 424 Subpart P; CMS PIM Pub 100-08 Ch.10",
+      "citation_text": "42 CFR 424 Subpart P [binding]; CMS PIM Pub 100-08 Ch.10 [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -390,7 +399,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "DOJ 2025 Operation Gold Rush; Program Integrity Alliance - Value-for-Money in Anti-Fraud Efforts",
+      "citation_text": "DOJ 2025 Operation Gold Rush [case evidence]; Program Integrity Alliance - Value-for-Money in Anti-Fraud Efforts [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -414,7 +423,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "DOJ 2025 Operation Gold Rush; Program Integrity Alliance - Value-for-Money in Anti-Fraud Efforts",
+      "citation_text": "DOJ 2025 Operation Gold Rush [case evidence]; Program Integrity Alliance - Value-for-Money in Anti-Fraud Efforts [case evidence]",
       "reg_ids": [],
       "ds_ids": [
         "DS-16"
@@ -440,7 +449,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "42 CFR 424.57(c),(d) — DMEPOS supplier standards, accreditation & $50,000 surety bond; SSA §1834(a)(16)",
+      "citation_text": "42 CFR 424.57(c),(d) — DMEPOS supplier standards, accreditation & $50,000 surety bond [binding]; SSA §1834(a)(16) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -464,7 +473,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P8, P10, P12",
-      "citation_text": "CAQH ProView / NCQA credentialing",
+      "citation_text": "CAQH ProView / NCQA credentialing [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -488,7 +497,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "GAO Green Book 2025 Principles 3 & 10 (authority/responsibility; control activities incl. segregation of duties); 42 CFR part 424 subpart P (Medicare enrollment)",
+      "citation_text": "GAO Green Book 2025 Principles 3 & 10 (authority/responsibility; control activities incl. segregation of duties) [guidance]; 42 CFR part 424 subpart P (Medicare enrollment) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -512,7 +521,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 455 Subpart A (Medicaid PI); CMS PIM Pub 100-08 Ch.2 (Data Analysis)",
+      "citation_text": "42 CFR 455 Subpart A (Medicaid PI) [binding]; CMS PIM Pub 100-08 Ch.2 (Data Analysis) [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -540,7 +549,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM Pub 100-08 Ch.2 (Data Analysis)",
+      "citation_text": "CMS PIM Pub 100-08 Ch.2 (Data Analysis) [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -566,7 +575,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM Pub 100-08 Ch.2 (Data Analysis)",
+      "citation_text": "CMS PIM Pub 100-08 Ch.2 (Data Analysis) [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -592,10 +601,10 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "OIG A-09 Molecular Pathology Genetic Test (2023, OPEN rec); OIG Definitive Drug Testing G0483 (2023, OPEN rec)",
+      "citation_text": "OIG A-09-22-03010 (21 Jun 2023) - molecular pathology genetic test (CPT 81408); all three recommendations closed [case evidence]; OIG A-09-21-03006 (27 Feb 2023) - definitive drug testing (G0483); all four recommendations closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Edit logic",
       "applies_to": "Payers/plans/PI-SIU units; providers (self-audit)",
       "dmepos": "no",
@@ -616,7 +625,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions); CMS PIM Pub 100-08 Ch.8 (Administrative Actions / Sampling)",
+      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions) [guidance]; CMS PIM Pub 100-08 Ch.8 (Administrative Actions / Sampling) [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -642,7 +651,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM Pub 100-08 Ch.4 (Benefit Integrity); PIM Sec.1.8 - Medical Review for Benefit Integrity",
+      "citation_text": "CMS PIM Pub 100-08 Ch.4 (Benefit Integrity) [guidance]; PIM Sec.1.8 - Medical Review for Benefit Integrity [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -668,7 +677,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 401.305 + SSA 1128J(d) (60-day rule)",
+      "citation_text": "42 CFR 401.305 + SSA 1128J(d) (60-day rule) [binding]",
       "reg_ids": [
         "REG-002"
       ],
@@ -694,7 +703,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 401.305 + SSA 1128J(d) (60-day rule)",
+      "citation_text": "42 CFR 401.305 + SSA 1128J(d) (60-day rule) [binding]",
       "reg_ids": [
         "REG-002"
       ],
@@ -720,7 +729,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "CMS PIM Pub 100-08 Ch.8 (Administrative Actions / Sampling); 42 CFR 405.980 (reopening) / SSA 1893(h) (RAC)",
+      "citation_text": "CMS PIM Pub 100-08 Ch.8 (Administrative Actions / Sampling) [guidance]; 42 CFR 405.980 (reopening) / SSA 1893(h) (RAC) [binding]",
       "reg_ids": [
         "REG-004",
         "REG-041"
@@ -747,7 +756,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions); GAO-19-277 (2019, OPEN rec)",
+      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions) [guidance]; GAO-19-277 (27 Mar 2019) Rec 2 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-041",
         "REG-056"
@@ -774,7 +783,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "GAO-19-277 (2019, OPEN rec)",
+      "citation_text": "GAO-19-277 (27 Mar 2019) Recs 1 and 2 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-056"
       ],
@@ -800,7 +809,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions); CMS CERT Program",
+      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions) [guidance]; CMS CERT Program [case evidence]",
       "reg_ids": [
         "REG-041"
       ],
@@ -826,7 +835,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions); 42 CFR 405.980 (reopening) / SSA 1893(h) (RAC)",
+      "citation_text": "CMS PIM Pub 100-08 Ch.3 (Verifying Errors & Corrective Actions) [guidance]; 42 CFR 405.980 (reopening) / SSA 1893(h) (RAC) [binding]",
       "reg_ids": [
         "REG-004",
         "REG-041"
@@ -853,7 +862,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 455 Subpart A (Medicaid PI); CMS PIM Pub 100-08 Ch.4 (Benefit Integrity)",
+      "citation_text": "42 CFR 455 Subpart A (Medicaid PI) [binding]; CMS PIM Pub 100-08 Ch.4 (Benefit Integrity) [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -879,7 +888,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 455 Subpart F (Medicaid RAC); GAO-23-106025 (2023, OPEN rec)",
+      "citation_text": "42 CFR 455 Subpart F (Medicaid RAC) [binding]; GAO-23-106025 (28 Jun 2023) Rec 4 to CMS, open (managed-care RAC cost study); Recs 1 to 3 closed [case evidence]",
       "reg_ids": [
         "REG-060"
       ],
@@ -905,7 +914,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 455.23 (Medicaid payment suspension); 42 CFR 405.371 (Medicare payment suspension)",
+      "citation_text": "42 CFR 455.23 (Medicaid payment suspension) [binding]; 42 CFR 405.371 (Medicare payment suspension) [binding]",
       "reg_ids": [
         "REG-003",
         "REG-025"
@@ -932,7 +941,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 433.135-139 (Medicaid TPL); OIG Medicaid Third-Party Liability (2023, OPEN rec)",
+      "citation_text": "42 CFR 433.135-139 (Medicaid TPL) [binding]; OIG A-05-21-00013 (20 Oct 2023) - Medicaid third-party liability; recs 24-A-05-006.03 and .05 to .08 open, .01, .02 and .04 closed [case evidence]",
       "reg_ids": [
         "REG-020"
       ],
@@ -958,7 +967,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "GAO Green Book 2025 (Standards for Internal Control)",
+      "citation_text": "GAO Green Book 2025 (Standards for Internal Control) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -982,7 +991,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "Program Integrity Alliance - Value-for-Money in Anti-Fraud; GAO Green Book 2025 (Standards for Internal Control)",
+      "citation_text": "Program Integrity Alliance - Value-for-Money in Anti-Fraud [case evidence]; GAO Green Book 2025 (Standards for Internal Control) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1006,7 +1015,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P16",
-      "citation_text": "42 CFR 455 Subpart A (Medicaid Agency Fraud Detection & Investigation Program) incl. §455.23 (payment suspension on credible fraud allegation); §455 Subpart E (provider screening)",
+      "citation_text": "42 CFR 455 Subpart A (Medicaid Agency Fraud Detection & Investigation Program) incl. §455.23 (payment suspension on credible fraud allegation) [binding]; §455 Subpart E (provider screening) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-06",
@@ -1022,7 +1031,7 @@
       "system_touchpoint": "Claims + enrollment (PECOS/MMIS) join",
       "evidence_artifact": "Footprint-inconsistency alert log + dispositions",
       "frequency": "Continuous / near-real-time",
-      "failure_mode": "Legitimately-enrolled NPI billed by an unrelated party for services the named provider never rendered (SC Operation Border War 2025 pattern)",
+      "failure_mode": "Legitimately-enrolled NPI billed by an unrelated party for services the named provider never rendered (pattern from a 2025 state enforcement operation)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -1034,7 +1043,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 455 Subpart A (Medicaid fraud detection/investigation); 42 USC 1320a-7b(b) (Anti-Kickback Statute — beneficiary inducement)",
+      "citation_text": "42 CFR 455 Subpart A (Medicaid fraud detection/investigation) [binding]; 42 USC 1320a-7b(b) (Anti-Kickback Statute — beneficiary inducement) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-13",
@@ -1049,7 +1058,7 @@
       "system_touchpoint": "Enrollment + claims + HR roster join",
       "evidence_artifact": "Recruiter-cluster + roster-overlap exception report + dispositions",
       "frequency": "Monthly",
-      "failure_mode": "Beneficiary as paid participant - cash-bribe enrollment / employee-as-recipient (Zhu SADC 2026; Irving NEMT 2026 patterns)",
+      "failure_mode": "Beneficiary as paid participant - cash-bribe enrollment / employee-as-recipient (patterns from a 2026 adult day-care scheme and a 2026 non-emergency transport scheme, both alleged)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -1061,7 +1070,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 USC 1320a-7b(b) (Anti-Kickback Statute); 18 USC 1956 (laundering of monetary instruments)",
+      "citation_text": "42 USC 1320a-7b(b) (Anti-Kickback Statute) [binding]; 18 USC 1956 (laundering of monetary instruments) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-13",
@@ -1076,7 +1085,7 @@
       "system_touchpoint": "Claims + payment + ownership/entity data",
       "evidence_artifact": "Entity-network transfer-pattern alert + dispositions",
       "frequency": "Quarterly",
-      "failure_mode": "Laundering entities converting claim proceeds into bribe cash (Zhu SADC self-funding loop 2026)",
+      "failure_mode": "Laundering entities converting claim proceeds into bribe cash (self-funding loop in a 2026 adult day-care scheme, alleged)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -1088,7 +1097,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 USC 1320a-7b(b) (Anti-Kickback Statute); 42 CFR 403 Subpart I (Open Payments; SSA §1128G / 42 USC 1320a-7h)",
+      "citation_text": "42 USC 1320a-7b(b) (Anti-Kickback Statute) [binding]; 42 USC 1320a-7h(a)(1), (a)(2), (c) (SSA 1128G, Open Payments: manufacturers and group purchasing organizations report payments and physician ownership in them; data input only, not payer or MSO data) [binding]; 42 CFR 403 Subpart I [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-09",
@@ -1104,7 +1113,7 @@
       "system_touchpoint": "Claims + Open Payments + ownership-disclosure data",
       "evidence_artifact": "MSO-distribution vs referral-volume correlation report",
       "frequency": "Annual / on-trigger",
-      "failure_mode": "Kickbacks disguised as MSO investment returns, invisible in transaction-level views (Boston Heart >$61M since 2019)",
+      "failure_mode": "Kickbacks disguised as MSO investment returns, invisible in transaction-level views (one investment-return arrangement, alleged more than $61M in DOJ settlements since 2019)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -1116,7 +1125,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "45 CFR 162.1002 (HIPAA code set standards); 42 CFR 424.5 (conditions for Medicare payment)",
+      "citation_text": "45 CFR 162.1002 (HIPAA code set standards) [binding]; 42 CFR 424.5 (conditions for Medicare payment) [binding]",
       "reg_ids": [
         "REG-016"
       ],
@@ -1142,7 +1151,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "45 CFR 162.1002 (HIPAA code set standards)",
+      "citation_text": "45 CFR 162.1002 (HIPAA code set standards) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1166,7 +1175,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Evaluation & Management (2021 guidelines); Program Integrity Alliance - GovQuery / PIA Connect (MCP)",
+      "citation_text": "CMS Evaluation & Management (2021 guidelines) [guidance]; Program Integrity Alliance - GovQuery / PIA Connect (MCP) [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1190,7 +1199,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "CMS National Correct Coding Initiative (NCCI) - PTP edits & Policy Manual; Program Integrity Alliance - Value-for-Money in Anti-Fraud",
+      "citation_text": "CMS National Correct Coding Initiative (NCCI) - PTP edits & Policy Manual [guidance]; context only: Program Integrity Alliance, Prioritizing Prevention: Value-for-Money in Anti-Fraud Efforts (white paper, 1 Mar 2025), argues prevention should be credited alongside recoveries and does not address NCCI [case evidence]",
       "reg_ids": [
         "REG-047"
       ],
@@ -1218,7 +1227,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "CMS National Correct Coding Initiative (NCCI) - PTP edits & Policy Manual",
+      "citation_text": "CMS National Correct Coding Initiative (NCCI) - PTP edits & Policy Manual [guidance]",
       "reg_ids": [
         "REG-047"
       ],
@@ -1244,7 +1253,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Medicaid NCCI (six methodologies)",
+      "citation_text": "CMS Medicaid NCCI (six methodologies) [guidance]",
       "reg_ids": [
         "REG-045"
       ],
@@ -1272,7 +1281,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "CMS NCCI Medically Unlikely Edits (MUE)",
+      "citation_text": "CMS NCCI Medically Unlikely Edits (MUE) [guidance]",
       "reg_ids": [
         "REG-046"
       ],
@@ -1300,12 +1309,12 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS NCCI Medically Unlikely Edits (MUE); OIG (2021, OPEN) - Chronic Care Management overpayments",
+      "citation_text": "CMS NCCI Medically Unlikely Edits (MUE) [guidance]; OIG A-07-19-05122 (6 Aug 2021) - Chronic Care Management overpayments; edit rec 21-A-07-129.03 closed unimplemented, notification rec .02 open [case evidence]",
       "reg_ids": [
         "REG-046"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "No",
       "analytics_technique": "Frequency",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1326,13 +1335,13 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Pub 100-04 Claims Processing Manual; OIG A-12-00-00503 (2022, OPEN) - co-surgery/assistant/duplicate modifiers",
+      "citation_text": "CMS Pub 100-04 Claims Processing Manual ch.12 sec.40.6-40.9 and 20.4.3 [guidance]; OIG A-01-20-00503 (22 Nov 2022) - co-surgery and assistant-at-surgery services billed without the appropriate modifiers [case evidence]; rec 23-A-01-018.04 open, .01 to .03 closed [case evidence]",
       "reg_ids": [
         "REG-040",
         "REG-072"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "Yes",
       "analytics_technique": "Modifier analytics",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1353,7 +1362,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Pub 100-04 Claims Processing Manual",
+      "citation_text": "CMS Pub 100-04 Claims Processing Manual [guidance]",
       "reg_ids": [
         "REG-040"
       ],
@@ -1379,7 +1388,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "SSA 1862(a)(1)(A) (reasonable & necessary)",
+      "citation_text": "SSA 1862(a)(1)(A) (reasonable & necessary) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1403,12 +1412,12 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "OIG A-09-22-03005 (2023, OPEN) - OTP opioid-use-disorder dx",
+      "citation_text": "OIG A-09-22-03005 (17 Aug 2023) - OTP opioid-use-disorder dx; all six recommendations closed [case evidence]",
       "reg_ids": [
         "REG-069"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "No",
       "analytics_technique": "Dx edits",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1429,13 +1438,13 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Pub 100-04 Claims Processing Manual; OIG A-04-21-04084 (2023, OPEN) - POS-32 non-facility rate",
+      "citation_text": "CMS Pub 100-04 Claims Processing Manual [guidance]; OIG A-04-21-04084 (30 May 2023) - POS-32 non-facility rate; recs 23-A-04-080.03 and .04 open [case evidence]",
       "reg_ids": [
         "REG-040",
         "REG-064"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "Yes",
       "analytics_technique": "Pos analytics",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1456,7 +1465,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Pub 100-04 Claims Processing Manual; OIG A-09-23-03016 (2023) - post-acute-transfer DRG",
+      "citation_text": "CMS Pub 100-04 Claims Processing Manual [guidance]; OIG A-09-23-03016 (2023) - post-acute-transfer DRG [case evidence]",
       "reg_ids": [
         "REG-040",
         "REG-071"
@@ -1483,13 +1492,13 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "OIG A-12-00-00503 (2022, OPEN) - co-surgery/assistant/duplicate modifiers; OIG A-06-21-05003 (2022, OPEN) - duplicate professional services",
+      "citation_text": "OIG A-01-20-00503 (22 Nov 2022) - 6 of 100 sampled services billed twice by two providers on the same day [case evidence]; duplicate-service edit rec (.03) closed, co-surgery education rec (.04) open [case evidence]; OIG A-06-21-05003 (19 Sep 2022) - duplicate professional services; edit rec 22-A-06-098.04 closed, recovery recs .01 and .02 open [case evidence]",
       "reg_ids": [
         "REG-066",
         "REG-072"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "No",
       "analytics_technique": "Duplicate detection",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1510,7 +1519,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "Program Integrity Alliance - GovQuery / PIA Connect (MCP)",
+      "citation_text": "Program Integrity Alliance - GovQuery / PIA Connect (MCP) [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1534,13 +1543,13 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS Pub 100-08 Program Integrity Manual; OIG A-09-21-03021 (2023, OPEN) - psychotherapy/telehealth",
+      "citation_text": "CMS Pub 100-08 Program Integrity Manual [guidance]; OIG A-09-21-03021 (2 May 2023) - psychotherapy/telehealth; all six recommendations closed [case evidence]",
       "reg_ids": [
         "REG-041",
         "REG-068"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "No",
       "analytics_technique": "Edit tuning",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1561,7 +1570,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "CMS National Correct Coding Initiative (NCCI) Policy Manual; NCCI PTP/MUE pre-payment edits; Medicare Program Integrity Manual (Pub 100-08)",
+      "citation_text": "CMS National Correct Coding Initiative (NCCI) Policy Manual [guidance]; NCCI PTP/MUE pre-payment edits [guidance]; Medicare Program Integrity Manual (Pub 100-08) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1585,13 +1594,13 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS Pub 100-08 Program Integrity Manual; OIG A-09-22-03010 (2023, OPEN) - molecular pathology (CPT 81408)",
+      "citation_text": "CMS Pub 100-08 Program Integrity Manual [guidance]; OIG A-09-22-03010 (21 Jun 2023) - molecular pathology (CPT 81408); all three recommendations closed [case evidence]",
       "reg_ids": [
         "REG-041",
         "REG-070"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "No",
       "analytics_technique": "Sampling",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1612,7 +1621,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "OIG Compliance Program Guidance",
+      "citation_text": "OIG Compliance Program Guidance [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1636,12 +1645,12 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "OIG A-09-22-03010 (2023, OPEN) - molecular pathology (CPT 81408); GAO Green Book (2025) - Standards for Internal Control",
+      "citation_text": "OIG A-09-22-03010 (21 Jun 2023) - molecular pathology (CPT 81408); all three recommendations closed [case evidence]; GAO Green Book (2025) - Standards for Internal Control [guidance]",
       "reg_ids": [
         "REG-070"
       ],
       "ds_ids": [],
-      "open_oversight_rec": null,
+      "open_oversight_rec": "No",
       "analytics_technique": "Monitoring",
       "applies_to": "Providers, billing entities & payers",
       "dmepos": "no",
@@ -1662,7 +1671,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "OIG Compliance Program Guidance; GAO Green Book (2025) - Standards for Internal Control",
+      "citation_text": "OIG Compliance Program Guidance [guidance]; GAO Green Book (2025) - Standards for Internal Control [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1686,7 +1695,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "42 CFR 414.234; 42 CFR 410.38",
+      "citation_text": "42 CFR 414.234 [binding]; 42 CFR 410.38 [binding]",
       "reg_ids": [
         "REG-006",
         "REG-007"
@@ -1713,7 +1722,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "42 CFR 414.234; Federal Register 2026-00487 (Jan 13, 2026)",
+      "citation_text": "42 CFR 414.234 [binding]; Federal Register 2026-00487 (Jan 13, 2026) [binding]",
       "reg_ids": [
         "REG-007"
       ],
@@ -1741,7 +1750,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "42 CFR 410.38; CMS PIM 100-08 (Program Integrity Manual)",
+      "citation_text": "42 CFR 410.38 [binding]; CMS PIM 100-08 (Program Integrity Manual) [guidance]",
       "reg_ids": [
         "REG-006"
       ],
@@ -1767,7 +1776,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "42 CFR 410.38",
+      "citation_text": "42 CFR 410.38 [binding]",
       "reg_ids": [
         "REG-006"
       ],
@@ -1793,7 +1802,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "CMS PIM 100-08 (Program Integrity Manual)",
+      "citation_text": "CMS PIM 100-08 (Program Integrity Manual) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1817,7 +1826,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "SSA 1862(a)(1)(A); Program Integrity Alliance - Value-for-Money in Anti-Fraud Efforts",
+      "citation_text": "SSA 1862(a)(1)(A) [binding]; Program Integrity Alliance - Value-for-Money in Anti-Fraud Efforts [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1841,7 +1850,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "CMS PIM 100-08 (Program Integrity Manual); OIG A-09-20-03016 (2022) - PMD repairs (open rec)",
+      "citation_text": "CMS PIM 100-08 (Program Integrity Manual) [guidance]; OIG A-09-20-03016 (31 May 2022) - PMD repairs; rec 22-A-09-063.07 open, .01 to .06 closed [case evidence]",
       "reg_ids": [
         "REG-067"
       ],
@@ -1867,7 +1876,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "OIG (2025) - intermittent urinary catheters (open rec)",
+      "citation_text": "OIG A-09-22-03019 (4 Feb 2025) - intermittent urinary catheters; rec 25-A-09-042.02 open, .01 and .03 closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": "Yes",
@@ -1886,17 +1895,17 @@
     {
       "id": "PA-09",
       "module": "Module 04 — Prior Authorization",
-      "name": "Coverage-rule application: apply current NCD/LCD/LCA; internal criteria not more restrictive than Medicare rules [open OIG rec]",
+      "name": "Coverage-rule application: apply current NCD/LCD/LCA; internal criteria not more restrictive than Medicare rules",
       "type": "Preventive",
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "SSA 1862(a)(1)(A); OIG OEI-09-18-00260 (2022) - MAO PA denials (open rec)",
+      "citation_text": "SSA 1862(a)(1)(A) [binding]; OIG OEI-09-18-00260 (27 Apr 2022) - MAO PA denials; all three recommendations closed [case evidence]",
       "reg_ids": [
         "REG-077"
       ],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Manual / none",
       "applies_to": "Ordering providers, DMEPOS suppliers & payers",
       "dmepos": "no",
@@ -1912,15 +1921,15 @@
     {
       "id": "PA-10",
       "module": "Module 04 — Prior Authorization",
-      "name": "Utilization-data sufficiency check before coverage determinations [open OIG rec]",
+      "name": "Utilization-data sufficiency check before coverage determinations",
       "type": "Detective",
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "OIG (2025) - Part B coverage determinations utilization data (open rec)",
+      "citation_text": "OIG OEI-BL-19-00501 (20 Feb 2025) - Part B coverage determinations utilization data; data rec 25-E-BL-015.01 closed, .02 (guidance on home and professional settings) open [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Data qa",
       "applies_to": "Ordering providers, DMEPOS suppliers & payers",
       "dmepos": "no",
@@ -1941,7 +1950,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "42 CFR 419 Subpart I (419.81-.83); CMS-0057-F Interoperability & Prior Authorization Final Rule (2024)",
+      "citation_text": "42 CFR 419 Subpart I (419.81-.83) [binding]; CMS-0057-F Interoperability & Prior Authorization Final Rule (2024) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1965,7 +1974,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "CMS-0057-F Interoperability & Prior Authorization Final Rule (2024)",
+      "citation_text": "CMS-0057-F Interoperability & Prior Authorization Final Rule (2024) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -1989,7 +1998,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "CMS ABN (Form CMS-R-131) / SSA 1879",
+      "citation_text": "CMS ABN (Form CMS-R-131) / SSA 1879 [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -2013,7 +2022,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "OIG OEI-09-19-00350 (2023) - Medicaid MC PA denials (open rec)",
+      "citation_text": "OIG OEI-09-19-00350 (17 Jul 2023) - Medicaid MC PA denials; rec 23-E-09-029.01 open [case evidence]",
       "reg_ids": [
         "REG-078"
       ],
@@ -2039,7 +2048,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "OIG OEI-09-19-00350 (2023) - Medicaid MC PA denials (open rec)",
+      "citation_text": "OIG OEI-09-19-00350 (17 Jul 2023) - Medicaid MC PA denials; rec 23-E-09-029.04 open [case evidence]",
       "reg_ids": [
         "REG-078"
       ],
@@ -2065,7 +2074,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P10, P12",
-      "citation_text": "GAO-24-106532 (2024) - Medicaid MC PA for children (open rec)",
+      "citation_text": "GAO-24-106532 (30 Apr 2024) - Medicaid MC PA for children; Recs 1 and 2 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-061"
       ],
@@ -2091,7 +2100,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS-0057-F Interoperability & Prior Authorization Final Rule (2024)",
+      "citation_text": "CMS-0057-F Interoperability & Prior Authorization Final Rule (2024) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -2115,7 +2124,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "CMS PIM 100-08 (Program Integrity Manual)",
+      "citation_text": "CMS PIM 100-08 (Program Integrity Manual) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -2139,7 +2148,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "CMS-0057-F Interoperability & Prior Authorization Final Rule (2024); 42 CFR 422.101(c)",
+      "citation_text": "42 CFR 422.566(d) (a physician or other appropriate health care professional with relevant expertise must review before a partly or fully adverse medical-necessity organization determination is issued; Medicare Advantage) [binding]; 42 CFR 422.101(c)(1)(i)(C)-(D) (medical-necessity decisions rest on the enrollee's history, physician recommendations, clinical notes and, where appropriate, medical director involvement) [binding]; related, not support for clinician review: CMS-0057-F, 89 FR 8758 (8 Feb 2024), which requires a specific denial reason and prior-authorization decision timeframes only [binding]",
       "reg_ids": [
         "REG-008"
       ],
@@ -2165,7 +2174,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "SSA 1862(a)(1)(A); Medicare Coverage Database (NCD/LCD/LCA)",
+      "citation_text": "SSA 1862(a)(1)(A) [binding]; Medicare Coverage Database (NCD/LCD/LCA) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -2184,17 +2193,17 @@
     {
       "id": "CD-02",
       "module": "Module 05 — Coverage & Documentation",
-      "name": "Coverage-policy change monitoring: track the Medicare Coverage Database for new/revised/retired NCD/LCD and refresh internal criteria [open GAO rec]",
+      "name": "Coverage-policy change monitoring: track the Medicare Coverage Database for new/revised/retired NCD/LCD and refresh internal criteria",
       "type": "Detective",
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Medicare Coverage Database (NCD/LCD/LCA); GAO-25-107623 (2025, open rec)",
+      "citation_text": "Medicare Coverage Database (NCD/LCD/LCA), subscription feature [guidance]; context only: GAO-25-107623 (9 Sep 2025) concerns CMS timeliness of national coverage determinations, not provider monitoring",
       "reg_ids": [
         "REG-063"
       ],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Manual / none",
       "applies_to": "All providers & suppliers submitting claims",
       "dmepos": "no",
@@ -2203,7 +2212,7 @@
       "system_touchpoint": "MCD monitor / policy repository",
       "evidence_artifact": "Policy-change log",
       "frequency": "Monthly",
-      "failure_mode": "Stale criteria misapply coverage rules (GAO-25-107623)",
+      "failure_mode": "Stale criteria misapply coverage rules",
       "provenance": "workbook",
       "verification": ""
     },
@@ -2215,7 +2224,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "SSA 1862(a)(1)(A); Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3",
+      "citation_text": "SSA 1862(a)(1)(A) [binding]; Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3 [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -2241,7 +2250,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "GAO-19-277 (2019, open rec)",
+      "citation_text": "GAO-19-277 (27 Mar 2019) Rec 1 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-056"
       ],
@@ -2267,7 +2276,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "CERT Program (Improper Payment Measurement); OIG - intermittent urinary catheters (2025, open rec)",
+      "citation_text": "CERT Program (Improper Payment Measurement) [case evidence]; OIG A-09-22-03019 (4 Feb 2025) - intermittent urinary catheters; rec 25-A-09-042.02 open, .01 and .03 closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": "Yes",
@@ -2291,7 +2300,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3",
+      "citation_text": "Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3 [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -2317,7 +2326,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 424.5(a)(6) (documentation must support services); Medicare Program Integrity Manual (Pub 100-08) ch.3; OIG guidance on cloned/copy-paste documentation",
+      "citation_text": "42 CFR 424.5(a)(6) (documentation must support services) [binding]; Medicare Program Integrity Manual (Pub 100-08) ch.3 [guidance]; OIG guidance on cloned/copy-paste documentation [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -2336,12 +2345,12 @@
     {
       "id": "CD-08",
       "module": "Module 05 — Coverage & Documentation",
-      "name": "Valid-order verification: a signed physician/practitioner order is on file before the service; order authentication enforced; ordering-physician IDENTITY/NPI authenticated at the authoritative source (NPPES/PECOS) — guards against stolen/forged real-clinician identities",
+      "name": "Valid-order verification: a treating physician/practitioner order is on file before the service (signed where the rule for the item or service requires it); order authentication enforced; ordering-physician IDENTITY/NPI authenticated at the authoritative source (NPPES/PECOS) — guards against stolen/forged real-clinician identities",
       "type": "Preventive",
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Medicare Benefit Policy Manual (CMS Pub 100-02); 42 CFR 410.32",
+      "citation_text": "Medicare Benefit Policy Manual (CMS Pub 100-02) ch.15 sec.80.6 (orders for diagnostic tests) [guidance]; 42 CFR 410.32(a) and (d)(2) (diagnostic tests ordered by the treating physician; documentation kept) [binding]; 42 CFR 410.38(d)(1) (DMEPOS written order/prescription) [binding]",
       "reg_ids": [
         "REG-005",
         "REG-039"
@@ -2368,7 +2377,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Program Integrity Manual (Pub 100-08) Ch.5; 42 CFR 410.38",
+      "citation_text": "Program Integrity Manual (Pub 100-08) Ch.5 sec.5.10 and Ch.4 sec.4.7.3.1 [guidance]; 42 CFR 424.57(c)(12) (supplier must maintain proof of delivery) [binding]",
       "reg_ids": [
         "REG-006",
         "REG-041"
@@ -2383,7 +2392,7 @@
       "system_touchpoint": "POD system",
       "evidence_artifact": "Complete POD record",
       "frequency": "Per delivery",
-      "failure_mode": "Billing for items not delivered / POD incomplete (42 CFR 410.38)",
+      "failure_mode": "Billing for items not delivered / POD incomplete (42 CFR 424.57(c)(12))",
       "provenance": "workbook",
       "verification": ""
     },
@@ -2395,7 +2404,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Medicare Benefit Policy Manual (CMS Pub 100-02)",
+      "citation_text": "Medicare Benefit Policy Manual (CMS Pub 100-02) [guidance]",
       "reg_ids": [
         "REG-039"
       ],
@@ -2421,7 +2430,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 424.516",
+      "citation_text": "42 CFR 424.516 [binding]",
       "reg_ids": [
         "REG-017"
       ],
@@ -2447,7 +2456,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3",
+      "citation_text": "Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3 [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -2473,7 +2482,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3",
+      "citation_text": "Medicare Program Integrity Manual (CMS Pub 100-08) Ch.3 [guidance]",
       "reg_ids": [
         "REG-041"
       ],
@@ -2499,7 +2508,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "CERT Program (Improper Payment Measurement); GAO-19-277 (2019, open rec)",
+      "citation_text": "CERT Program (Improper Payment Measurement) [case evidence]; GAO-19-277 (27 Mar 2019) Recs 1 and 2 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-056"
       ],
@@ -2520,15 +2529,15 @@
     {
       "id": "CD-15",
       "module": "Module 05 — Coverage & Documentation",
-      "name": "Targeted documentation education for high-risk item/service categories [open OIG rec]",
+      "name": "Targeted documentation education for high-risk item/service categories",
       "type": "Preventive",
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "OIG - intermittent urinary catheters (2025, open rec); OIG - psychotherapy incl. telehealth (2023, open rec)",
+      "citation_text": "OIG A-09-22-03019 (4 Feb 2025) - intermittent urinary catheters; education rec 25-A-09-042.03 closed [case evidence]; OIG A-09-21-03021 (2 May 2023) - psychotherapy incl. telehealth; all six recommendations closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Manual / none",
       "applies_to": "All providers & suppliers submitting claims",
       "dmepos": "no",
@@ -2544,15 +2553,15 @@
     {
       "id": "CD-16",
       "module": "Module 05 — Coverage & Documentation",
-      "name": "Enhanced documentation review for high-cost / high-risk tests and services [open OIG rec]",
+      "name": "Enhanced documentation review for high-cost / high-risk tests and services",
       "type": "Detective",
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "OIG - molecular pathology genetic test (2023, open rec)",
+      "citation_text": "OIG A-09-22-03010 (21 Jun 2023) - molecular pathology genetic test; all three recommendations closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "High-cost targeting",
       "applies_to": "All providers & suppliers submitting claims",
       "dmepos": "no",
@@ -2568,15 +2577,15 @@
     {
       "id": "CD-17",
       "module": "Module 05 — Coverage & Documentation",
-      "name": "Coordination-of-benefits / setting documentation control to prevent duplicate or incorrect payment across benefit periods [open OIG rec]",
+      "name": "Coordination-of-benefits / setting documentation control to prevent duplicate or incorrect payment across benefit periods",
       "type": "Detective",
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "OIG - hospice outpatient services (2024, open rec)",
+      "citation_text": "OIG A-09-23-03024 (12 Nov 2024) - Part B hospital outpatient services that duplicate the hospice per diem [case evidence]; all six recommendations closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Cob overlap match",
       "applies_to": "All providers & suppliers submitting claims",
       "dmepos": "no",
@@ -2592,15 +2601,15 @@
     {
       "id": "CD-18",
       "module": "Module 05 — Coverage & Documentation",
-      "name": "Service-modality documentation control: note and claim modifier support the billed modality (e.g., telehealth/audio-only) [open OIG rec]",
+      "name": "Service-modality documentation control: note and claim modifier support the billed modality (e.g., telehealth/audio-only)",
       "type": "Preventive",
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "OIG - psychotherapy incl. telehealth (2023, open rec)",
+      "citation_text": "OIG A-09-21-03021 (2 May 2023) - psychotherapy incl. telehealth; all six recommendations closed [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Manual / none",
       "applies_to": "All providers & suppliers submitting claims",
       "dmepos": "no",
@@ -2621,7 +2630,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "GAO Green Book 2025 Principles 16–17 (monitoring & remediation of deficiencies); Medicare Program Integrity Manual (Pub 100-08) documentation standards",
+      "citation_text": "GAO Green Book 2025 Principles 16–17 (monitoring & remediation of deficiencies) [guidance]; Medicare Program Integrity Manual (Pub 100-08) documentation standards [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -2645,7 +2654,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C); 42 CFR 422.503(b)(4)(vi)",
+      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C) [binding]; 42 CFR 422.503(b)(4)(vi) [binding]",
       "reg_ids": [
         "REG-012",
         "REG-031"
@@ -2660,7 +2669,7 @@
       "system_touchpoint": "Policy repository",
       "evidence_artifact": "Board-approved compliance plan",
       "frequency": "Annual",
-      "failure_mode": "Ineffective/absent compliance program (422.503); clinicians pressured to suspend medical judgment (Gehrke/King wound-graft 2025)",
+      "failure_mode": "Ineffective/absent compliance program (422.503); clinicians pressured to suspend medical judgment (a 2025 wound-graft case)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -2672,7 +2681,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C); 42 CFR 422.503(b)(4)(vi)",
+      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C) [binding]; 42 CFR 422.503(b)(4)(vi) [binding]",
       "reg_ids": [
         "REG-012",
         "REG-031"
@@ -2699,7 +2708,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "42 CFR 422.503(b)(4)(vi); 42 CFR Part 423 (Medicare Part D)",
+      "citation_text": "42 CFR 422.503(b)(4)(vi) [binding]; 42 CFR Part 423 (Medicare Part D) [binding]",
       "reg_ids": [
         "REG-012",
         "REG-032"
@@ -2726,7 +2735,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C); 42 CFR 422.310",
+      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C) [binding]; 42 CFR 422.310 [binding]",
       "reg_ids": [
         "REG-010",
         "REG-031"
@@ -2753,7 +2762,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.310; OIG - MA Risk-Adjustment Compliance Audits (Keystone/MCS/Highmark/Presbyterian)",
+      "citation_text": "42 CFR 422.310 [binding]; OIG - MA Risk-Adjustment Compliance Audits (four plan-specific audits) [case evidence]",
       "reg_ids": [
         "REG-010"
       ],
@@ -2779,7 +2788,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "OIG (2024) - Questionable Use of Health Risk Assessments (OPEN rec)",
+      "citation_text": "OIG OEI-03-23-00380 (21 Oct 2024) - Questionable Use of Health Risk Assessments; recs 25-E-03-003.01 to .03 open [case evidence]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": "Yes",
@@ -2803,7 +2812,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 422.310; OIG - MA Risk-Adjustment Compliance Audits (Keystone/MCS/Highmark/Presbyterian)",
+      "citation_text": "42 CFR 422.310 [binding]; OIG - MA Risk-Adjustment Compliance Audits (four plan-specific audits) [case evidence]",
       "reg_ids": [
         "REG-010"
       ],
@@ -2829,7 +2838,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "GAO-16-76 (OPEN recs) - MA RADV & coding intensity",
+      "citation_text": "GAO-16-76 (8 Apr 2016) - MA RADV & coding intensity; Recs 1, 4 and 5 to CMS open, Recs 2 and 3 closed [case evidence]",
       "reg_ids": [
         "REG-052",
         "REG-055"
@@ -2856,7 +2865,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.503(b)(4)(vi); Prescription Drug Benefit Manual Pub 100-18 Ch. 9 (FWA)",
+      "citation_text": "42 CFR 422.503(b)(4)(vi) [binding]; Prescription Drug Benefit Manual Pub 100-18 Ch. 9 (FWA) [guidance]",
       "reg_ids": [
         "REG-012",
         "REG-043"
@@ -2883,7 +2892,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "Prescription Drug Benefit Manual Pub 100-18 Ch. 9 (FWA); Program Integrity Alliance - Value-for-Money / GovQuery (PIA Connect)",
+      "citation_text": "Prescription Drug Benefit Manual Pub 100-18 Ch. 9 (FWA) [guidance]; Program Integrity Alliance - Value-for-Money / GovQuery (PIA Connect) [case evidence]",
       "reg_ids": [
         "REG-043"
       ],
@@ -2909,7 +2918,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR Part 423 (Medicare Part D); 42 CFR 423.504(b)(4)(vi)",
+      "citation_text": "42 CFR Part 423 (Medicare Part D) [binding]; 42 CFR 423.504(b)(4)(vi) [binding]",
       "reg_ids": [
         "REG-015",
         "REG-032"
@@ -2938,7 +2947,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.503(b)(4)(vi) & 423.504(b)(4)(vi) (Part C/D compliance program — OIG-LEIE/GSA-SAM exclusion screening of employees & FDRs); SSA §1128; OIG Special Advisory Bulletin on the Effect of Exclusion (2013)",
+      "citation_text": "42 CFR 422.752(a)(8) and 423.752(a)(6) (sanctionable violation to employ or contract with an individual or entity excluded from Medicare under SSA 1128 or 1128A for health care, utilization review, medical social work or administrative services, or with an entity that does) [binding]; 42 CFR 422.503(b)(4)(vi)(F)-(G) and 423.504(b)(4)(vi)(F)-(G) as general monitoring and corrective-action elements only [binding]; monthly LEIE/SAM screening cadence: CMS Pub 100-18 ch.9 and the OIG Special Advisory Bulletin on the Effect of Exclusion (2013) [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-01",
@@ -2965,7 +2974,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR Part 423 (Medicare Part D); Prescription Drug Benefit Manual Pub 100-18 Ch. 9 (FWA)",
+      "citation_text": "42 CFR Part 423 (Medicare Part D) [binding]; Prescription Drug Benefit Manual Pub 100-18 Ch. 9 (FWA) [guidance]",
       "reg_ids": [
         "REG-032",
         "REG-043"
@@ -2992,7 +3001,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 423.153(f)",
+      "citation_text": "42 CFR 423.153(f) [binding]",
       "reg_ids": [
         "REG-014"
       ],
@@ -3018,7 +3027,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 423.120; GAO-23-105270 (OPEN rec) - Part D rebates",
+      "citation_text": "42 CFR 423.120 [binding]; GAO-23-105270 (5 Sep 2023) - Part D rebates; one rec to CMS, open on the GAO page (HHS does not concur) [case evidence]",
       "reg_ids": [
         "REG-013",
         "REG-059"
@@ -3045,7 +3054,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.2274 & 423.2274 (agent/broker & FDR oversight, rapid-disenrollment compensation recovery); CMS Medicare Communications & Marketing Guidelines (MCMG)",
+      "citation_text": "42 CFR 422.2274 & 423.2274 (agent/broker & FDR oversight, rapid-disenrollment compensation recovery) [binding]; CMS Medicare Communications & Marketing Guidelines (MCMG) [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3069,7 +3078,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C); GAO-15-710 (OPEN rec) - MA network oversight",
+      "citation_text": "42 CFR Part 422 (Medicare Advantage / Part C) [binding]; GAO-15-710 (31 Aug 2015) - MA network oversight; rec to CMS to verify provider information, open [case evidence]",
       "reg_ids": [
         "REG-031",
         "REG-054"
@@ -3096,7 +3105,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.2460 / 423.2460",
+      "citation_text": "42 CFR 422.2460 / 423.2460 [binding]",
       "reg_ids": [
         "REG-009"
       ],
@@ -3122,7 +3131,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 422.326 / 423.360",
+      "citation_text": "42 CFR 422.326 / 423.360 (report and return identified overpayments within 60 days; six most recent completed payment years) [binding, MA organizations and Part D sponsors]; self-reporting of potential fraud or misconduct: 42 CFR 422.503(b)(4)(vi)(G)(3) / 423.504(b)(4)(vi)(G)(3) [binding; the Part D text uses 'should']",
       "reg_ids": [
         "REG-011"
       ],
@@ -3148,9 +3157,10 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR Part 438 (Medicaid managed care)",
+      "citation_text": "42 CFR Part 438 (Medicaid managed care) [binding]",
       "reg_ids": [
-        "REG-035"
+        "REG-035",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3174,7 +3184,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17, P15",
-      "citation_text": "42 CFR 423.504(b)(4)(vi)",
+      "citation_text": "42 CFR 423.504(b)(4)(vi) [binding]",
       "reg_ids": [
         "REG-015"
       ],
@@ -3200,7 +3210,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P3, P10",
-      "citation_text": "42 CFR Part 438 Subpart H (managed-care Additional Program Integrity Safeguards), incl. §438.608; plan HRSF/in-lieu-of-services policy",
+      "citation_text": "42 CFR Part 438 Subpart H (managed-care Additional Program Integrity Safeguards), incl. §438.608 [binding]; plan HRSF/in-lieu-of-services policy [guidance]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3212,7 +3222,7 @@
       "system_touchpoint": "Benefit-fund / disbursement system",
       "evidence_artifact": "Dual-approval record + recipient-pattern review log",
       "frequency": "Per disbursement + quarterly pattern review",
-      "failure_mode": "Employee with sole processing authority routing discretionary funds to self/family (CareOregon HRSF 2026 pattern)",
+      "failure_mode": "Employee with sole processing authority routing discretionary funds to self/family (pattern from a 2026 managed care plan HRSF case)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -3224,10 +3234,11 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 455.410, .450 (risk-based screening levels); CMS State Medicaid Manual (Pub 100-12)",
+      "citation_text": "42 CFR 455.410, .450 (risk-based screening levels) [binding]; CMS State Medicaid Manual (Pub 100-12) [guidance]",
       "reg_ids": [
         "REG-026",
-        "REG-042"
+        "REG-042",
+        "REG-108"
       ],
       "ds_ids": [
         "DS-17"
@@ -3253,9 +3264,10 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 455.414 (revalidation); 455.450 (reactivation re-screening)",
+      "citation_text": "42 CFR 455.414 (State must revalidate every provider at least every 5 years) [binding]; 42 CFR 455.420 (re-screen and collect application fee before reactivating a deactivated provider) [binding]; 42 CFR 455.450 (risk-level screening for revalidation and re-enrollment) [binding on State Medicaid agencies]",
       "reg_ids": [
-        "REG-027"
+        "REG-027",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3279,9 +3291,10 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 455.104-.106 (ownership/control & business-transaction disclosure)",
+      "citation_text": "42 CFR 455.104-.106 (ownership/control & business-transaction disclosure) [binding]",
       "reg_ids": [
-        "REG-024"
+        "REG-024",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3305,11 +3318,13 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 455.436 (LEIE/SAM/Death Master File database checks)",
+      "citation_text": "42 CFR 455.436 (LEIE/SAM/Death Master File database checks) [binding]",
       "reg_ids": [
         "REG-029",
         "REG-048",
-        "REG-049"
+        "REG-049",
+        "REG-108",
+        "REG-110"
       ],
       "ds_ids": [
         "DS-01",
@@ -3337,9 +3352,10 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 455.432 (on-site visits); 455.434 (fingerprint/background checks)",
+      "citation_text": "42 CFR 455.432 (on-site visits) [binding]; 455.434 (fingerprint/background checks) [binding]",
       "reg_ids": [
-        "REG-028"
+        "REG-028",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3363,7 +3379,7 @@
       "stage": 2,
       "stage_name": "Eligibility",
       "gb_principle": "P10",
-      "citation_text": "42 CFR Part 435 Subpart J (435.940-.965) - eligibility verification",
+      "citation_text": "42 CFR Part 435 Subpart J (435.940-.965) - eligibility verification [binding]",
       "reg_ids": [
         "REG-034"
       ],
@@ -3389,7 +3405,7 @@
       "stage": 2,
       "stage_name": "Eligibility",
       "gb_principle": "P10",
-      "citation_text": "42 CFR Part 455; GAO-25-106976 (2025) - interstate/PARIS enrollment matching (open rec)",
+      "citation_text": "42 CFR 435.945(d) (State eligibility determination systems must conduct PARIS data matching) [binding]; GAO-25-106976 (25 Sep 2025) Rec 3 to CMS, open: require State Medicaid/CHIP agencies to submit all enrollment data to PARIS frequently, review matches and end coverage when appropriate [case evidence, advisory to CMS]",
       "reg_ids": [
         "REG-036",
         "REG-050",
@@ -3419,11 +3435,12 @@
       "stage": 2,
       "stage_name": "Eligibility",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 455.436; SSA Death Master File; OIG A-42109005 (open rec)",
+      "citation_text": "42 CFR 455.436 [binding]; SSA Death Master File [binding]; OIG A-04-21-09005 (24 Nov 2023) - capitation after enrollee deaths; recs 24-A-04-018.01 and .02 open, .03 (Death Master File match) closed [case evidence]",
       "reg_ids": [
         "REG-029",
         "REG-048",
-        "REG-073"
+        "REG-073",
+        "REG-109"
       ],
       "ds_ids": [
         "DS-03",
@@ -3450,13 +3467,13 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 438.608; OIG A-05-20-00025 - concurrent capitation (open rec)",
+      "citation_text": "42 CFR 438.608 [binding]; OIG A-05-20-00025 (19 Sep 2022) - concurrent capitation; both recommendations closed [case evidence]",
       "reg_ids": [
         "REG-023",
         "REG-065"
       ],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Matching",
       "applies_to": "State Medicaid & CHIP agencies, MCOs/CHIP plans, and their enrolled providers",
       "dmepos": "no",
@@ -3477,9 +3494,10 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P16",
-      "citation_text": "42 CFR 438.608 (Medicaid managed-care PI safeguards)",
+      "citation_text": "42 CFR 438.608 (Medicaid managed-care PI safeguards) [binding]",
       "reg_ids": [
-        "REG-023"
+        "REG-023",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3503,7 +3521,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 438.4-.7 (actuarial soundness); 438.608",
+      "citation_text": "42 CFR 438.4-.7 (actuarial soundness) [binding]; 438.608 [binding]",
       "reg_ids": [
         "REG-022"
       ],
@@ -3529,7 +3547,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P10",
-      "citation_text": "42 CFR Part 431 Subpart Q (PERM/MEQC); CMS PERM program",
+      "citation_text": "42 CFR Part 431 Subpart Q (PERM/MEQC) [binding]; CMS PERM program [guidance]",
       "reg_ids": [
         "REG-033",
         "REG-051"
@@ -3556,7 +3574,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17",
-      "citation_text": "42 CFR Part 431 Subpart Q; GAO-19-277 (2019) - CAP root-cause (open rec)",
+      "citation_text": "42 CFR Part 431 Subpart Q [binding]; GAO-19-277 (27 Mar 2019) - CAP root-cause; Rec 2 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-033",
         "REG-056"
@@ -3583,9 +3601,10 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "42 CFR Part 456 (utilization control/SURS); CMS State Medicaid Manual",
+      "citation_text": "42 CFR Part 456 (utilization control/SURS) [binding]; CMS State Medicaid Manual [guidance]",
       "reg_ids": [
-        "REG-037"
+        "REG-037",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3609,7 +3628,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P10",
-      "citation_text": "42 CFR Part 456; GAO-19-277 (2019) - documentation necessity (open rec)",
+      "citation_text": "42 CFR Part 456 [binding]; GAO-19-277 (27 Mar 2019) - documentation necessity; Rec 1 to CMS, open [case evidence]",
       "reg_ids": [
         "REG-037",
         "REG-056"
@@ -3636,7 +3655,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16",
-      "citation_text": "CMS T-MSIS (Transformed MSIS) monthly data submission",
+      "citation_text": "CMS T-MSIS (Transformed MSIS) monthly data submission [guidance]",
       "reg_ids": [
         "REG-053"
       ],
@@ -3664,13 +3683,13 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16",
-      "citation_text": "CMS T-MSIS; OIG OEI-03-20-00330 - encounter data quality (open rec)",
+      "citation_text": "CMS T-MSIS [guidance]; 42 CFR 438.242(c)-(d) and 438.602(e) (encounter data submission; State validation; independent audit at least every 3 years) [binding]; OIG OEI-02-19-00180 (26 Mar 2021) - State-reported managed care payment data in T-MSIS incomplete and inaccurate, all three recommendations to CMS closed [case evidence]",
       "reg_ids": [
         "REG-053",
         "REG-075"
       ],
       "ds_ids": [],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Data QA",
       "applies_to": "State Medicaid & CHIP agencies, MCOs/CHIP plans, and their enrolled providers",
       "dmepos": "no",
@@ -3691,10 +3710,11 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P16",
-      "citation_text": "42 CFR 455.23 (payment suspension on credible allegation); 42 CFR Part 1007 (MFCU)",
+      "citation_text": "42 CFR 455.23 (payment suspension on credible allegation) [binding]; 42 CFR Part 1007 (MFCU) [binding]",
       "reg_ids": [
         "REG-025",
-        "REG-030"
+        "REG-030",
+        "REG-108"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3718,8 +3738,10 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P3",
-      "citation_text": "SSA sec.1936; CMS Comprehensive Medicaid Integrity Plan (CMIP)",
-      "reg_ids": [],
+      "citation_text": "SSA sec.1936 [binding]; CMS Comprehensive Medicaid Integrity Plan (CMIP) [guidance]",
+      "reg_ids": [
+        "REG-108"
+      ],
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
@@ -3742,7 +3764,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16",
-      "citation_text": "42 CFR Part 457 (CHIP); GAO-19-481 (2019) - Child Core Set/EPSDT (open rec)",
+      "citation_text": "42 CFR Part 457 (CHIP) [binding]; GAO-19-481 (16 Aug 2019) - Child Core Set/EPSDT; Recs 1 to 4 and 6 to CMS open, Rec 5 closed [case evidence]",
       "reg_ids": [
         "REG-038",
         "REG-057"
@@ -3769,7 +3791,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16",
-      "citation_text": "42 CFR 431.10; GAO-21-17 (2020) - state financial management reviews (open rec)",
+      "citation_text": "GAO-21-17 (14 Oct 2020) Rec 1 to CMS, open: time frames for CMS to complete Medicaid financial management reviews [case evidence]; no regulation found that requires State self-audits (42 CFR 431.10, the single State agency rule, removed)",
       "reg_ids": [
         "REG-019",
         "REG-058"
@@ -3796,7 +3818,7 @@
       "stage": 2,
       "stage_name": "Eligibility",
       "gb_principle": "P10",
-      "citation_text": "SSA §1905(a)(29)(A); 42 CFR 435.1009–.1010; CMS SHO 16-007/24-004; CAA 2024 (suspend-not-terminate, eff. 1/1/2026)",
+      "citation_text": "SSA §1905(a), clause (A) of the text after paragraph (32) [binding]; 42 CFR 435.1009–.1010 [binding]; CMS SHO 16-007/24-004 [guidance]; CAA 2024 (suspend-not-terminate, eff. 1/1/2026) [binding]",
       "reg_ids": [
         "REG-001",
         "REG-021",
@@ -3814,7 +3836,7 @@
       "system_touchpoint": "Eligibility system + corrections data feed",
       "evidence_artifact": "Monthly incarceration-match exception report + dispositions",
       "frequency": "Monthly",
-      "failure_mode": "PCA/home-care billing while recipient incarcerated (Missouri MFCU 2026 pattern); capitation for incarcerated enrollees",
+      "failure_mode": "PCA/home-care billing while recipient incarcerated (pattern from a 2026 state MFCU case); capitation for incarcerated enrollees",
       "provenance": "workbook",
       "verification": ""
     },
@@ -3826,7 +3848,7 @@
       "stage": 4,
       "stage_name": "Authorization",
       "gb_principle": "P7, P8, P16",
-      "citation_text": "42 CFR 447 Subpart C (Payment for Inpatient Hospital & Long-Term Care Facility Services; NF rate reasonableness, SSA §1902(a)(13)(A))",
+      "citation_text": "42 CFR 447 Subpart C (Payment for Inpatient Hospital & Long-Term Care Facility Services; NF rate reasonableness, SSA §1902(a)(13)(A)) [binding]",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -3838,7 +3860,7 @@
       "system_touchpoint": "Rate-setting system + state revenue / licensure / court data",
       "evidence_artifact": "Financial-distress screen result attached to each accepted cost report",
       "frequency": "Each cost-report cycle",
-      "failure_mode": "Inflated self-reported costs driving overpaid per-diem rates at a financially-distressed facility (Skyline/Schwartz AR 2025 pattern)",
+      "failure_mode": "Inflated self-reported costs driving overpaid per-diem rates at a financially-distressed facility (pattern from a 2025 state nursing-facility case)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -3850,7 +3872,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P3, P10",
-      "citation_text": "42 CFR 441 Subpart G (HCBS §1915(c) waivers) & Subpart K (Community First Choice); 21st Century Cures Act §12006 → SSA §1903(l) (EVV mandate)",
+      "citation_text": "42 CFR 441 Subpart G (HCBS §1915(c) waivers) & Subpart K (Community First Choice) [binding]; 21st Century Cures Act §12006 → SSA §1903(l) (EVV mandate) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-13",
@@ -3866,7 +3888,7 @@
       "system_touchpoint": "EVV / claims + representative & attendant registries",
       "evidence_artifact": "Conflict-screen result + representative-approved-claim sampling disposition",
       "frequency": "Continuous screen + quarterly sample",
-      "failure_mode": "Representative-approver with a financial tie to the caregiver approving fabricated time (TennCare/Hughlett 2026 pattern)",
+      "failure_mode": "Representative-approver with a financial tie to the caregiver approving fabricated time (pattern from a 2026 state self-directed-care case)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -3878,7 +3900,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P1, P15, P16, P17",
-      "citation_text": "42 CFR 455.14–.23 (preliminary investigation → MFCU referral → payment suspension); 42 CFR 438.608 (MCO fraud referral)",
+      "citation_text": "42 CFR 455.14–.23 (preliminary investigation → MFCU referral → payment suspension) [binding]; 42 CFR 438.608 (MCO fraud referral) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-18"
@@ -3892,7 +3914,7 @@
       "system_touchpoint": "Case-management / referral system + audit trail",
       "evidence_artifact": "Dated escalation record + auditor confirmation",
       "frequency": "Event-driven + annual attestation",
-      "failure_mode": "Detected systemic scheme (e.g., foreign-based mass enrollment) not escalated to law enforcement/oversight (OHCA/OK 2026 pattern)",
+      "failure_mode": "Detected systemic scheme (e.g., foreign-based mass enrollment) not escalated to law enforcement/oversight (pattern from a 2026 state Medicaid agency matter)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -3904,7 +3926,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P10, P11",
-      "citation_text": "42 CFR 440.170(a) (Medicaid transportation benefit; NEMT brokerage §440.170(a)(4); cf. §431.53)",
+      "citation_text": "42 CFR 440.170(a) (Medicaid transportation benefit; NEMT brokerage §440.170(a)(4); cf. §431.53) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-13",
@@ -3919,7 +3941,7 @@
       "system_touchpoint": "NEMT claims + trip/EVV data",
       "evidence_artifact": "Shared-ride / unit-inflation exception report",
       "frequency": "Monthly",
-      "failure_mode": "Per-passenger-as-separate-trip inflation + phantom/implausible trips (Irving NM NEMT 2026 pattern)",
+      "failure_mode": "Per-passenger-as-separate-trip inflation + phantom/implausible trips (pattern from a 2026 non-emergency transport case)",
       "provenance": "workbook",
       "verification": ""
     },
@@ -3931,7 +3953,7 @@
       "stage": 3,
       "stage_name": "Enrollment",
       "gb_principle": "P10, P11",
-      "citation_text": "42 CFR 455.410/.436 (Medicaid provider screening); 42 CFR 424.500-.570 (Medicare enrollment & identity); NIST AI RMF Generative AI Profile (synthetic-content risk)",
+      "citation_text": "42 CFR 455.410/.436 (Medicaid provider screening) [binding]; 42 CFR 424.500-.570 (Medicare enrollment & identity) [binding]; NIST AI RMF Generative AI Profile (synthetic-content risk) [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-01",
@@ -3959,7 +3981,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 455 Subpart A (Medicaid fraud detection); NIST AI RMF (AI 100-1) + Generative AI Profile (content provenance / corroboration)",
+      "citation_text": "42 CFR 455 Subpart A (Medicaid fraud detection) [binding]; NIST AI RMF (AI 100-1) + Generative AI Profile (content provenance / corroboration) [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-15",
@@ -3988,7 +4010,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P16, P11",
-      "citation_text": "NIST AI RMF Generative AI Profile (content provenance); C2PA / Content Credentials specification; builds on CD-07 (copy-forward) & CD-13 (amendment integrity)",
+      "citation_text": "NIST AI RMF Generative AI Profile (content provenance) [guidance]; C2PA / Content Credentials specification [guidance]; builds on CD-07 (copy-forward) & CD-13 (amendment integrity)",
       "reg_ids": [],
       "ds_ids": [],
       "open_oversight_rec": null,
@@ -4007,12 +4029,12 @@
     {
       "id": "AG-01",
       "module": "Module 08 — AI & Analytics Governance",
-      "name": "AI governance to NIST AI RMF + Generative AI Profile — maintain a model inventory with intended-use statements, pre-deployment testing, a human-in-the-loop gate before any adverse action, and incident disclosure for any AI/analytics used in coverage, adjudication or fraud detection (mirrors OIG CIA AI attestation). See Module 08 assessment (G1 adversary / G2 adjudication batteries)",
+      "name": "AI governance to NIST AI RMF + Generative AI Profile — maintain a model inventory with intended-use statements, pre-deployment testing, a human-in-the-loop gate before any adverse action, and incident disclosure for any AI/analytics used in coverage, adjudication or fraud detection (NIST guidance; sampled OIG corporate integrity agreements require only a statement on generative-AI use). See Module 08 assessment (G1 adversary / G2 adjudication batteries)",
       "type": "Preventive",
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "NIST AI RMF (AI 100-1) + Generative AI Profile (NIST-AI-600-1); OIG Corporate Integrity Agreement AI provisions",
+      "citation_text": "NIST AI RMF 1.0 (AI 100-1): GOVERN 1.6, MAP 3.5, MEASURE 2.1 and 2.3, MANAGE 4.3 [guidance]; NIST AI 600-1 Generative AI Profile: GV-1.6-001 to -003 [guidance, voluntary]; OIG corporate integrity agreements from 2026 (sampled) require a statement on generative-AI use in annual and independent-review reports and do not prescribe a model inventory, human gate or incident disclosure [case evidence]",
       "reg_ids": [],
       "ds_ids": [
         "DS-18"
@@ -4038,7 +4060,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.208/.210 (physician incentive plan / stinting safeguards); 42 CFR 1001.952(ee)-(gg) VBE safe-harbor anti-stinting conditions",
+      "citation_text": "42 CFR 422.208/.210 (physician incentive plan / stinting safeguards) [binding]; 42 CFR 1001.952(ee)-(gg) VBE safe-harbor anti-stinting conditions [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-12",
@@ -4066,7 +4088,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.110 (non-discrimination / selection); 42 CFR 1001.952 VBE anti-steering conditions; ACO REACH beneficiary-alignment rules",
+      "citation_text": "42 CFR 422.110 (non-discrimination / selection) [binding]; 42 CFR 1001.952 VBE anti-steering conditions [binding]; ACO REACH beneficiary-alignment rules [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-12",
@@ -4093,7 +4115,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P1, P2, P3 (Control Environment)",
-      "citation_text": "42 CFR 1001.952(ee),(ff),(gg) (AKS value-based-enterprise safe harbors, eff. 2021); 42 USC 1320a-7b(b); OIG 2026 safe-harbor RFI",
+      "citation_text": "42 CFR 1001.952(ee),(ff),(gg) (AKS value-based-enterprise safe harbors, eff. 2021) [binding]; 42 USC 1320a-7b(b) [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-09",
@@ -4120,7 +4142,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.162-.166 (Star Ratings program); Medicare Shared Savings / ACO quality-gating rules",
+      "citation_text": "42 CFR 422.162-.166 (Star Ratings program) [binding]; Medicare Shared Savings / ACO quality-gating rules [binding]",
       "reg_ids": [],
       "ds_ids": [
         "DS-12",
@@ -4147,12 +4169,12 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P11",
-      "citation_text": "42 CFR 422.308 (risk adjustment); CMS-HCC V28 phase-in; HHS-OIG 2026 Work Plan (V24-vs-V28 comparison)",
+      "citation_text": "42 CFR 422.308 (risk adjustment) [binding]; CMS-HCC V28 phase-in [guidance]; HHS-OIG 2026 Work Plan (V24-vs-V28 comparison) [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-12"
       ],
-      "open_oversight_rec": "Yes",
+      "open_oversight_rec": "No",
       "analytics_technique": "Acuity-drift / model-delta analytics",
       "applies_to": "MA (Part C) plans / sponsors",
       "dmepos": "no",
@@ -4173,7 +4195,7 @@
       "stage": 6,
       "stage_name": "Payment",
       "gb_principle": "P11, P16",
-      "citation_text": "42 CFR 422.308 (risk adjustment); 42 CFR 422.504(l) (data certification); NIST AI RMF 1.0 + Generative AI Profile (NIST-AI-600-1); OMB M-25-21 (human review of high-impact AI); ACFE 2026 Report to the Nations (MA risk-adjustment AI-without-oversight)",
+      "citation_text": "42 CFR 422.308 (risk adjustment) [binding]; 42 CFR 422.504(l) (data certification) [binding]; NIST AI RMF 1.0 + Generative AI Profile (NIST-AI-600-1) [guidance]; OMB M-25-21 (human review of high-impact AI) [guidance]",
       "reg_ids": [],
       "ds_ids": [
         "DS-12"
@@ -4199,7 +4221,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P12, P2",
-      "citation_text": "SSA 1128B(b); SSA 1877; 42 CFR 411.350-.357",
+      "citation_text": "SSA 1128B(b) [binding]; SSA 1877 [binding]; 42 CFR 411.350-.357 [binding]",
       "reg_ids": [
         "REG-101",
         "REG-102"
@@ -4209,7 +4231,7 @@
       ],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "New arrangement, renewal, amendment, or acquisition",
       "owner": "Compliance officer",
@@ -4228,7 +4250,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P10, P3",
-      "citation_text": "42 CFR 411.353-.357; 42 CFR 1001.952; OIG Special Fraud Alerts (PODs 2013, speaker programs 2020, telemedicine 2022)",
+      "citation_text": "42 CFR 411.355-.357 (exceptions; the prohibition is 411.353) [binding]; 42 CFR 1001.952 [binding]; OIG Special Fraud Alerts (PODs 2013, speaker programs 2020, telemedicine 2022) [guidance]",
       "reg_ids": [
         "REG-101",
         "REG-102",
@@ -4237,7 +4259,7 @@
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "Arrangement submitted for signature",
       "owner": "Legal / compliance counsel",
@@ -4254,9 +4276,9 @@
       "name": "Independent FMV and commercial-reasonableness determination",
       "type": "Preventive",
       "stage": 1,
-      "stage_name": "Documentation",
+      "stage_name": "Governance",
       "gb_principle": "P10",
-      "citation_text": "42 CFR 411.351 (FMV & commercial reasonableness, 2020 final rule); 42 CFR 1001.952(d)",
+      "citation_text": "42 CFR 411.351 (FMV & commercial reasonableness, 2020 final rule) [binding]; 42 CFR 1001.952(d) [binding]",
       "reg_ids": [
         "REG-102",
         "REG-101"
@@ -4264,7 +4286,7 @@
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "New or amended compensation with a referral source; defined refresh triggers",
       "owner": "Compliance officer / external valuator",
@@ -4283,7 +4305,7 @@
       "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P10",
-      "citation_text": "SSA 1877; 42 CFR 411.354(d)",
+      "citation_text": "SSA 1877 [binding]; 42 CFR 411.354(d) [binding]",
       "reg_ids": [
         "REG-102"
       ],
@@ -4309,14 +4331,14 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P16, P12",
-      "citation_text": "42 CFR 411.354(e) (writing, signature, 90-day rule); 42 CFR 411.357 (holdover)",
+      "citation_text": "42 CFR 411.354(e) (writing, signature, 90-day rule) [binding]; 42 CFR 411.357 (holdover) [binding]",
       "reg_ids": [
         "REG-102"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "Continuous against the arrangement register",
       "owner": "Contract administrator",
@@ -4335,7 +4357,7 @@
       "stage": 5,
       "stage_name": "Documentation",
       "gb_principle": "P16",
-      "citation_text": "42 CFR 1001.952(d); OIG Compliance Program Guidance",
+      "citation_text": "42 CFR 1001.952(d) [binding]; OIG Compliance Program Guidance [guidance]",
       "reg_ids": [
         "REG-101",
         "REG-102"
@@ -4362,7 +4384,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16, P8",
-      "citation_text": "SSA 1128B(b); SSA 1877",
+      "citation_text": "SSA 1128B(b) [binding]; SSA 1877 [binding]",
       "reg_ids": [
         "REG-101",
         "REG-102"
@@ -4370,7 +4392,7 @@
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "Scheduled analytic run",
       "owner": "Program-integrity analytics",
@@ -4386,10 +4408,10 @@
       "module": "Module 09 — Financial Relationships & Referral Integrity",
       "name": "Marketing and lead-generation arrangement review",
       "type": "Preventive",
-      "stage": 2,
+      "stage": 1,
       "stage_name": "Governance",
       "gb_principle": "P10",
-      "citation_text": "SSA 1128B(b); 18 U.S.C. 220 (EKRA); OIG Special Fraud Alert: telemedicine (2022)",
+      "citation_text": "SSA 1128B(b) [binding]; 18 U.S.C. 220 (EKRA) [binding]; OIG Special Fraud Alert: telemedicine (2022) [guidance]",
       "reg_ids": [
         "REG-101",
         "REG-104",
@@ -4398,7 +4420,7 @@
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "New marketing, lead-generation, call-center or recruiter arrangement",
       "owner": "Compliance officer",
@@ -4415,16 +4437,16 @@
       "name": "Beneficiary inducement and cost-sharing waiver controls",
       "type": "Preventive",
       "stage": 2,
-      "stage_name": "Governance",
+      "stage_name": "Eligibility",
       "gb_principle": "P10",
-      "citation_text": "SSA 1128A(a)(5); OIG nominal-value policy (2016: $15/$75); 42 CFR 1001.952(k)",
+      "citation_text": "SSA 1128A(a)(5) [binding]; OIG nominal-value policy (2016: $15/$75) [guidance]; 42 CFR 1001.952(k) [binding]",
       "reg_ids": [
         "REG-103"
       ],
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "Any beneficiary gift, incentive or waiver",
       "owner": "Compliance officer",
@@ -4443,7 +4465,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16",
-      "citation_text": "SSA 1128G; 42 CFR 403.900-.914",
+      "citation_text": "SSA 1128G (42 USC 1320a-7h) [binding]; 42 CFR 403.900-.914 (Open Payments: reporting duty on applicable manufacturers and GPOs; covered recipients and physician owners have at least 45 days to review and correct, 42 CFR 403.908(g)) [binding]",
       "reg_ids": [
         "REG-105"
       ],
@@ -4471,7 +4493,7 @@
       "stage": 7,
       "stage_name": "Monitoring",
       "gb_principle": "P16",
-      "citation_text": "42 CFR 411.357(k),(m)",
+      "citation_text": "42 CFR 411.357(k) (nonmonetary compensation: annual aggregate limit per physician, indexed) [binding]; 42 CFR 411.357(m) (medical staff incidental benefits from a hospital: limit per occurrence, indexed, no annual limit) [binding]",
       "reg_ids": [
         "REG-102"
       ],
@@ -4483,9 +4505,9 @@
       "trigger": "Any non-monetary item provided",
       "owner": "Compliance analyst",
       "system_touchpoint": "COI / expense system",
-      "evidence_artifact": "Per-physician per-year running total against the CMS-indexed limits",
+      "evidence_artifact": "Per-physician per-year running total against the CMS-indexed annual limit (411.357(k)); per-occurrence check of medical staff incidental benefits against the CMS-indexed limit (411.357(m))",
       "frequency": "Continuous",
-      "failure_mode": "Unrecorded gifts and benefits breaching the annual limit with no exception path",
+      "failure_mode": "Unrecorded gifts and benefits breaching the annual limit (k) or the per-occurrence limit (m) with no exception path",
       "provenance": "hand-authored",
       "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
     },
@@ -4497,7 +4519,7 @@
       "stage": 8,
       "stage_name": "Corrective action",
       "gb_principle": "P17",
-      "citation_text": "SRDP (SSA 1877; ACA 6409); OIG Self-Disclosure Protocol; 42 CFR 401.305",
+      "citation_text": "SRDP (SSA 1877; ACA 6409) [binding]; OIG Self-Disclosure Protocol [guidance]; 42 CFR 401.305 [binding]",
       "reg_ids": [
         "REG-101",
         "REG-102"
@@ -4505,7 +4527,7 @@
       "ds_ids": [],
       "open_oversight_rec": null,
       "analytics_technique": "Manual / none",
-      "applies_to": "Providers, health systems, plans and states — any entity with referral-source or vendor financial relationships",
+      "applies_to": "Providers, suppliers and health systems that enter referral-source or vendor financial relationships (the entity's own compliance control; not run by a payer or a state)",
       "dmepos": "no",
       "trigger": "Non-compliant arrangement identified",
       "owner": "Compliance officer + counsel",
@@ -4515,6 +4537,35 @@
       "failure_mode": "Silent forward-only fixes that leave the lookback exposure unquantified and undisclosed",
       "provenance": "hand-authored",
       "verification": "hand-authored 2026-08-20; anchors and the $15/$75 nominal-value thresholds flagged verify-against-primary-source; subject-matter review of option keying outstanding"
+    },
+    {
+      "id": "MC-29",
+      "module": "Module 06 — Managed Care (Part C/D)",
+      "name": "Preclusion List screening of prescribers, providers and suppliers before payment",
+      "type": "Preventive",
+      "stage": 6,
+      "stage_name": "Payment",
+      "gb_principle": "P10, P12",
+      "citation_text": "42 CFR 422.222(a)(1) (Medicare Advantage organization must not pay for an item, service or drug furnished, ordered or prescribed by an individual or entity on the preclusion list) [binding]; 42 CFR 423.120(c)(6)(i)-(ii) (Part D sponsor must reject, or require its PBM to reject, a pharmacy claim, and deny a reimbursement request, for a drug prescribed by a precluded prescriber) [binding]; 42 CFR 423.120(c)(6)(iv) and 422.222(a)(1)(ii) (written notice to beneficiaries within 30 days of a list update and no rejection or denial solely for the update during the following 60 days, for parties not excluded by OIG) [binding]",
+      "reg_ids": [
+        "REG-107",
+        "REG-013"
+      ],
+      "ds_ids": [
+        "DS-08"
+      ],
+      "open_oversight_rec": null,
+      "analytics_technique": "List matching",
+      "applies_to": "MA (Part C) & Part D plans/sponsors; not Medicaid managed care",
+      "dmepos": "no",
+      "trigger": "Each claim or encounter, and each monthly list update",
+      "owner": "Compliance / claims operations",
+      "system_touchpoint": "Claims adjudication and PBM edit",
+      "evidence_artifact": "Edit configuration showing the current list version + rejected-claim log + notice records for newly listed parties + monthly list-load record",
+      "frequency": "Per claim, with a monthly list refresh",
+      "failure_mode": "Claim paid for an item, service or drug furnished or prescribed by a precluded party",
+      "provenance": "hand-authored",
+      "verification": "hand-authored 2026-10-31; 42 CFR 422.222 and 423.120(c)(6) read on eCFR 2026-10-31; subject-matter review of option keying outstanding"
     }
   ]
 }

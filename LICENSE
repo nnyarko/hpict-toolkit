@@ -1,10 +1,3 @@
-HPI-CT — Healthcare Program Integrity Control Toolkit
-This LICENSE (MIT) governs the CODE in this repository: the toolkit HTML/JS and
-any scripts. The framework CONTENT and data are licensed openly under CC BY 4.0 —
-see LICENSE-CONTENT. Both are permissive; the only obligation is attribution.
-
-------------------------------------------------------------------------------
-
 MIT License
 
 Copyright (c) 2026 Nicholas Nyarko
@@ -26,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------------------------
+
+Project note (not part of the license text): this MIT license covers the code
+in HPI-CT, including the toolkit HTML and JavaScript and the SQL in the
+detection tests. Content and data are under CC BY 4.0; see LICENSE-CONTENT.
+Embedded third-party libraries keep their own licenses; see
+THIRD_PARTY_LICENSES.md.

@@ -1,10 +1,10 @@
 {
   "_meta": {
     "artifact": "improper_payment_weighting",
-    "status": "DRAFT \u2014 confirm all figures vs CMS FY2025 improper-payment materials",
+    "status": "released. The program rates and dollar amounts were checked against the CMS FY2025 improper-payment fact sheet on 2026-11-05; the cause weights are qualitative judgments, not published figures",
     "method": "qualitative High/Med/Low (numeric needs cause-level dollar splits not cleanly published)",
-    "scope": "advisory/organizational; no claims or protected data; distinct from PARKED transaction-level deep-check",
-    "cms_fy2025_published": "2026-03-03",
+    "scope": "advisory/organizational; no claims or protected data; distinct from any transaction-level deep check",
+    "cms_fy2025_published": "2026-01-15 (date shown on the CMS fact sheet page)",
     "generated": "2026-07-13",
     "sources": [
       "https://www.cms.gov/newsroom/fact-sheets/fiscal-year-2025-improper-payments-fact-sheet",

@@ -1,20 +1,20 @@
 {
   "_meta": {
-    "generated": "2026-08-18",
+    "generated": "2026-11-11",
     "status": "released",
     "note": "Derived file - regenerated from the HPI-CT workbooks (source of truth). Do not hand-edit. Public-source, personal-capacity work; all case figures reflect allegations/settlements as described in cited public documents, not findings of fact unless a court so determined.",
-    "record_count": 78
+    "record_count": 88
   },
   "rules": [
     {
       "reg_id": "REG-001",
       "instrument_type": "Statute",
-      "citation": "SSA 1905(a)(29)",
+      "citation": "SSA 1905(a), clause (A) after paragraph (32)",
       "cited_by": [
         "MD-22"
       ],
       "link": "https://www.ssa.gov/OP_Home/ssact/title19/1905.htm",
-      "note": "SSA definitions incl. inmate payment exclusion 1905(a)(29)(A)"
+      "note": "SSA definitions incl. inmate payment exclusion: 1905(a), clause (A) of the text after paragraph (32) (42 USC 1396d(a))"
     },
     {
       "reg_id": "REG-002",
@@ -142,7 +142,8 @@
       "instrument_type": "Regulation",
       "citation": "42 CFR 423.120",
       "cited_by": [
-        "MC-15"
+        "MC-15",
+        "MC-29"
       ],
       "link": "https://www.ecfr.gov/current/title-42/section-423.120",
       "note": "Part D pharmacy access: convenient retail network (urban 90% within 2 miles), any-willing-pharmacy on standard terms, out-of-network access rules"
@@ -724,8 +725,8 @@
       "cited_by": [
         "CB-15"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG audit A-06-21-05003 (issued 09/19/2022). Critical access hospitals (CAHs) and practitioners were both paid for the SAME professional services; MACs overpaid providers ~$907,438 and beneficiaries were overcharged ~$281,321 in cost-sharing. Illustrates duplicate/same-service payment risk. Draft - verify against oig.hhs.gov region6/62105003."
+      "link": "https://oig.hhs.gov/oas/reports/region6/62105003.asp",
+      "note": "OIG audit A-06-21-05003 (issued 09/19/2022). Critical access hospitals (CAHs) and practitioners were both paid for the SAME professional services; MACs overpaid providers ~$907,438 and beneficiaries were overcharged ~$281,321 in cost-sharing. Illustrates duplicate/same-service payment risk. Verify against oig.hhs.gov region6/62105003."
     },
     {
       "reg_id": "REG-067",
@@ -734,8 +735,8 @@
       "cited_by": [
         "PA-07"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG audit A-09-20-03016 (issued 05/31/2022). Of ~$40.1M paid for Power Mobility Device (PMD) repairs (FY2019), OIG estimated ~$8M improperly paid for repairs not meeting Medicare requirements. Draft - verify against oig.hhs.gov region9/92003016."
+      "link": "https://oig.hhs.gov/oas/reports/region9/92003016.asp",
+      "note": "OIG audit A-09-20-03016 (issued 05/31/2022). Of ~$40.1M paid for Power Mobility Device (PMD) repairs (FY2019), OIG estimated ~$8M improperly paid for repairs not meeting Medicare requirements. Verify against oig.hhs.gov region9/92003016."
     },
     {
       "reg_id": "REG-068",
@@ -744,8 +745,8 @@
       "cited_by": [
         "CB-17"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG audit A-09-21-03021 (issued 05/02/2023). Of ~$1B paid for psychotherapy incl. telehealth in the first COVID-19 PHE year, OIG estimated ~$580M improper ($348M telehealth, $232M non-telehealth) - e.g., undocumented time, missing signatures. Draft - verify against oig.hhs.gov region9/92103021."
+      "link": "https://oig.hhs.gov/oas/reports/region9/92103021.asp",
+      "note": "OIG audit A-09-21-03021 (issued 05/02/2023). Of ~$1B paid for psychotherapy incl. telehealth in the first COVID-19 PHE year, OIG estimated ~$580M improper ($348M telehealth, $232M non-telehealth) - e.g., undocumented time, missing signatures. Verify against oig.hhs.gov region9/92103021."
     },
     {
       "reg_id": "REG-069",
@@ -754,8 +755,8 @@
       "cited_by": [
         "CB-12"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG audit A-09-22-03005 (issued 08/17/2023). Up to ~$17.8M in potentially improper payments to opioid treatment programs (OTPs) for opioid-use-disorder services: duplicate weekly bundles ($10.4M), take-home supplies covered by other payments ($5.1M), no OUD diagnosis ($1.3M), excess intake activities ($1M); CMS had not directed MACs to add system edits. Draft - verify against oig.hhs.gov region9/92203005."
+      "link": "https://oig.hhs.gov/oas/reports/region9/92203005.asp",
+      "note": "OIG audit A-09-22-03005 (issued 08/17/2023). Up to ~$17.8M in potentially improper payments to opioid treatment programs (OTPs) for opioid-use-disorder services: duplicate weekly bundles ($10.4M), take-home supplies covered by other payments ($5.1M), no OUD diagnosis ($1.3M), excess intake activities ($1M); CMS had not directed MACs to add system edits. Verify against oig.hhs.gov region9/92203005."
     },
     {
       "reg_id": "REG-070",
@@ -765,8 +766,8 @@
         "CB-19",
         "CB-21"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG audit A-09-22-03010 (issued June 2023). CMS/MAC oversight of the highest-paid molecular pathology genetic test (CPT 81408) was inadequate to reduce risk of up to ~$888M in improper payments (weak provider-relationship, disease-to-gene, and volume monitoring). Draft - verify against oig.hhs.gov region9/92203010."
+      "link": "https://oig.hhs.gov/oas/reports/region9/92203010.asp",
+      "note": "OIG audit A-09-22-03010 (issued June 2023). CMS/MAC oversight of the highest-paid molecular pathology genetic test (CPT 81408) was inadequate to reduce risk of up to ~$888M in improper payments (weak provider-relationship, disease-to-gene, and volume monitoring). Verify against oig.hhs.gov region9/92203010."
     },
     {
       "reg_id": "REG-071",
@@ -781,23 +782,23 @@
     {
       "reg_id": "REG-072",
       "instrument_type": "Oversight (OIG)",
-      "citation": "OIG A-12-00-00503",
+      "citation": "OIG A-01-12-00503",
       "cited_by": [
         "CB-09",
         "CB-15"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG hospital compliance audit (cited as A-12-00-00503; official ID appears to be A-01-12-00503, issued 11/30/2012, Tufts Medical Center). Judgmentally sampled at-risk inpatient/outpatient claims found billing errors; hospital accepted findings and processed adjustments via its MAC. Draft - confirm the exact report ID and findings against oig.hhs.gov region1/11200503.pdf."
+      "link": "https://oig.hhs.gov/oas/reports/region1/11200503.asp",
+      "note": "OIG hospital compliance audit (A-01-12-00503, issued 11/30/2012). Judgmentally sampled at-risk inpatient/outpatient claims found billing errors; hospital accepted findings and processed adjustments via its MAC."
     },
     {
       "reg_id": "REG-073",
       "instrument_type": "Oversight (OIG)",
-      "citation": "OIG A-42109005",
+      "citation": "OIG A-04-21-09005",
       "cited_by": [
         "MD-08"
       ],
-      "link": "https://oig.hhs.gov/reports-and-publications/",
-      "note": "OIG rollup audit (cited as A-42109005; official ID appears to be A-04-21-09005, issued 11/24/2023). Across 14 prior state audits, Medicaid agencies made >$249M ($172M federal share) in unallowable capitation payments to MCOs on behalf of DECEASED enrollees; OIG recommends routine T-MSIS-to-SSA Death Master File matching. Draft - confirm ID/findings against oig.hhs.gov A-04-21-09005."
+      "link": "https://oig.hhs.gov/oas/reports/region4/42109005.asp",
+      "note": "OIG rollup audit (A-04-21-09005, issued 11/24/2023). Across 14 prior state audits, Medicaid agencies made >$249M ($172M federal share) in unallowable capitation payments to MCOs on behalf of DECEASED enrollees; OIG recommends routine T-MSIS-to-SSA Death Master File matching."
     },
     {
       "reg_id": "REG-074",
@@ -843,13 +844,138 @@
     {
       "reg_id": "REG-078",
       "instrument_type": "Oversight (OIG)",
-      "citation": "OIG OEI-09-19-00350",
+      "citation": "OIG OEI-09-19-00350 (Jul 17, 2023)",
       "cited_by": [
         "PA-14",
         "PA-15"
       ],
-      "link": "https://oig.hhs.gov/oei/reports/OEI-09-18-00260.asp",
-      "note": "OIG: some Medicare Advantage prior-authorization and payment denials in fact met Medicare coverage rules, raising concerns that capitated incentives restrict access to medically necessary care."
+      "link": "https://oig.hhs.gov/oei/reports/OEI-09-19-00350.asp",
+      "note": "OIG: about 1 in 8 Medicaid managed care prior authorization requests were denied in 2019; 12 of 115 plans denied more than 25 percent; most States did not routinely review denials. Case evidence; recommendations 23-E-09-029.01, .04 and .05 open at page read."
+    },
+    {
+      "reg_id": "REG-101",
+      "instrument_type": "Statute",
+      "citation": "SSA 1128B(b) (Anti-Kickback Statute)",
+      "cited_by": [
+        "FR-01",
+        "FR-02",
+        "FR-03",
+        "FR-06",
+        "FR-07",
+        "FR-08",
+        "FR-12"
+      ],
+      "link": "https://www.ssa.gov/OP_Home/ssact/title11/1128B.htm",
+      "note": "Anti-Kickback Statute: criminal (felony) bar on knowingly and willfully soliciting, receiving, offering or paying remuneration to induce or reward referrals of items/services payable by a Federal health care program; intent-based. Statutory exceptions plus regulatory safe harbors at 42 CFR 1001.952 (e.g., (d) personal services/management). Verify against primary source."
+    },
+    {
+      "reg_id": "REG-102",
+      "instrument_type": "Statute",
+      "citation": "SSA 1877 (Physician Self-Referral / Stark Law)",
+      "cited_by": [
+        "FR-01",
+        "FR-02",
+        "FR-03",
+        "FR-04",
+        "FR-05",
+        "FR-06",
+        "FR-07",
+        "FR-11",
+        "FR-12"
+      ],
+      "link": "https://www.ssa.gov/OP_Home/ssact/title18/1877.htm",
+      "note": "Physician Self-Referral Law (Stark): strict-liability bar on a physician referring designated health services to an entity with which the physician (or immediate family) has a financial relationship unless an exception is met. Regulations at 42 CFR 411.350-.357, incl. FMV/commercial reasonableness (411.351, 2020 final rule), writing/signature and 90-day rule (411.354(e)), and holdover (411.357). Verify against primary source."
+    },
+    {
+      "reg_id": "REG-103",
+      "instrument_type": "Statute",
+      "citation": "SSA 1128A(a)(5) (Beneficiary Inducement CMP)",
+      "cited_by": [
+        "FR-09"
+      ],
+      "link": "https://www.ssa.gov/OP_Home/ssact/title11/1128A.htm",
+      "note": "Civil Monetary Penalty for offering/transferring remuneration to a Medicare/Medicaid beneficiary that the offeror knows or should know is likely to influence selection of a provider. OIG nominal-value policy (Dec 7, 2016, still current 2026) treats items/services of <= $15 each and <= $75 aggregate per patient per year as below the threshold; cost-sharing-waiver safe harbor at 42 CFR 1001.952(k). Verify against primary source."
+    },
+    {
+      "reg_id": "REG-104",
+      "instrument_type": "Statute",
+      "citation": "18 U.S.C. 220 (EKRA)",
+      "cited_by": [
+        "FR-08"
+      ],
+      "link": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section220",
+      "note": "Eliminating Kickbacks in Recovery Act of 2018 (SUPPORT Act sec. 8122; effective Oct 24, 2018): all-payor criminal bar on knowingly and willfully paying or receiving remuneration for referrals to recovery homes, clinical treatment facilities and laboratories. Reaches any health care benefit program incl. private/commercial payors - broader than AKS - with a narrower employment exception. Verify against primary source."
+    },
+    {
+      "reg_id": "REG-105",
+      "instrument_type": "Statute",
+      "citation": "SSA 1128G (Open Payments / Sunshine Act)",
+      "cited_by": [
+        "FR-10"
+      ],
+      "link": "https://www.ssa.gov/OP_Home/ssact/title11/1128G.htm",
+      "note": "Physician Payments Sunshine Act (ACA sec. 6002): requires applicable manufacturers of covered drugs/devices/biologicals/supplies to report payments and other transfers of value to physicians and teaching hospitals, and physician ownership/investment interests, to CMS (the Open Payments program). Implementing regulations at 42 CFR part 403 subpart I. Verify against primary source."
+    },
+    {
+      "reg_id": "REG-106",
+      "instrument_type": "Oversight (OIG)",
+      "citation": "OIG Special Fraud Alerts",
+      "cited_by": [
+        "FR-02",
+        "FR-08"
+      ],
+      "link": "https://oig.hhs.gov/compliance/alerts/",
+      "note": "OIG Special Fraud Alerts identify arrangements OIG views as high-risk under the Anti-Kickback Statute, incl. physician-owned distributorships (PODs, 2013), speaker programs (2020) and telemedicine company arrangements (Telefraud, 2022). Guidance/enforcement signal, not binding law, but used for pre-execution safe-harbor and risk mapping. Verify against primary source."
+    },
+    {
+      "reg_id": "REG-107",
+      "instrument_type": "Regulation",
+      "citation": "42 CFR 422.222",
+      "cited_by": [
+        "MC-29"
+      ],
+      "link": "https://www.ecfr.gov/current/title-42/section-422.222",
+      "note": "Preclusion list: a Medicare Advantage organization must not pay for an item, service or drug furnished, ordered or prescribed by a listed individual or entity; 30-day notice and 60-day payment protection for newly listed parties not excluded by OIG; beneficiaries cannot appeal denials based on list status. Verify against primary source."
+    },
+    {
+      "reg_id": "REG-108",
+      "instrument_type": "CMS guidance",
+      "citation": "CMS Medicaid and CHIP Program Integrity Pillars",
+      "cited_by": [
+        "MD-01",
+        "MD-02",
+        "MD-03",
+        "MD-04",
+        "MD-05",
+        "MD-10",
+        "MD-14",
+        "MD-18",
+        "MD-19",
+        "MC-20"
+      ],
+      "link": "https://www.cms.gov/medicare/medicare-medicaid-coordination/program-integrity-pillars-medicaid-childrens-health-insurance-program-chip",
+      "note": "CMS expectations for state Medicaid agencies, managed care plans and law enforcement partners across six pillars: claims editing and data analytics, provider enrollment, targeted reviews and audits, managed care oversight, investigations and law enforcement referrals, and administrative actions. Written as expectations (should), not binding rules; further guidance is listed as forthcoming for three pillars. Page read 2026-10-31. Verify against primary source."
+    },
+    {
+      "reg_id": "REG-109",
+      "instrument_type": "Statute",
+      "citation": "SSA 1902(a)(89) and (ww) (Pub. L. 119-21 sec. 71104)",
+      "cited_by": [
+        "MD-08"
+      ],
+      "link": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "note": "State Medicaid plans in the 50 States and D.C. must check the Social Security Death Master File for deceased enrollees at least quarterly, beginning 1 January 2027; a person found deceased is disenrolled and payment for later services stops; a person wrongly recorded as deceased is re-enrolled retroactively. Enacted text read 2026-11-05; verify the current CMS guidance."
+    },
+    {
+      "reg_id": "REG-110",
+      "instrument_type": "Statute",
+      "citation": "SSA 1902(kk)(1)(B) (Pub. L. 119-21 sec. 71105)",
+      "cited_by": [
+        "MD-04",
+        "PE-09"
+      ],
+      "link": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm",
+      "note": "States must check the Social Security Death Master File to see whether a provider or supplier is deceased as part of enrollment, re-enrollment or revalidation, and at least quarterly while the provider remains enrolled, beginning 1 January 2028. Enacted text read 2026-11-05; verify the current CMS guidance."
     }
   ]
 }

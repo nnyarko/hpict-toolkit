@@ -1,14 +1,15 @@
 {
-  "generated": "2026-08-24",
-  "controls": 172,
+  "generated": "2026-11-11",
+  "controls": 173,
   "modules_total": 10,
   "control_bearing_modules": 9,
   "control_types": {
-    "Preventive": 78,
+    "Preventive": 79,
     "Detective": 87,
     "Corrective": 7
   },
-  "questions": 246,
-  "coded_cases": 1586,
-  "cases_with_amount": 816
+  "questions": 247,
+  "coded_cases": 877,
+  "cases_with_amount": 555,
+  "cases_with_text_amount": 2
 }

@@ -1,10 +1,12 @@
-HPI-CT — Healthcare Program Integrity Control Toolkit
+HPI-CT: Healthcare Program Integrity Control Toolkit
 Content & Data License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 This license governs the non-code CONTENT and DATA in this repository: the control
 library and crosswalks, the assessment instrument and questionnaire, the rules and
 data-source references, the diagnosis matrix, the de-identified case exemplars, the
-distilled guides, and the white paper. The CODE is licensed under MIT (see LICENSE).
+distilled guides, and the white paper. The CODE is licensed under MIT (see LICENSE);
+that includes the SQL in the detection tests (data/analytics_tests.json and
+analytics/*.md).
 
 ------------------------------------------------------------------------------
 
@@ -13,13 +15,13 @@ Copyright (c) 2026 Nicholas Nyarko.
 This content is licensed under the Creative Commons Attribution 4.0 International
 License (CC BY 4.0). You are free to:
 
-  - Share — copy and redistribute the material in any medium or format.
-  - Adapt — remix, transform, and build upon the material for any purpose,
+  - Share: copy and redistribute the material in any medium or format.
+  - Adapt: remix, transform, and build upon the material for any purpose,
     including commercially.
 
 Under the single term:
 
-  - Attribution — You must give appropriate credit to Nicholas Nyarko, provide a
+  - Attribution: You must give appropriate credit to Nicholas Nyarko, provide a
     link to the license, and indicate if changes were made. You may do so in any
     reasonable manner, but not in any way that suggests the licensor endorses you
     or your use.
@@ -32,7 +34,7 @@ REQUIRED ATTRIBUTION (use this text or an equivalent):
 The full legal code governs this grant: https://creativecommons.org/licenses/by/4.0/legalcode
 Human-readable summary: https://creativecommons.org/licenses/by/4.0/
 
-WHAT THIS LICENSE CANNOT COVER — THIRD-PARTY STANDARDS
+WHAT THIS LICENSE CANNOT COVER: THIRD-PARTY STANDARDS
   This work maps to the GAO Green Book (a U.S. Government work, public domain,
   17 U.S.C. 105) and refers to COSO and the COSO/ACFE Fraud Risk Management Guide
   by component and principle in original wording. It does not reproduce or
@@ -41,12 +43,14 @@ WHAT THIS LICENSE CANNOT COVER — THIRD-PARTY STANDARDS
   bodies directly. "COSO" and "ACFE" are marks of their owners, used descriptively.
   No endorsement, certification, or affiliation is claimed. Federal regulations,
   CMS manuals, and HHS-OIG/GAO/DOJ records are public domain and cited freely.
-  Full source-by-source basis: see THIRD_PARTY_RIGHTS.md.
+  Full source-by-source basis: see THIRD_PARTY_RIGHTS.md. Open-source libraries
+  embedded in the toolkit keep their own licenses: see THIRD_PARTY_LICENSES.md.
 
 NOT INCLUDED HERE (held by the maintainer)
   The row-level identified coded case dataset and raw intake are NOT part of this
   release. The published case exemplars in /data are de-identified (party names,
-  case names, URLs, and exact dates removed; dollar figures banded). The identified
+  case names, URLs, and exact dates removed; row-level dollar figures banded). The
+  identified
   source crosswalk is available to researchers on request under a data-use
   understanding: nicholasnyarko@gmail.com
 

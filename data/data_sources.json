@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "generated": "2026-08-18",
+    "generated": "2026-11-11",
     "status": "released",
     "note": "Derived file - regenerated from the HPI-CT workbooks (source of truth). Do not hand-edit. Public-source, personal-capacity work; all case figures reflect allegations/settlements as described in cited public documents, not findings of fact unless a court so determined.",
-    "record_count": 18
+    "record_count": 20
   },
   "data_sources": [
     {
@@ -17,8 +17,7 @@
       "match_keys": "NPI, name+DOB, EIN",
       "consumed_by": [
         "PE screening (monthly LEIE/SAM)",
-        "C-02",
-        "MC-12, MD-04, PE-07 (v1.1 ID-link)"
+        "MC-12, MD-04, PE-07, PE-08"
       ],
       "caveats": "Name matching needs fuzzy logic; verify hits against full record before action",
       "link": "https://oig.hhs.gov/exclusions/"
@@ -35,7 +34,7 @@
       "consumed_by": [
         "PE screening",
         "vendor/FDR screening (MC-11)",
-        "MC-12, MD-04, PE-04, PE-07 (v1.1 ID-link)"
+        "MC-12, MD-04, PE-04, PE-07, PE-08"
       ],
       "caveats": "Broader than healthcare; classification codes matter",
       "link": "https://sam.gov/"
@@ -52,7 +51,7 @@
       "consumed_by": [
         "MD-08 deceased-enrollee",
         "deceased-provider checks",
-        "MD-04 (v1.1 ID-link)"
+        "MD-04, PE-09"
       ],
       "caveats": "Full file restricted since 2011; state vital-records matches supplement; false positives on common names",
       "link": "https://dmf.ntis.gov/"
@@ -100,7 +99,7 @@
         "Enrollment verification",
         "ordering/referring validation",
         "network analysis input (PE-05)",
-        "PI-20 footprint consistency (v1.2 ID-link)"
+        "PI-20 footprint consistency"
       ],
       "caveats": "Self-reported fields go stale; addresses lag reality",
       "link": "https://npiregistry.cms.hhs.gov/"
@@ -115,10 +114,10 @@
       "refresh": "Weekly/monthly",
       "match_keys": "NPI",
       "consumed_by": [
-        "Order-validity checks (C-04/C-05)",
+        "Order-validity checks",
         "enrollment status verification",
-        "PE-01, PE-02, PE-06, PE-14 (v1.1 ID-link)",
-        "PI-20 footprint consistency (v1.2 ID-link)"
+        "PE-01, PE-02, PE-06, PE-14",
+        "PI-20 footprint consistency"
       ],
       "caveats": "Medicare-scope; state Medicaid enrollment is separate",
       "link": "https://data.cms.gov/"
@@ -133,7 +132,8 @@
       "refresh": "Monthly",
       "match_keys": "NPI, name",
       "consumed_by": [
-        "MC payment screening"
+        "Preclusion List screening before payment",
+        "MC-29"
       ],
       "caveats": "Plan-only access; not public",
       "link": "via HPMS"
@@ -148,8 +148,8 @@
       "refresh": "Annual + updates",
       "match_keys": "NPI, name",
       "consumed_by": [
-        "C-06 kickback/COI screen of referral relationships",
-        "PI-23 MSO/investment-kickback correlation (v1.2 ID-link)"
+        "Kickback/COI screen of referral relationships",
+        "PI-23 MSO/investment-kickback correlation"
       ],
       "caveats": "Disclosure data, not wrongdoing; use as risk indicator only",
       "link": "https://openpaymentsdata.cms.gov/"
@@ -166,7 +166,7 @@
       "consumed_by": [
         "CB coding-edit controls",
         "pre-payment edits",
-        "CB-04, CB-06, CB-07 (v1.1 ID-link)"
+        "CB-04, CB-06, CB-07"
       ],
       "caveats": "Version discipline matters (currently v322r0 eff. 7/1/2026 per update monitor); Medicaid NCCI differs slightly",
       "link": "https://www.cms.gov/medicare/coding-billing/ncci-medicare"
@@ -182,7 +182,7 @@
       "match_keys": "HCPCS",
       "consumed_by": [
         "PA-gate controls (Module 04)",
-        "PA-02 (v1.1 ID-link)"
+        "PA-02"
       ],
       "caveats": "Effective dates matter; last known update eff. 4/13/2026 (+18 codes)",
       "link": "https://www.cms.gov/"
@@ -197,7 +197,7 @@
       "refresh": "Annual",
       "match_keys": "NPI, HCPCS",
       "consumed_by": [
-        "Peer-outlier benchmarking (PI-01, coding-intensity, C-07)"
+        "Peer-outlier benchmarking (PI-01, coding-intensity)"
       ],
       "caveats": "1-2 year lag; aggregate only - directional benchmarks, not cases",
       "link": "https://data.cms.gov/"
@@ -213,8 +213,8 @@
       "match_keys": "beneficiary/provider IDs (encrypted)",
       "consumed_by": [
         "State-level analytics controls (Module 07)",
-        "MD-08, MD-16 (v1.1 ID-link)",
-        "PI-20/21/22/23 program-integrity analytics, MD-24 self-directed, MD-26 NEMT (v1.2 ID-link)"
+        "MD-08, MD-16",
+        "PI-20/21/22/23 program-integrity analytics, MD-24 self-directed, MD-26 NEMT"
       ],
       "caveats": "Heavy access process; states should use their own MMIS first",
       "link": "https://resdac.org/"
@@ -229,7 +229,7 @@
       "refresh": "Near-real-time",
       "match_keys": "Patient, prescriber DEA/NPI",
       "consumed_by": [
-        "C-03 opioid prescribing-pattern review"
+        "Opioid prescribing-pattern review"
       ],
       "caveats": "Access rules vary sharply by state and role",
       "link": "state PDMP portals"
@@ -244,11 +244,11 @@
       "refresh": "Near-real-time",
       "match_keys": "Visit ID, attendant ID, member ID, GPS/time",
       "consumed_by": [
-        "C-08 EVV reconciliation",
+        "EVV reconciliation",
         "impossible-day checks",
-        "MD-24 self-directed EVV, MD-26 NEMT trip data (v1.2 ID-link)"
+        "MD-24 self-directed EVV, MD-26 NEMT trip data"
       ],
-      "caveats": "Verifies the ATTENDANT, not the recipient status - pair with DS-03/DS-04 matches (Missouri lesson)",
+      "caveats": "Verifies the ATTENDANT, not the recipient status - pair with DS-03/DS-04 matches (lesson from a 2026 state MFCU case)",
       "link": "state EVV aggregator"
     },
     {
@@ -263,8 +263,8 @@
       "consumed_by": [
         "PE-04/05 ownership verification + network analysis",
         "PE-16 acquisition velocity",
-        "PE-03 (v1.1 ID-link)",
-        "PI-21/22/23 entity-network & ownership, MD-24 relationship overlap (v1.2 ID-link)"
+        "PE-03",
+        "PI-21/22/23 entity-network & ownership, MD-24 relationship overlap"
       ],
       "caveats": "Cross-state assembly is manual; shared address/agent is signal not proof. FinCEN BOI RETIRED 2026-08-14 (FR 2026-16576) - no longer an independent corroboration source; ownership corroboration re-pointed to CMS/state ownership-disclosure filings (primary), SAM.gov entity, state SOS registries, and PECOS/424.519. Evidence ceiling (Rule 12): self-reported ownership disclosure = push-provenance ceiling 2 unless registry-cross-matched (then 3).",
       "link": "state SOS sites; sam.gov; pecos.cms.hhs.gov; ecfr.gov/current/title-42/section-455.104"
@@ -280,6 +280,7 @@
       "match_keys": "NPI, name",
       "consumed_by": [
         "PE re-screening",
+        "PE-08",
         "MD-01 risk-based screening"
       ],
       "caveats": "42 CFR 455.416 requires state action on other-state terminations",
@@ -288,7 +289,7 @@
     {
       "ds_id": "DS-18",
       "name": "DOJ/OIG/GAO enforcement + oversight feeds",
-      "custodian": "DOJ, HHS-OIG, GAO (via PIA Connect)",
+      "custodian": "DOJ, HHS-OIG, GAO (the agencies are the custodians; PIA Connect is only an access route)",
       "contents": "Enforcement actions and oversight findings",
       "access_tier": "PUBLIC-FREE",
       "how_to_get": "Automated daily harvest (this project) via PIA Connect MCP + web",
@@ -296,10 +297,40 @@
       "match_keys": "n/a (learning layer)",
       "consumed_by": [
         "Feeds Control-Failure Learnings + Diagnosis Matrix priorities - the \"model learning\" loop",
-        "MD-25 systemic-fraud escalation (v1.2 ID-link)"
+        "MD-25 systemic-fraud escalation"
       ],
       "caveats": "Allegations until adjudicated; the more cases coded, the sharper the priorities",
       "link": "justice.gov / oig.hhs.gov / gao.gov"
+    },
+    {
+      "ds_id": "DS-19",
+      "name": "National Practitioner Data Bank (NPDB)",
+      "custodian": "HRSA (HHS)",
+      "contents": "Reports on malpractice payments, adverse licensure actions, clinical privilege actions and some exclusions for practitioners and certain entities",
+      "access_tier": "RESTRICTED (eligible entities)",
+      "how_to_get": "Query by registered eligible entities (for example hospitals, health plans, state licensing boards); continuous query is offered",
+      "refresh": "Continuous, as reports are submitted",
+      "match_keys": "Name, date of birth, license, NPI",
+      "consumed_by": [
+        "PE-09"
+      ],
+      "caveats": "Not public; who may query is set by NPDB rules, confirm on the NPDB site. A report is not a finding of fault",
+      "link": "https://www.npdb.hrsa.gov/"
+    },
+    {
+      "ds_id": "DS-20",
+      "name": "State Medicaid exclusion and termination lists",
+      "custodian": "Each state Medicaid agency",
+      "contents": "Providers excluded, suspended or terminated from a state Medicaid program, including terminations for cause",
+      "access_tier": "PUBLIC-FREE (varies by state)",
+      "how_to_get": "Each state publishes its own list or file; there is no common portal or format",
+      "refresh": "Varies by state (monthly to quarterly)",
+      "match_keys": "Name, NPI, license number, state provider ID",
+      "consumed_by": [
+        "PE-09"
+      ],
+      "caveats": "Coverage and timeliness differ by state; the federal LEIE does not carry state-only actions",
+      "link": "Varies by state"
     }
   ]
 }
