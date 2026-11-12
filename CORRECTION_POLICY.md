@@ -41,7 +41,7 @@ We will act on a report that any of the following is inaccurate:
 - **A factual error** in a scheme classification, a control-failure characterization, a dollar figure, a date, or a citation.
 - **A mis-citation**: a regulatory or case citation that does not support the statement attached to it.
 
-The project also corrects itself. Release 1.1.0 records a correction the project found, not one reported to it: the case base counted matters that did not meet its own inclusion rule, and some control citations did not support what the control claimed. The CHANGELOG states what was wrong, the old and new figures side by side, and what did not change. Citations are now labelled binding, guidance or case evidence so a reader can see what kind of authority stands behind a control.
+The project also corrects itself. Release 1.1.0 records changes the project found, not ones reported to it: the case base was refocused on matters with a claim on a payer, with repeat entries and announcements removed, and some control citations that did not support what the control claimed were corrected. The CHANGELOG states what changed, the old and new figures side by side, and what did not change. Citations are now labelled binding, guidance or case evidence so a reader can see what kind of authority stands behind a control.
 
 ## 5. How to report, and what happens
 
