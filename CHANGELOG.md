@@ -8,6 +8,11 @@ a release history that only records improvements is not one anyone should rely o
 
 ---
 
+## [Unreleased]
+
+- Website: the landing page (index.html) now counts anonymous visits with Cloudflare Web Analytics, without cookies and without personal data, as PRIVACY.md already allowed for the hosted copy. The toolkit file and every downloaded copy send nothing.
+- Website: the maintainer's credentials in the landing-page footer now read CPA, CA, MBA.
+
 ## [1.1.0] - 2026-11-11
 
 Version 1.1.0 extends the toolkit and sharpens the method behind its evidence. New in this release: 128 reference detection tests in
